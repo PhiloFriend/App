@@ -1,4 +1,5 @@
 import React from "react";
+//@ts-ignore
 import { useFind, useSubscribe } from "meteor/react-meteor-data";
 import { LinksCollection, Link } from "../api/links";
 

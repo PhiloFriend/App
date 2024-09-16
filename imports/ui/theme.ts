@@ -28,7 +28,7 @@ const theme = extendTheme({
         root: {
           fontFamily: '"Helvetica", sans-serif',
           fontWeight: 700, // Increased font weight for better button appearance
-          borderRadius: 0, // Remove border radius
+          borderRadius: 24, // Remove border radius
         },
       },
     },
@@ -48,6 +48,7 @@ const theme = extendTheme({
           800: "#0f0f0e",
           900: "#080807",
         },
+        divider: '#f2f2f2'
       },
     },
     dark: {

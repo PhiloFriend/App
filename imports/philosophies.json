@@ -1,0 +1,95 @@
+{
+  "philosophies": [
+    {
+      "id": "stoicism",
+      "name": "Stoicism",
+      "category": "Ancient Philosophy",
+      "summary": "Ancient Greek philosophy emphasizing ethics, logic, and living in harmony with nature. Focuses on cultivating self-control and fortitude to overcome destructive emotions.",
+      "imagePrompt": "A serene figure standing unmoved amidst a stormy sea, with a scroll of wisdom in hand, rendered in a hand-drawn, ancient Greek style."
+    },
+    {
+      "id": "taoism",
+      "name": "Taoism",
+      "category": "Eastern Philosophy",
+      "summary": "Chinese philosophy emphasizing living in harmony with the Tao (the source and essence of everything). Promotes simplicity, spontaneity, and non-action.",
+      "imagePrompt": "A winding river flowing through a misty mountain landscape, with yin-yang symbols hidden in the natural elements, in a traditional Chinese brush painting style."
+    },
+    {
+      "id": "buddhism",
+      "name": "Buddhism",
+      "category": "Eastern Philosophy/Religion",
+      "summary": "Eastern philosophy focused on ending suffering through understanding the nature of reality, cultivating wisdom, and following the Eightfold Path.",
+      "imagePrompt": "A peaceful Buddha figure seated under a Bodhi tree, surrounded by lotus flowers and gentle light, in a hand-drawn mandala-inspired style."
+    },
+    {
+      "id": "islam",
+      "name": "Islam",
+      "category": "Religion",
+      "summary": "Monotheistic religion teaching submission to Allah (God) and following the teachings of Prophet Muhammad. Emphasizes faith, prayer, charity, and ethical living.",
+      "imagePrompt": "A beautifully detailed mosque with intricate geometric patterns, surrounded by people in prayer and acts of charity, in an Islamic calligraphy-inspired hand-drawn style."
+    },
+    {
+      "id": "christianity",
+      "name": "Christianity",
+      "category": "Religion",
+      "summary": "Monotheistic religion based on the life and teachings of Jesus Christ. Emphasizes love, faith, forgiveness, and salvation through Christ.",
+      "imagePrompt": "A radiant cross on a hill, surrounded by diverse people helping each other, with doves and olive branches, in a stained-glass window inspired hand-drawn style."
+    },
+    {
+      "id": "hinduism",
+      "name": "Hinduism",
+      "category": "Religion",
+      "summary": "Ancient Indian religion and philosophy with diverse traditions. Emphasizes dharma (ethics and duties), karma (action and consequences), and moksha (liberation).",
+      "imagePrompt": "A cosmic wheel representing the cycle of life, death, and rebirth, adorned with Hindu deities and symbols, in a colorful hand-drawn mandala style."
+    },
+    {
+      "id": "confucianism",
+      "name": "Confucianism",
+      "category": "Eastern Philosophy",
+      "summary": "Ancient Chinese ethical and philosophical system developed by Confucius. Emphasizes personal and governmental morality, correctness of social relationships, and justice.",
+      "imagePrompt": "A harmonious garden with five intertwining trees representing the Five Constants (Wuchang): benevolence, righteousness, propriety, wisdom, and faithfulness. Each tree bears fruit symbolizing social harmony, with a golden thread connecting them all, illustrating the interconnectedness of virtues and relationships in society. The scene is rendered in a blend of traditional and modern artistic styles, emphasizing balance and order."
+    },
+    {
+      "id": "epicureanism",
+      "name": "Epicureanism",
+      "category": "Ancient Philosophy",
+      "summary": "Ancient Greek philosophical system advocating for the pursuit of moderate pleasure and tranquility through knowledge, friendship, and virtuous living.",
+      "imagePrompt": "A group of friends sharing a simple meal in a garden, surrounded by symbols of learning and nature, in a classical Greek fresco-inspired hand-drawn style."
+    },
+    {
+      "id": "secular_humanism",
+      "name": "Secular Humanism",
+      "category": "Modern Philosophy",
+      "summary": "Philosophical stance emphasizing the potential for good in humanity, ethical behavior based on reason, and the search for meaning without supernatural beliefs.",
+      "imagePrompt": "People of diverse backgrounds building a bridge together, with symbols of science, art, and justice incorporated into the structure, in a modern hand-drawn infographic style."
+    },
+    {
+      "id": "positive_psychology",
+      "name": "Positive Psychology",
+      "category": "Psychology",
+      "summary": "Branch of psychology focusing on the cultivation of happiness, well-being, and human flourishing. Emphasizes strengths, positive experiences, and meaningful life.",
+      "imagePrompt": "A vibrant tree with leaves representing different positive emotions and strengths, with people climbing and flourishing among its branches, in a colorful hand-drawn style."
+    },
+    {
+      "id": "mindfulness",
+      "name": "Mindfulness",
+      "category": "Psychology/Eastern Philosophy",
+      "summary": "Practice of maintaining awareness of the present moment, often derived from Buddhist meditation techniques. Focuses on non-judgmental observation of thoughts and sensations.",
+      "imagePrompt": "A person seated in a lotus position, with thought bubbles gently floating away, surrounded by a mandala of everyday objects, in a zen-inspired hand-drawn style."
+    },
+    {
+      "id": "cbt",
+      "name": "Cognitive Behavioral Therapy (CBT)",
+      "category": "Psychology",
+      "summary": "Psychotherapeutic approach focusing on challenging and changing cognitive distortions and behaviors to improve emotional regulation and develop personal coping strategies.",
+      "imagePrompt": "A mind map showing the interconnection between thoughts, emotions, and behaviors, with arrows indicating the ability to influence each aspect, in a clean, hand-drawn infographic style."
+    },
+    {
+      "id": "virtue_ethics",
+      "name": "Virtue Ethics",
+      "category": "Ancient/Modern Philosophy",
+      "summary": "Approach to ethics emphasizing the virtues or moral character, rather than duties, rules, or consequences. Focuses on cultivating excellence of character.",
+      "imagePrompt": "A person tending to a garden of various plants, each representing a different virtue (courage, wisdom, justice, etc.), in a classical hand-drawn allegory style."
+    }
+  ]
+}
