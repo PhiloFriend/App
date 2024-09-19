@@ -14,11 +14,11 @@ export const PhilosophyItemBasic = ({
 }: PhilosophyItemBasicProps) => {
   return (
     <div>
-      <Grid mb="2em" spacing={2} container>
+      <Grid mb="2em" spacing={3} container>
         <Grid md={4}>
           <Box sx={{ position: "relative", height: "100%" }}>
             <img
-              src="/reflect.jpg"
+              src={`/${philosophy.id}.webp`}
               alt="Grow"
               style={{
                 width: "100%",
@@ -40,7 +40,7 @@ export const PhilosophyItemBasic = ({
             {philosophy.name}
           </Typography>
           <Typography
-            mb="0.5em"
+            mb="1em"
             level={variant === "primary" ? "body-lg" : "body-sm"}
             sx={{ fontWeight: 300 }}
           >

@@ -2,6 +2,8 @@ import React from "react";
 
 import { Box, Typography } from "@mui/joy";
 
+
+
 interface QuizHeaderProps {
   title: string;
   questionNumber: number;
@@ -25,7 +27,9 @@ export const QuizHeader = ({
         {title}
       </Typography>
       <Typography level="h3" sx={{ fontWeight: 400 }}>
-        {questionNumber}/{quizMaxQuestions}
+        {questionNumber <= quizMaxQuestions
+          ? `${questionNumber}/${quizMaxQuestions}`
+          : ``}
       </Typography>
     </Box>
   );

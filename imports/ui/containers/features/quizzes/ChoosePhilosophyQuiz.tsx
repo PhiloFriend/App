@@ -39,13 +39,13 @@ export const ChoosePhilosophyQuiz = () => {
 
   useEffect(() => {
     const createQuiz = async () => {
-      const quizId = await Meteor.callAsync(
-        "quizzes.create",
-        initialQuiz.currentQuestion,
-        initialQuiz.currentOptions
-      );
+      //const quizId = await Meteor.callAsync(
+      //  "quizzes.create",
+      //  initialQuiz.currentQuestion,
+      //  initialQuiz.currentOptions
+      //);
 
-      setQuizId(quizId);
+      setQuizId("gieaK7haFwXqeGw8b");
     };
 
     createQuiz();
@@ -60,7 +60,7 @@ export const ChoosePhilosophyQuiz = () => {
       <QuizHeader
         title="The Wisdom Compass"
         questionNumber={quiz?.history ? quiz.history?.length + 1 : 1}
-        quizMaxQuestions={10}
+        quizMaxQuestions={15}
       ></QuizHeader>
       {effectiveQuiz.currentQuestion ? (
         <Question body={effectiveQuiz.currentQuestion} />

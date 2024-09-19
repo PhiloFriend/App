@@ -17,7 +17,7 @@
     {
       "id": "buddhism",
       "name": "Buddhism",
-      "category": "Eastern Philosophy/Religion",
+      "category": "Eastern Philosophy",
       "summary": "Eastern philosophy focused on ending suffering through understanding the nature of reality, cultivating wisdom, and following the Eightfold Path.",
       "imagePrompt": "A peaceful Buddha figure seated under a Bodhi tree, surrounded by lotus flowers and gentle light, in a hand-drawn mandala-inspired style."
     },
@@ -73,7 +73,7 @@
     {
       "id": "mindfulness",
       "name": "Mindfulness",
-      "category": "Psychology/Eastern Philosophy",
+      "category": "Psychology",
       "summary": "Practice of maintaining awareness of the present moment, often derived from Buddhist meditation techniques. Focuses on non-judgmental observation of thoughts and sensations.",
       "imagePrompt": "A person seated in a lotus position, with thought bubbles gently floating away, surrounded by a mandala of everyday objects, in a zen-inspired hand-drawn style."
     },
@@ -87,9 +87,51 @@
     {
       "id": "virtue_ethics",
       "name": "Virtue Ethics",
-      "category": "Ancient/Modern Philosophy",
+      "category": "Modern Philosophy",
       "summary": "Approach to ethics emphasizing the virtues or moral character, rather than duties, rules, or consequences. Focuses on cultivating excellence of character.",
       "imagePrompt": "A person tending to a garden of various plants, each representing a different virtue (courage, wisdom, justice, etc.), in a classical hand-drawn allegory style."
+    },
+    {
+      "id": "dialectical_materialism",
+      "name": "Dialectical Materialism",
+      "category": "Modern Philosophy",
+      "summary": "Philosophical approach developed by Karl Marx and Friedrich Engels. It emphasizes the importance of material conditions in life and social development, viewing history as a process of dialectical change driven by material and economic factors.",
+      "imagePrompt": "A dynamic scene showing the transformation of society through time, with gears and tools symbolizing material production intertwined with social structures, rendered in a bold, hand-drawn socialist realism style."
+    },
+    {
+      "id": "psychoanalysis",
+      "name": "Psychoanalysis",
+      "category": "Psychology",
+      "summary": "Therapeutic approach and theory of mind developed by Sigmund Freud. Focuses on unconscious mental processes, childhood experiences, and their influence on behavior and mental health.",
+      "imagePrompt": "A human silhouette with a visible iceberg beneath, representing the conscious and unconscious mind, surrounded by symbolic dream imagery, in a surrealist-inspired hand-drawn style."
+    },
+    {
+      "id": "platonism",
+      "name": "Platonism",
+      "category": "Ancient Philosophy",
+      "summary": "Philosophical system based on the teachings of Plato. Emphasizes the existence of abstract forms or ideas as the most fundamental reality, with the physical world being an imperfect reflection of these forms.",
+      "imagePrompt": "A cave scene inspired by Plato's Allegory of the Cave, with shadowy figures observing projections on a wall, while a path leads to a bright, idealized world outside, rendered in a classical Greek-inspired hand-drawn style."
+    },
+    {
+      "id": "pragmatism",
+      "name": "Pragmatism",
+      "category": "Modern Philosophy",
+      "summary": "Philosophical tradition that emphasizes the practical consequences of ideas and beliefs as the main criterion for their truth or value. It focuses on problem-solving and views truth as that which works in practice.",
+      "imagePrompt": "A hand holding a wrench, adjusting a gear mechanism. Simple, clean lines in a blueprint style."
+    },
+    {
+      "id": "nietzscheism",
+      "name": "Nietzscheism",
+      "category": "Modern Philosophy",
+      "summary": "Philosophical perspective based on the ideas of Friedrich Nietzsche. It challenges traditional morality, advocates for the revaluation of all values, and emphasizes concepts like the will to power, eternal recurrence, and the Übermensch.",
+      "imagePrompt": "A figure standing atop a mountain, breaking free from chains, with a spiraling path representing eternal recurrence below, and contrasting light and shadow symbolizing the interplay of Apollonian and Dionysian forces, in a bold, expressionist hand-drawn style."
+    },
+    {
+      "id": "yalomian_existentialism",
+      "name": "Yalomian Existentialism",
+      "category": "Modern Philosophy",
+      "summary": "A contemporary approach to existential psychotherapy developed by Irvin D. Yalom. It focuses on four 'ultimate concerns' of human existence: death, freedom, isolation, and meaninglessness, emphasizing their role in psychological well-being and personal growth.",
+      "imagePrompt": "A simple compass with four cardinal points labeled: Death, Freedom, Isolation, Meaninglessness. Minimalist black and white design."
     }
   ]
 }
