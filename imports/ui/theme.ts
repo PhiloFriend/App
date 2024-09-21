@@ -32,23 +32,32 @@ const theme = extendTheme({
         },
       },
     },
+    JoyInput: {
+      styleOverrides: {
+        root: {
+          fontFamily: '"Helvetica", sans-serif',
+          fontWeight: 500, // Increased font weight for better button appearance
+          borderRadius: 24, // Remove border radius
+        },
+      },
+    },
   },
   colorSchemes: {
     light: {
       palette: {
         primary: {
           50: "#f5f5f5",
-          100: "#e0e0e0",
-          200: "#cccccc",
-          300: "#b8b8b8",
-          400: "#a3a3a3",
+          100: "#a8a7a7",
+          200: "#7c7c7a",
+          300: "#51504e",
+          400: "#3b3a38",
           500: "#252422", // Set primary color to #252422
           600: "#1e1d1b",
           700: "#161614",
           800: "#0f0f0e",
           900: "#080807",
         },
-        divider: '#f2f2f2'
+        divider: "#f2f2f2",
       },
     },
     dark: {

@@ -105,17 +105,14 @@ h6 {
   font-family: "Playfair Display", serif;
 }
 
-
-
-
-.banner{
+.banner {
   width: 100%;
   height: 320px;
   text-align: center;
   overflow: hidden;
   position: relative;
 }
-.banner .slider{
+.banner .slider {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -126,27 +123,29 @@ h6 {
   animation: autoRun 480s linear infinite;
   z-index: 2;
 }
-@keyframes autoRun{
-  from{
-      transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
-  }to{
-      transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
   }
 }
 
-.banner .slider .item{
+.banner .slider .item {
   position: absolute;
   inset: 0 0 0 0;
-  transform: 
-      rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-      translateZ(173px);
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(173px);
 }
-.banner .slider .item img{
+.banner .slider .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.banner .content{
+.banner .content {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -160,14 +159,14 @@ h6 {
   align-items: center;
   z-index: 1;
 }
-.banner .content h1{
-  font-family: 'ICA Rubrik';
+.banner .content h1 {
+  font-family: "ICA Rubrik";
   font-size: 16em;
   line-height: 1em;
-  color: #25283B;
+  color: #25283b;
   position: relative;
 }
-.banner .content h1::after{
+.banner .content h1::after {
   position: absolute;
   inset: 0 0 0 0;
   content: attr(data-content);
@@ -175,15 +174,15 @@ h6 {
   -webkit-text-stroke: 2px #d2d2d2;
   color: transparent;
 }
-.banner .content .author{
+.banner .content .author {
   font-family: Poppins;
   text-align: right;
   max-width: 200px;
 }
-.banner .content h2{
+.banner .content h2 {
   font-size: 3em;
 }
-.banner .content .model{
+.banner .content .model {
   background-image: url(images/model.png);
   width: 100%;
   height: 75vh;
@@ -196,45 +195,86 @@ h6 {
   z-index: 1;
 }
 @media screen and (max-width: 1023px) {
-  .banner .slider{
-      width: 160px;
-      height: 200px;
-      left: calc(50% - 80px);
+  .banner .slider {
+    width: 160px;
+    height: 200px;
+    left: calc(50% - 80px);
   }
-  .banner .slider .item{
-      transform: 
-          rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-          translateZ(300px);
+  .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(300px);
   }
-  .banner .content h1{
-      text-align: center;
-      width: 100%;
-      text-shadow: 0 10px 20px #000;
-      font-size: 7em;
+  .banner .content h1 {
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 10px 20px #000;
+    font-size: 7em;
   }
-  .banner .content .author{
-      color: #fff;
-      padding: 20px;
-      text-shadow: 0 10px 20px #000;
-      z-index: 2;
-      max-width: unset;
-      width: 100%;
-      text-align: center;
-      padding: 0 30px;
+  .banner .content .author {
+    color: #fff;
+    padding: 20px;
+    text-shadow: 0 10px 20px #000;
+    z-index: 2;
+    max-width: unset;
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
   }
 }
 @media screen and (max-width: 767px) {
-  .banner .slider{
-      width: 100px;
-      height: 150px;
-      left: calc(50% - 50px);
+  .banner .slider {
+    width: 100px;
+    height: 150px;
+    left: calc(50% - 50px);
   }
-  .banner .slider .item{
-      transform: 
-          rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-          translateZ(180px);
+  .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(180px);
   }
-  .banner .content h1{
-      font-size: 5em;
+  .banner .content h1 {
+    font-size: 5em;
   }
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(220, 220, 220) 40%,
+    rgb(170, 170, 170) 98%,
+    rgb(10, 10, 10) 100%
+  );
+  border-radius: 50%;
+  position: relative;
+}
+
+.loader:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border-bottom: 0 solid #ffffff05;
+  box-shadow: 0 -10px 20px 20px #ffffff40 inset,
+    0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px #ffffff80 inset,
+    0 -3px 2px #ffffffbb inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff,
+    0 5px 5px #ffffff90, 0 10px 15px #ffffff60, 0 10px 20px 20px #ffffff40;
+  filter: blur(3px);
+  animation: 2s rotate linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  color: #252422 !important
 }

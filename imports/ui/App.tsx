@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+
 // @ts-ignore
 import { useSubscribe } from "meteor/react-meteor-data";
 
@@ -12,19 +19,40 @@ import { Hero } from "./components/layout/Hero";
 import { Main } from "./components/layout/Main";
 
 import { PhilosophySelector } from "./containers/features/quizzes/PhilosopySelector";
+import SignUp from "./containers/layout/Signup";
 
 export const App = () => {
   useSubscribe("philosophies");
 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <Box>
+          <HeaderContainer />
+          <Main>
+            <Hero />
+            <Box mt={10} />
+            <PhilosophySelector />
+          </Main>{" "}
+        </Box>
+      ),
+    },
+    {
+      path: "signup",
+      element: (
+        <Box>
+          <HeaderContainer />
+          <SignUp />
+        </Box>
+      ),
+    },
+  ]);
+
   return (
     <CssVarsProvider theme={theme}>
       <CssBaseline />
-      <HeaderContainer />
-      <Main>
-        <Hero />
-        <Box mt={10} />
-        <PhilosophySelector />
-      </Main>{" "}
+      <RouterProvider router={router}></RouterProvider>
     </CssVarsProvider>
   );
 };
