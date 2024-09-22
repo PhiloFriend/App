@@ -5,8 +5,11 @@ import { useTracker } from "meteor/react-meteor-data";
 import { Box, Button, IconButton, Menu, MenuItem } from "@mui/joy";
 import { Logo } from "../common/Logo";
 import { Meteor } from "meteor/meteor";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
+  const navigate = useNavigate();
+
   const user = useTracker(() => Meteor.user());
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -29,7 +32,9 @@ export const Header = () => {
         borderColor: (theme) => theme.palette.divider,
       }}
     >
-      <Logo />
+      <Box sx={{ cursor: "pointer" }} onClick={() => navigate("/")}>
+        <Logo />
+      </Box>
       {user ? (
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Button sx={{ mr: "0.5em" }} variant="solid">

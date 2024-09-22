@@ -28,7 +28,6 @@ interface SignupFormProps {
 export const SignupForm: React.FC<SignupFormProps> = ({
   philosophies,
 }: SignupFormProps) => {
-  console.log(philosophies);
 
   const [formData, setFormData] = useState<FormData>({
     email: "",

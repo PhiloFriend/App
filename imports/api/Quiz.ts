@@ -6,7 +6,7 @@ import { StringOutputParser } from "@langchain/core/output_parsers";
 import { ChatOpenAI } from "@langchain/openai";
 import { HumanMessage, SystemMessage } from "@langchain/core/messages";
 import { ChatAnthropicMessages } from "@langchain/anthropic";
-
+import { getConfig } from "../config";
 
 export interface QuizAnswer {
   question: string;
@@ -37,7 +37,7 @@ const generateTheNextQuestion = async (
   if (Meteor.isServer) {
     const model = new ChatOpenAI({
       model: "gpt-4o",
-      apiKey,
+      apiKey: getConfig().openAiKey,
     });
 
     const setNewQuestion = async (question: string, options: Options) => {
@@ -146,7 +146,7 @@ const generateResult = async (
   if (Meteor.isServer) {
     const model = new ChatOpenAI({
       model: "gpt-4o",
-      apiKey,
+      apiKey: getConfig().openAiKey,
     });
 
     console.log("_=------------------------------1");

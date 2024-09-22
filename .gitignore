@@ -1,3 +1,5 @@
 node_modules/
 
+imports/config.ts
+
 .DS_Store

@@ -15,10 +15,9 @@ import theme from "./theme";
 import { Box } from "@mui/joy";
 
 import { HeaderContainer } from "./containers/layout/HeaderContainer";
-import { Hero } from "./components/layout/Hero";
-import { Main } from "./components/layout/Main";
 
-import { PhilosophySelector } from "./containers/features/quizzes/PhilosopySelector";
+import { HomePage } from "./pages/HomePage";
+
 import SignUp from "./containers/layout/Signup";
 
 export const App = () => {
@@ -27,16 +26,7 @@ export const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <Box>
-          <HeaderContainer />
-          <Main>
-            <Hero />
-            <Box mt={10} />
-            <PhilosophySelector />
-          </Main>{" "}
-        </Box>
-      ),
+      element: <HomePage />,
     },
     {
       path: "signup",
