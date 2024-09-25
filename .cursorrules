@@ -1,0 +1,79 @@
+# Meteor.js with TypeScript, React, and Joy UI Best Practices
+
+You are an expert in TypeScript, Meteor.js, React, Joy UI, and MongoDB.
+
+## Code Style and Structure
+- Write clean, efficient TypeScript code with accurate examples.
+- Use functional and declarative programming patterns; avoid classes when possible.
+- Prefer iteration and modularization over code duplication.
+- Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError).
+- Structure files: client, server, imports (for shared code), api (for collections and methods), ui (for React components).
+
+## Naming Conventions
+- Use camelCase for TypeScript/JavaScript identifiers.
+- Use PascalCase for React components and interfaces.
+- Use kebab-case for file names (e.g., user-profile.tsx).
+
+## TypeScript Usage
+- Use TypeScript for all code; prefer interfaces over types for better extensibility.
+- Leverage type inference where possible, but explicitly type complex structures.
+- Use union types instead of enums for better type safety.
+- Define clear interfaces for method parameters, props, and state.
+
+## React and Joy UI
+- Use functional components with TypeScript interfaces for props.
+- Utilize React hooks (useState, useEffect, useMemo, useCallback) effectively.
+- Implement Joy UI components for consistent styling and user experience.
+- Use Joy UI's theming capabilities for customization.
+
+## Syntax and Formatting
+- Use arrow functions for callbacks and method definitions.
+- Utilize destructuring and spread operators for cleaner code.
+- Use optional chaining (?.) and nullish coalescing (??) operators.
+
+## State Management
+- Use React's built-in state management (useState, useReducer) for local state.
+- Consider using Recoil or MobX for more complex global state management.
+- Leverage Meteor's reactivity system with useTracker hook from react-meteor-data package.
+
+## Data Fetching and Management
+- Use Meteor methods for server-side operations, typed with TypeScript.
+- Implement proper security checks using check() from meteor/check package.
+- Use publications and subscriptions for efficient data transfer, typed with TypeScript.
+- Utilize MongoDB indexes for improved query performance.
+
+## Routing
+- Use React Router for client-side routing.
+- Implement dynamic imports for route-based code splitting.
+
+## Performance Optimization
+- Minimize the use of global variables and side effects.
+- Use React.memo() for component memoization when appropriate.
+- Implement pagination or infinite scrolling for large datasets.
+- Use Meteor.subscribe() with limits and sorting for efficient data loading.
+
+## Security
+- Always validate user input on both client and server sides.
+- Use Methods.allow() and Methods.deny() to control database operations.
+- Implement proper user authentication and authorization.
+
+## Testing
+- Write unit tests using Jest for React components and TypeScript functions.
+- Use React Testing Library for component testing.
+- Implement integration tests using Meteor's built-in testing framework.
+
+## Error Handling and Logging
+- Implement a global error boundary for React components.
+- Use try-catch blocks in async functions and Meteor methods.
+- Implement proper logging on both client and server sides.
+
+## Deployment and Scaling
+- Use Meteor Up (mup) or Galaxy for deployment.
+- Consider using MongoDB Atlas for scalable database solutions.
+- Implement proper environment variable management for different deployment stages.
+
+## Package Management
+- Use Meteor's built-in package system alongside NPM for managing dependencies.
+- Keep packages up-to-date and be aware of potential breaking changes.
+
+Follow the official Meteor Guide and TypeScript documentation for best practices on specific topics like data loading, methods, publications, and subscriptions.

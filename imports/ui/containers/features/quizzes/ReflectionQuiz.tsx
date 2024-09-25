@@ -22,12 +22,15 @@ import { QuizHistory } from "/imports/ui/components/features/quiz/QuizHistory";
 import { Loader } from "/imports/ui/components/common/Loader";
 
 const initialQuiz = {
-  currentQuestion: "What was the most meaningful moment you experienced today?",
+  currentQuestion:
+    "Which of the following best captures how you felt throughout today?",
   currentOptions: {
-    A: "Achieving a personal goal",
-    B: "Connecting with someone special",
-    C: "Overcoming a challenge",
-    D: "Taking time to relax and reflect",
+    A: "Joyful and content",
+    B: "Calm and peaceful",
+    C: "Anxious or stressed",
+    D: "Sad or down",
+    E: "Frustrated or angry",
+    F: "Disconnected or numb",
   },
   history: [],
 };
@@ -38,10 +41,13 @@ interface ReflectionResultProps {
     quote: string;
     story: string;
     application: string;
+    imageUrl: string;
   };
 }
 
 export const ReflectionResult = ({ result }: ReflectionResultProps) => {
+  console.log(result);
+
   return (
     <Box>
       <Grid container spacing={4}>
@@ -63,7 +69,7 @@ export const ReflectionResult = ({ result }: ReflectionResultProps) => {
           </Typography>
         </Grid>
         <Grid sm={6} xs={12}>
-          {" "}
+          <img src={result.imageUrl} style={{ width: "100%" }} />{" "}
           <Typography level="h4">Your Reflection:</Typography>{" "}
           <Typography level="body-sm">{result.reflection}</Typography>
         </Grid>
@@ -86,16 +92,17 @@ export const ReflectionQuiz = () => {
 
   useEffect(() => {
     const createQuiz = async () => {
-      //const quizId = await Meteor.callAsync(
-      //  "reflectionQuizzes.create",
-      //  initialQuiz.currentQuestion,
-      //  initialQuiz.currentOptions,
-      //  //@ts-ignore
-      //  Meteor.user()?.profile.philosophies
-      //);
-      //
-      //console.log("are we here?", quizId);
-      setQuizId("ao7uw9LoEb3EqBbqa");
+      const quizId = await Meteor.callAsync(
+        "reflectionQuizzes.create",
+        initialQuiz.currentQuestion,
+        initialQuiz.currentOptions,
+        //@ts-ignore
+        Meteor.user()?.profile.philosophies
+      );
+
+      console.log("are we here?", quizId);
+      //setQuizId("fT4KKeH5XCFvywdfb");
+      setQuizId(quizId);
     };
 
     createQuiz();

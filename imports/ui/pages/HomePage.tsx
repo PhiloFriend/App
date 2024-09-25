@@ -12,6 +12,8 @@ import { Main } from "../components/layout/Main";
 import { PhilosophySelector } from "../containers/features/quizzes/PhilosopySelector";
 import { ReflectionQuiz } from "../containers/features/quizzes/ReflectionQuiz";
 
+import { Dashboard } from "../containers/features/user/Dashboard";
+
 export const HomePage = () => {
   const user = useTracker(() => Meteor.user());
 
@@ -26,7 +28,7 @@ export const HomePage = () => {
             <PhilosophySelector />
           </>
         ) : (
-          <ReflectionQuiz />
+          <Dashboard />
         )}
         {/* For the logged-in user, render null for now */}
       </Main>
