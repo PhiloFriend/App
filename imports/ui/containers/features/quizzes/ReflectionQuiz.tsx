@@ -41,7 +41,8 @@ interface ReflectionResultProps {
     quote: string;
     story: string;
     application: string;
-    imageUrl: string;
+    sharableCaption: string;
+    image: string;
   };
 }
 
@@ -51,9 +52,32 @@ export const ReflectionResult = ({ result }: ReflectionResultProps) => {
   return (
     <Box>
       <Grid container spacing={4}>
-        <Grid sm={6} xs={12}>
-          <Typography mb={"1.5em"} level="body-lg">
+        <Grid sm={4} xs={12}>
+          <img src={result.image} style={{ width: "100%" }} />{" "}
+          <Typography mb={"1.5em"} level="body-md">
             {result.quote}
+          </Typography>
+          <Box sx={{ width: "100%" }}>
+            <Grid container spacing={2}>
+              <Grid xs={6}>
+                <Button fullWidth variant="solid" color="primary" size="md">
+                  Share Reflection
+                </Button>
+              </Grid>
+              <Grid xs={6}>
+                <Button fullWidth variant="outlined" color="primary" size="md">
+                  Make it NFT
+                </Button>
+              </Grid>
+            </Grid>
+          </Box>
+        </Grid>
+        <Grid sm={8} xs={12}>
+          <Typography mb={"0.5em"} level="h4">
+            Your Reflection:
+          </Typography>{" "}
+          <Typography mb={"1em"} level="body-md">
+            {result.reflection}
           </Typography>
           <Typography mb={"0.5em"} level="h4">
             A Story:
@@ -67,11 +91,12 @@ export const ReflectionResult = ({ result }: ReflectionResultProps) => {
           <Typography mb={"1em"} level="body-md">
             {result.application}
           </Typography>
-        </Grid>
-        <Grid sm={6} xs={12}>
-          <img src={result.imageUrl} style={{ width: "100%" }} />{" "}
-          <Typography level="h4">Your Reflection:</Typography>{" "}
-          <Typography level="body-sm">{result.reflection}</Typography>
+          <Typography mb={"0.5em"} level="h4">
+            Sharable Caption:
+          </Typography>{" "}
+          <Typography mb={"1em"} level="body-md">
+            {result.sharableCaption}
+          </Typography>
         </Grid>
       </Grid>
     </Box>

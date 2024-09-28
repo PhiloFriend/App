@@ -1,0 +1,3339 @@
+{
+  "questions": [
+    {
+      "id": "root",
+      "type": "question",
+      "title": "How are you feeling today?",
+      "description": "Select the emotion that best describes your current state.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Joy",
+          "description": "A feeling of great pleasure and happiness.",
+          "image": {
+            "hash": "59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09-mini.png"
+          },
+          "nextQuestionId": "intensity_Joy"
+        },
+        {
+          "type": "option",
+          "title": "Sadness",
+          "description": "A feeling of sorrow or unhappiness.",
+          "image": {
+            "hash": "70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5-mini.png"
+          },
+          "nextQuestionId": "intensity_Sadness"
+        },
+        {
+          "type": "option",
+          "title": "Anger",
+          "description": "A strong feeling of annoyance, displeasure, or hostility.",
+          "image": {
+            "hash": "306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907-mini.png"
+          },
+          "nextQuestionId": "intensity_Anger"
+        },
+        {
+          "type": "option",
+          "title": "Fear",
+          "description": "An unpleasant emotion caused by the threat of danger, pain, or harm.",
+          "image": {
+            "hash": "d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff-mini.png"
+          },
+          "nextQuestionId": "intensity_Fear"
+        },
+        {
+          "type": "option",
+          "title": "Anxiety",
+          "description": "A feeling of worry, nervousness, or unease.",
+          "image": {
+            "hash": "f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36-mini.png"
+          },
+          "nextQuestionId": "intensity_Anxiety"
+        },
+        {
+          "type": "option",
+          "title": "Disgust",
+          "description": "A feeling of revulsion or profound disapproval aroused by something unpleasant or offensive.",
+          "image": {
+            "hash": "9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b-mini.png"
+          },
+          "nextQuestionId": "intensity_Disgust"
+        },
+        {
+          "type": "option",
+          "title": "Calm",
+          "description": "A state of tranquility, peace, and emotional balance.",
+          "image": {
+            "hash": "34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d-mini.png"
+          },
+          "nextQuestionId": "intensity_Calm"
+        }
+      ],
+      "parentId": null,
+      "repeatable": true
+    },
+    {
+      "id": "root_return",
+      "type": "question",
+      "title": "Do you have an additional emotion to add?",
+      "description": "Select another emotion that describes your current state.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Joy",
+          "description": "A feeling of great pleasure and happiness.",
+          "image": {
+            "hash": "59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09-mini.png"
+          },
+          "nextQuestionId": "intensity_Joy"
+        },
+        {
+          "type": "option",
+          "title": "Sadness",
+          "description": "A feeling of sorrow or unhappiness.",
+          "image": {
+            "hash": "70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5-mini.png"
+          },
+          "nextQuestionId": "intensity_Sadness"
+        },
+        {
+          "type": "option",
+          "title": "Anger",
+          "description": "A strong feeling of annoyance, displeasure, or hostility.",
+          "image": {
+            "hash": "306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907-mini.png"
+          },
+          "nextQuestionId": "intensity_Anger"
+        },
+        {
+          "type": "option",
+          "title": "Fear",
+          "description": "An unpleasant emotion caused by the threat of danger, pain, or harm.",
+          "image": {
+            "hash": "d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff-mini.png"
+          },
+          "nextQuestionId": "intensity_Fear"
+        },
+        {
+          "type": "option",
+          "title": "Anxiety",
+          "description": "A feeling of worry, nervousness, or unease.",
+          "image": {
+            "hash": "f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36-mini.png"
+          },
+          "nextQuestionId": "intensity_Anxiety"
+        },
+        {
+          "type": "option",
+          "title": "Disgust",
+          "description": "A feeling of revulsion or profound disapproval aroused by something unpleasant or offensive.",
+          "image": {
+            "hash": "9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b-mini.png"
+          },
+          "nextQuestionId": "intensity_Disgust"
+        },
+        {
+          "type": "option",
+          "title": "Calm",
+          "description": "A state of tranquility, peace, and emotional balance.",
+          "image": {
+            "hash": "34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d-mini.png"
+          },
+          "nextQuestionId": "intensity_Calm"
+        }
+      ],
+      "parentId": null,
+      "repeatable": true
+    },
+    {
+      "id": "root_fork",
+      "type": "question",
+      "title": "Would you like to add another emotion?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another emotion",
+          "image": null,
+          "nextQuestionId": "root_return"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Finish the reflection",
+          "image": null,
+          "nextQuestionId": "End"
+        }
+      ],
+      "parentId": "detail_Joy_Achievement",
+      "repeatable": false
+    },
+    {
+      "id": "intensity_Joy",
+      "type": "question",
+      "title": "How intense is your feeling of Joy?",
+      "description": "Select the level of intensity that best matches your current state.",
+      "image": {
+        "hash": "59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Contentment",
+          "description": "A state of peaceful happiness.",
+          "image": {
+            "hash": "c4a6a5820041532ab0a411e814cd2ac08ef0df8084e67fb21f55c34cbcb0bfb6",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/c4a6a5820041532ab0a411e814cd2ac08ef0df8084e67fb21f55c34cbcb0bfb6.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/c4a6a5820041532ab0a411e814cd2ac08ef0df8084e67fb21f55c34cbcb0bfb6-mini.png"
+          },
+          "nextQuestionId": "trigger_Joy"
+        },
+        {
+          "type": "option",
+          "title": "Happiness",
+          "description": "A feeling of pleasure and contentment.",
+          "image": {
+            "hash": "da81967ab2816646b8978d4c85db136aa7253f6b2c855a0b3a57829361172a47",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/da81967ab2816646b8978d4c85db136aa7253f6b2c855a0b3a57829361172a47.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/da81967ab2816646b8978d4c85db136aa7253f6b2c855a0b3a57829361172a47-mini.png"
+          },
+          "nextQuestionId": "trigger_Joy"
+        },
+        {
+          "type": "option",
+          "title": "Elation",
+          "description": "An intense feeling of joy and excitement.",
+          "image": {
+            "hash": "d481687ac7261186081a8b4c48af7617be669b20ddc204655684372cbae5e757",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d481687ac7261186081a8b4c48af7617be669b20ddc204655684372cbae5e757.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d481687ac7261186081a8b4c48af7617be669b20ddc204655684372cbae5e757-mini.png"
+          },
+          "nextQuestionId": "trigger_Joy"
+        }
+      ],
+      "parentId": "root",
+      "repeatable": false
+    },
+    {
+      "id": "trigger_Joy",
+      "type": "question",
+      "title": "What triggered your feeling of Joy?",
+      "description": "Select the option that best describes the cause of your emotion.",
+      "image": {
+        "hash": "59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/59f15ec163d89fe03acf1e2812c4c4e1918cbaf4bd3018e07b3f1b69330a9f09-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Achievement",
+          "description": "Accomplishing a goal or task successfully.",
+          "image": {
+            "hash": "a8dbd37e9579e0c847607f329759e7650854b4be94f5546e88414c8f1b6047a6",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a8dbd37e9579e0c847607f329759e7650854b4be94f5546e88414c8f1b6047a6.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a8dbd37e9579e0c847607f329759e7650854b4be94f5546e88414c8f1b6047a6-mini.png"
+          },
+          "nextQuestionId": "detail_Joy_Achievement"
+        },
+        {
+          "type": "option",
+          "title": "Relationships",
+          "description": "Positive interactions with others.",
+          "image": {
+            "hash": "f87c4b9082a9dc901bc46b7ba8149344a64941cfdeeb60623b8abb6147c8a4b5",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f87c4b9082a9dc901bc46b7ba8149344a64941cfdeeb60623b8abb6147c8a4b5.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f87c4b9082a9dc901bc46b7ba8149344a64941cfdeeb60623b8abb6147c8a4b5-mini.png"
+          },
+          "nextQuestionId": "detail_Joy_Relationships"
+        },
+        {
+          "type": "option",
+          "title": "Experiences",
+          "description": "Engaging in enjoyable activities.",
+          "image": {
+            "hash": "1faaaef449a53c0fb746f2a1cfbf81176aa24071b4128bb88c9b6af6345dc8b2",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1faaaef449a53c0fb746f2a1cfbf81176aa24071b4128bb88c9b6af6345dc8b2.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1faaaef449a53c0fb746f2a1cfbf81176aa24071b4128bb88c9b6af6345dc8b2-mini.png"
+          },
+          "nextQuestionId": "detail_Joy_Experiences"
+        },
+        {
+          "type": "option",
+          "title": "Personal Growth",
+          "description": "Progress in personal development.",
+          "image": {
+            "hash": "b3785c0e0790b9edb65958afb7ffb9abe10ce8c19f943b77ba81c51b21d544eb",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b3785c0e0790b9edb65958afb7ffb9abe10ce8c19f943b77ba81c51b21d544eb.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b3785c0e0790b9edb65958afb7ffb9abe10ce8c19f943b77ba81c51b21d544eb-mini.png"
+          },
+          "nextQuestionId": "detail_Joy_Personal Growth"
+        }
+      ],
+      "parentId": "intensity_Joy",
+      "repeatable": true
+    },
+    {
+      "id": "detail_Joy_Achievement",
+      "type": "question",
+      "title": "What accomplishment today brought you joy?",
+      "description": "Accomplishing a goal or task successfully.",
+      "image": {
+        "hash": "a8dbd37e9579e0c847607f329759e7650854b4be94f5546e88414c8f1b6047a6",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a8dbd37e9579e0c847607f329759e7650854b4be94f5546e88414c8f1b6047a6.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a8dbd37e9579e0c847607f329759e7650854b4be94f5546e88414c8f1b6047a6-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Completed a challenging task",
+          "description": "",
+          "image": {
+            "hash": "53231b0142ae847ee15a07b1335aab486e069ad4f77198da0a36fb1b2bf557d1",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/53231b0142ae847ee15a07b1335aab486e069ad4f77198da0a36fb1b2bf557d1.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/53231b0142ae847ee15a07b1335aab486e069ad4f77198da0a36fb1b2bf557d1-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Achievement"
+        },
+        {
+          "type": "option",
+          "title": "Received recognition for work",
+          "description": "",
+          "image": {
+            "hash": "e7a055dc0ca79aa76838234e8e13a6ad70cf95ec0f0ae99d9639a9c1b4163db2",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e7a055dc0ca79aa76838234e8e13a6ad70cf95ec0f0ae99d9639a9c1b4163db2.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e7a055dc0ca79aa76838234e8e13a6ad70cf95ec0f0ae99d9639a9c1b4163db2-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Achievement"
+        },
+        {
+          "type": "option",
+          "title": "Learned something new",
+          "description": "",
+          "image": {
+            "hash": "633116cc3fd6a549ad33fa68d116e541b433a16b83d12286aaee4e014efac610",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/633116cc3fd6a549ad33fa68d116e541b433a16b83d12286aaee4e014efac610.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/633116cc3fd6a549ad33fa68d116e541b433a16b83d12286aaee4e014efac610-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Achievement"
+        },
+        {
+          "type": "option",
+          "title": "Helped someone in need",
+          "description": "",
+          "image": {
+            "hash": "8bc421ef7561bd479aaa2717f1710e10bf8edb07f7348a3495351e45944ac8be",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8bc421ef7561bd479aaa2717f1710e10bf8edb07f7348a3495351e45944ac8be.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8bc421ef7561bd479aaa2717f1710e10bf8edb07f7348a3495351e45944ac8be-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Achievement"
+        }
+      ],
+      "parentId": "trigger_Joy",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Joy_Achievement",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Joy"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Joy_Achievement",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Joy_Relationships",
+      "type": "question",
+      "title": "Which interaction today made you feel joyful?",
+      "description": "Positive interactions with others.",
+      "image": {
+        "hash": "f87c4b9082a9dc901bc46b7ba8149344a64941cfdeeb60623b8abb6147c8a4b5",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f87c4b9082a9dc901bc46b7ba8149344a64941cfdeeb60623b8abb6147c8a4b5.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f87c4b9082a9dc901bc46b7ba8149344a64941cfdeeb60623b8abb6147c8a4b5-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Spending time with family",
+          "description": "",
+          "image": {
+            "hash": "11fe4b0f58ff420693a5d325b730c505a4fe3ea01087e87ccaa34095b0eb0668",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/11fe4b0f58ff420693a5d325b730c505a4fe3ea01087e87ccaa34095b0eb0668.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/11fe4b0f58ff420693a5d325b730c505a4fe3ea01087e87ccaa34095b0eb0668-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Relationships"
+        },
+        {
+          "type": "option",
+          "title": "Catching up with a friend",
+          "description": "",
+          "image": {
+            "hash": "bff448479c5d9ef0008a579f55cd015b4299c81b38e2837dd0a427d6df588708",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/bff448479c5d9ef0008a579f55cd015b4299c81b38e2837dd0a427d6df588708.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/bff448479c5d9ef0008a579f55cd015b4299c81b38e2837dd0a427d6df588708-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Relationships"
+        },
+        {
+          "type": "option",
+          "title": "Meeting someone new",
+          "description": "",
+          "image": {
+            "hash": "9ec5f8155af8dde0204eaac31f9e357bc4b59a2c9876498419483291e344f5f4",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9ec5f8155af8dde0204eaac31f9e357bc4b59a2c9876498419483291e344f5f4.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9ec5f8155af8dde0204eaac31f9e357bc4b59a2c9876498419483291e344f5f4-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Relationships"
+        },
+        {
+          "type": "option",
+          "title": "Receiving support from others",
+          "description": "",
+          "image": {
+            "hash": "e2a7efbaa021d3bd80d1a2b257975e264152362aff6b374a9ff903cdd4f88f3f",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e2a7efbaa021d3bd80d1a2b257975e264152362aff6b374a9ff903cdd4f88f3f.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e2a7efbaa021d3bd80d1a2b257975e264152362aff6b374a9ff903cdd4f88f3f-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Relationships"
+        }
+      ],
+      "parentId": "trigger_Joy",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Joy_Relationships",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Joy"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Joy_Relationships",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Joy_Experiences",
+      "type": "question",
+      "title": "What experience today brought you joy?",
+      "description": "Engaging in enjoyable activities.",
+      "image": {
+        "hash": "1faaaef449a53c0fb746f2a1cfbf81176aa24071b4128bb88c9b6af6345dc8b2",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1faaaef449a53c0fb746f2a1cfbf81176aa24071b4128bb88c9b6af6345dc8b2.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1faaaef449a53c0fb746f2a1cfbf81176aa24071b4128bb88c9b6af6345dc8b2-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Enjoyed a hobby",
+          "description": "",
+          "image": {
+            "hash": "da300af89cb766de2315deacf5470bc600939be79a3148bd699cbc487f8f7ba9",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/da300af89cb766de2315deacf5470bc600939be79a3148bd699cbc487f8f7ba9.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/da300af89cb766de2315deacf5470bc600939be79a3148bd699cbc487f8f7ba9-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Experiences"
+        },
+        {
+          "type": "option",
+          "title": "Explored a new place",
+          "description": "",
+          "image": {
+            "hash": "f0d7bfa9b2b212338df3fd4f0b40e9383e92e634acf56cb07ae8ca247b8a50e6",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f0d7bfa9b2b212338df3fd4f0b40e9383e92e634acf56cb07ae8ca247b8a50e6.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f0d7bfa9b2b212338df3fd4f0b40e9383e92e634acf56cb07ae8ca247b8a50e6-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Experiences"
+        },
+        {
+          "type": "option",
+          "title": "Appreciated nature",
+          "description": "",
+          "image": {
+            "hash": "e8572c3724602bf42db9ce08a04152856fa7bc2116f203cc7c09d3f9c937bce3",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e8572c3724602bf42db9ce08a04152856fa7bc2116f203cc7c09d3f9c937bce3.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e8572c3724602bf42db9ce08a04152856fa7bc2116f203cc7c09d3f9c937bce3-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Experiences"
+        },
+        {
+          "type": "option",
+          "title": "Attended an event",
+          "description": "",
+          "image": {
+            "hash": "b63b29ceba5c1d3f8f510e983813a3bf580ae7f780fbf414bcbeb8bf106d1b9c",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b63b29ceba5c1d3f8f510e983813a3bf580ae7f780fbf414bcbeb8bf106d1b9c.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b63b29ceba5c1d3f8f510e983813a3bf580ae7f780fbf414bcbeb8bf106d1b9c-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Experiences"
+        }
+      ],
+      "parentId": "trigger_Joy",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Joy_Experiences",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Joy"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Joy_Experiences",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Joy_Personal Growth",
+      "type": "question",
+      "title": "How did you grow today that brought you joy?",
+      "description": "Progress in personal development.",
+      "image": {
+        "hash": "b3785c0e0790b9edb65958afb7ffb9abe10ce8c19f943b77ba81c51b21d544eb",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b3785c0e0790b9edb65958afb7ffb9abe10ce8c19f943b77ba81c51b21d544eb.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b3785c0e0790b9edb65958afb7ffb9abe10ce8c19f943b77ba81c51b21d544eb-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Overcame a fear",
+          "description": "",
+          "image": {
+            "hash": "161a6db5585a678d6e1203108ea47d2d7a434b7e60b812289c4111bd7dfc0dbf",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/161a6db5585a678d6e1203108ea47d2d7a434b7e60b812289c4111bd7dfc0dbf.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/161a6db5585a678d6e1203108ea47d2d7a434b7e60b812289c4111bd7dfc0dbf-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Personal Growth"
+        },
+        {
+          "type": "option",
+          "title": "Practiced self-care",
+          "description": "",
+          "image": {
+            "hash": "f0c0181d71b0322fd8c457850eb17f014cee98eadc0897e571da6522568ff8b0",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f0c0181d71b0322fd8c457850eb17f014cee98eadc0897e571da6522568ff8b0.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f0c0181d71b0322fd8c457850eb17f014cee98eadc0897e571da6522568ff8b0-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Personal Growth"
+        },
+        {
+          "type": "option",
+          "title": "Achieved a personal goal",
+          "description": "",
+          "image": {
+            "hash": "fe1993a313a61d8a9f83b08bbd84a01fc6fa67e0749985a997956090de790e29",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fe1993a313a61d8a9f83b08bbd84a01fc6fa67e0749985a997956090de790e29.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fe1993a313a61d8a9f83b08bbd84a01fc6fa67e0749985a997956090de790e29-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Personal Growth"
+        },
+        {
+          "type": "option",
+          "title": "Learned about yourself",
+          "description": "",
+          "image": {
+            "hash": "9790371426059fff636014a1a9457c0c45016325321323feeccc341f0be9d2ca",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9790371426059fff636014a1a9457c0c45016325321323feeccc341f0be9d2ca.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9790371426059fff636014a1a9457c0c45016325321323feeccc341f0be9d2ca-mini.png"
+          },
+          "nextQuestionId": "fork_Joy_Personal Growth"
+        }
+      ],
+      "parentId": "trigger_Joy",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Joy_Personal Growth",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Joy"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Joy_Personal Growth",
+      "repeatable": false
+    },
+    {
+      "id": "intensity_Sadness",
+      "type": "question",
+      "title": "How intense is your feeling of Sadness?",
+      "description": "Select the level of intensity that best matches your current state.",
+      "image": {
+        "hash": "70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Melancholy",
+          "description": "A gentle feeling of sadness.",
+          "image": {
+            "hash": "81cbd9d2c1f2a6c6bafed87005e8e2e7078556519dc42e06c3f4c315a29902d9",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/81cbd9d2c1f2a6c6bafed87005e8e2e7078556519dc42e06c3f4c315a29902d9.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/81cbd9d2c1f2a6c6bafed87005e8e2e7078556519dc42e06c3f4c315a29902d9-mini.png"
+          },
+          "nextQuestionId": "trigger_Sadness"
+        },
+        {
+          "type": "option",
+          "title": "Sorrow",
+          "description": "A deep feeling of distress caused by loss or disappointment.",
+          "image": {
+            "hash": "b34bc5af3d70619af69df12d4b905ec2298d6f54c0e922d9239e958a35a51622",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b34bc5af3d70619af69df12d4b905ec2298d6f54c0e922d9239e958a35a51622.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b34bc5af3d70619af69df12d4b905ec2298d6f54c0e922d9239e958a35a51622-mini.png"
+          },
+          "nextQuestionId": "trigger_Sadness"
+        },
+        {
+          "type": "option",
+          "title": "Despair",
+          "description": "A complete loss of hope.",
+          "image": {
+            "hash": "f878b2f671f541c00d5f9b3a81a10177e33f2662f4611e86b340eeb5116fbd38",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f878b2f671f541c00d5f9b3a81a10177e33f2662f4611e86b340eeb5116fbd38.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f878b2f671f541c00d5f9b3a81a10177e33f2662f4611e86b340eeb5116fbd38-mini.png"
+          },
+          "nextQuestionId": "trigger_Sadness"
+        }
+      ],
+      "parentId": "root",
+      "repeatable": false
+    },
+    {
+      "id": "trigger_Sadness",
+      "type": "question",
+      "title": "What triggered your feeling of Sadness?",
+      "description": "Select the option that best describes the cause of your emotion.",
+      "image": {
+        "hash": "70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/70b6ba1ac25fbd88b28c860cef7c21c421f322036a2c2365c8306d2dfbb5e3e5-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Loss",
+          "description": "Experiencing the absence of someone or something.",
+          "image": {
+            "hash": "1874bcdde9d8d2093c673e52d2ba7c5c55acc3346af3dcd26c6c4f4a16892ecb",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1874bcdde9d8d2093c673e52d2ba7c5c55acc3346af3dcd26c6c4f4a16892ecb.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1874bcdde9d8d2093c673e52d2ba7c5c55acc3346af3dcd26c6c4f4a16892ecb-mini.png"
+          },
+          "nextQuestionId": "detail_Sadness_Loss"
+        },
+        {
+          "type": "option",
+          "title": "Disappointment",
+          "description": "Not meeting expectations or hopes.",
+          "image": {
+            "hash": "84661ffab10253fc33cbaa81365fda2f260d921c87c2ce45e3f4ef8c3ff869e2",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/84661ffab10253fc33cbaa81365fda2f260d921c87c2ce45e3f4ef8c3ff869e2.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/84661ffab10253fc33cbaa81365fda2f260d921c87c2ce45e3f4ef8c3ff869e2-mini.png"
+          },
+          "nextQuestionId": "detail_Sadness_Disappointment"
+        },
+        {
+          "type": "option",
+          "title": "Isolation",
+          "description": "Feeling alone or disconnected from others.",
+          "image": {
+            "hash": "d35e3685c388aaf8a081d8305ee09d3fc821387d9ac0765059a081d01dcc681d",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d35e3685c388aaf8a081d8305ee09d3fc821387d9ac0765059a081d01dcc681d.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d35e3685c388aaf8a081d8305ee09d3fc821387d9ac0765059a081d01dcc681d-mini.png"
+          },
+          "nextQuestionId": "detail_Sadness_Isolation"
+        },
+        {
+          "type": "option",
+          "title": "Reflection",
+          "description": "Thinking about past events.",
+          "image": {
+            "hash": "56080015a0f23786beda2897d491f39b84e7f8072018b4fa4bc4e9a272bf53bb",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/56080015a0f23786beda2897d491f39b84e7f8072018b4fa4bc4e9a272bf53bb.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/56080015a0f23786beda2897d491f39b84e7f8072018b4fa4bc4e9a272bf53bb-mini.png"
+          },
+          "nextQuestionId": "detail_Sadness_Reflection"
+        }
+      ],
+      "parentId": "intensity_Sadness",
+      "repeatable": true
+    },
+    {
+      "id": "detail_Sadness_Loss",
+      "type": "question",
+      "title": "What loss today contributed to your sadness?",
+      "description": "Experiencing the absence of someone or something.",
+      "image": {
+        "hash": "1874bcdde9d8d2093c673e52d2ba7c5c55acc3346af3dcd26c6c4f4a16892ecb",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1874bcdde9d8d2093c673e52d2ba7c5c55acc3346af3dcd26c6c4f4a16892ecb.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1874bcdde9d8d2093c673e52d2ba7c5c55acc3346af3dcd26c6c4f4a16892ecb-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Loss of a loved one",
+          "description": "",
+          "image": {
+            "hash": "d9d1f11c809e2fbb48d4f1b1a4eb9dbd9a49e65559b7321622b7a9391f61997c",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d9d1f11c809e2fbb48d4f1b1a4eb9dbd9a49e65559b7321622b7a9391f61997c.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d9d1f11c809e2fbb48d4f1b1a4eb9dbd9a49e65559b7321622b7a9391f61997c-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Loss"
+        },
+        {
+          "type": "option",
+          "title": "End of a relationship",
+          "description": "",
+          "image": {
+            "hash": "47f88a7a4f38e53c2bc78e8bd0434550ba7cede334bea57b20c199b4f0a961fc",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/47f88a7a4f38e53c2bc78e8bd0434550ba7cede334bea57b20c199b4f0a961fc.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/47f88a7a4f38e53c2bc78e8bd0434550ba7cede334bea57b20c199b4f0a961fc-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Loss"
+        },
+        {
+          "type": "option",
+          "title": "Missing an opportunity",
+          "description": "",
+          "image": {
+            "hash": "6794f03625e823c1ac829fd7e88dfca7db70739783a6cf9e6abb7cc1fb44f1e0",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6794f03625e823c1ac829fd7e88dfca7db70739783a6cf9e6abb7cc1fb44f1e0.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6794f03625e823c1ac829fd7e88dfca7db70739783a6cf9e6abb7cc1fb44f1e0-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Loss"
+        },
+        {
+          "type": "option",
+          "title": "Letting go of a cherished item",
+          "description": "",
+          "image": {
+            "hash": "33c2b1040f1ed93d30aaa8acd9a335eb115b1695dac1b1ae35eea0fab92155b1",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/33c2b1040f1ed93d30aaa8acd9a335eb115b1695dac1b1ae35eea0fab92155b1.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/33c2b1040f1ed93d30aaa8acd9a335eb115b1695dac1b1ae35eea0fab92155b1-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Loss"
+        }
+      ],
+      "parentId": "trigger_Sadness",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Sadness_Loss",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Sadness"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Sadness_Loss",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Sadness_Disappointment",
+      "type": "question",
+      "title": "What disappointment today affected your mood?",
+      "description": "Not meeting expectations or hopes.",
+      "image": {
+        "hash": "84661ffab10253fc33cbaa81365fda2f260d921c87c2ce45e3f4ef8c3ff869e2",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/84661ffab10253fc33cbaa81365fda2f260d921c87c2ce45e3f4ef8c3ff869e2.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/84661ffab10253fc33cbaa81365fda2f260d921c87c2ce45e3f4ef8c3ff869e2-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Not achieving a goal",
+          "description": "",
+          "image": {
+            "hash": "dc3410e3c7d5f8ac47d4f4f8ac61dfae568a8eb1b6a933d1fda4bfde91780d7e",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/dc3410e3c7d5f8ac47d4f4f8ac61dfae568a8eb1b6a933d1fda4bfde91780d7e.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/dc3410e3c7d5f8ac47d4f4f8ac61dfae568a8eb1b6a933d1fda4bfde91780d7e-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Disappointment"
+        },
+        {
+          "type": "option",
+          "title": "Receiving bad news",
+          "description": "",
+          "image": {
+            "hash": "6afbaaa0944f4e67e484323ea366b8051b0c48e43b4301ec76d4b907ea4f666f",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6afbaaa0944f4e67e484323ea366b8051b0c48e43b4301ec76d4b907ea4f666f.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6afbaaa0944f4e67e484323ea366b8051b0c48e43b4301ec76d4b907ea4f666f-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Disappointment"
+        },
+        {
+          "type": "option",
+          "title": "Failed plans",
+          "description": "",
+          "image": {
+            "hash": "06a3ec1b362228ecd024e8c2ea42d438cff0eb99d9212d338465ac358debda10",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/06a3ec1b362228ecd024e8c2ea42d438cff0eb99d9212d338465ac358debda10.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/06a3ec1b362228ecd024e8c2ea42d438cff0eb99d9212d338465ac358debda10-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Disappointment"
+        },
+        {
+          "type": "option",
+          "title": "Unmet expectations",
+          "description": "",
+          "image": {
+            "hash": "55a21a819198adb654a59e1d0b103ae5f6911212f3110fd337526399b8cb1ddf",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/55a21a819198adb654a59e1d0b103ae5f6911212f3110fd337526399b8cb1ddf.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/55a21a819198adb654a59e1d0b103ae5f6911212f3110fd337526399b8cb1ddf-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Disappointment"
+        }
+      ],
+      "parentId": "trigger_Sadness",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Sadness_Disappointment",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Sadness"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Sadness_Disappointment",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Sadness_Isolation",
+      "type": "question",
+      "title": "How did isolation today contribute to your sadness?",
+      "description": "Feeling alone or disconnected from others.",
+      "image": {
+        "hash": "d35e3685c388aaf8a081d8305ee09d3fc821387d9ac0765059a081d01dcc681d",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d35e3685c388aaf8a081d8305ee09d3fc821387d9ac0765059a081d01dcc681d.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d35e3685c388aaf8a081d8305ee09d3fc821387d9ac0765059a081d01dcc681d-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Feeling misunderstood",
+          "description": "",
+          "image": {
+            "hash": "cd48ce72a06e82ce1fdd42153196d6b18c0aac9879c8901a755e88f9e421dcef",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/cd48ce72a06e82ce1fdd42153196d6b18c0aac9879c8901a755e88f9e421dcef.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/cd48ce72a06e82ce1fdd42153196d6b18c0aac9879c8901a755e88f9e421dcef-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Isolation"
+        },
+        {
+          "type": "option",
+          "title": "Lack of social interaction",
+          "description": "",
+          "image": {
+            "hash": "5b35ad5ca89b53dafc52ac2a94c28f44ef9bf308f608005d9450418f3cd1a563",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5b35ad5ca89b53dafc52ac2a94c28f44ef9bf308f608005d9450418f3cd1a563.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5b35ad5ca89b53dafc52ac2a94c28f44ef9bf308f608005d9450418f3cd1a563-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Isolation"
+        },
+        {
+          "type": "option",
+          "title": "Physical separation from loved ones",
+          "description": "",
+          "image": {
+            "hash": "309152ec2ab66b7bf9ac707f821ba3427eac128cfe3c89bc7999e4437961e517",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/309152ec2ab66b7bf9ac707f821ba3427eac128cfe3c89bc7999e4437961e517.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/309152ec2ab66b7bf9ac707f821ba3427eac128cfe3c89bc7999e4437961e517-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Isolation"
+        },
+        {
+          "type": "option",
+          "title": "Withdrawing from others",
+          "description": "",
+          "image": {
+            "hash": "906c5afd6461f73b5007ae497cc33e58abec96d6bbd815a0a42bc8e0cfa097c7",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/906c5afd6461f73b5007ae497cc33e58abec96d6bbd815a0a42bc8e0cfa097c7.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/906c5afd6461f73b5007ae497cc33e58abec96d6bbd815a0a42bc8e0cfa097c7-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Isolation"
+        }
+      ],
+      "parentId": "trigger_Sadness",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Sadness_Isolation",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Sadness"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Sadness_Isolation",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Sadness_Reflection",
+      "type": "question",
+      "title": "What reflection today made you feel sad?",
+      "description": "Thinking about past events.",
+      "image": {
+        "hash": "56080015a0f23786beda2897d491f39b84e7f8072018b4fa4bc4e9a272bf53bb",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/56080015a0f23786beda2897d491f39b84e7f8072018b4fa4bc4e9a272bf53bb.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/56080015a0f23786beda2897d491f39b84e7f8072018b4fa4bc4e9a272bf53bb-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Remembering past mistakes",
+          "description": "",
+          "image": {
+            "hash": "acade432b51c1315a8fe0fa143bcbbc7eb3c5f9b59f4f11153f42e8bc7d61db0",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/acade432b51c1315a8fe0fa143bcbbc7eb3c5f9b59f4f11153f42e8bc7d61db0.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/acade432b51c1315a8fe0fa143bcbbc7eb3c5f9b59f4f11153f42e8bc7d61db0-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Reflection"
+        },
+        {
+          "type": "option",
+          "title": "Missing past experiences",
+          "description": "",
+          "image": {
+            "hash": "6f573de9a68596b74d2bdae11cf8ae3858dd657627e501c2b32eb42a9a4872a4",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6f573de9a68596b74d2bdae11cf8ae3858dd657627e501c2b32eb42a9a4872a4.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6f573de9a68596b74d2bdae11cf8ae3858dd657627e501c2b32eb42a9a4872a4-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Reflection"
+        },
+        {
+          "type": "option",
+          "title": "Regretting decisions",
+          "description": "",
+          "image": {
+            "hash": "a5c60dacc150cc232840cb56a830a48327ca102737a20dc51f087484e4724af8",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a5c60dacc150cc232840cb56a830a48327ca102737a20dc51f087484e4724af8.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a5c60dacc150cc232840cb56a830a48327ca102737a20dc51f087484e4724af8-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Reflection"
+        },
+        {
+          "type": "option",
+          "title": "Nostalgia for bygone times",
+          "description": "",
+          "image": {
+            "hash": "7453e6304a414d76b6466eada25319e9fa090dc3e88a514604e325c669cf52af",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/7453e6304a414d76b6466eada25319e9fa090dc3e88a514604e325c669cf52af.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/7453e6304a414d76b6466eada25319e9fa090dc3e88a514604e325c669cf52af-mini.png"
+          },
+          "nextQuestionId": "fork_Sadness_Reflection"
+        }
+      ],
+      "parentId": "trigger_Sadness",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Sadness_Reflection",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Sadness"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Sadness_Reflection",
+      "repeatable": false
+    },
+    {
+      "id": "intensity_Anger",
+      "type": "question",
+      "title": "How intense is your feeling of Anger?",
+      "description": "Select the level of intensity that best matches your current state.",
+      "image": {
+        "hash": "306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Irritation",
+          "description": "A mild form of anger.",
+          "image": {
+            "hash": "dfe34f9025a1d035799d3bfe24613ce97681d06a2ac263d0a58421ad878fce65",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/dfe34f9025a1d035799d3bfe24613ce97681d06a2ac263d0a58421ad878fce65.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/dfe34f9025a1d035799d3bfe24613ce97681d06a2ac263d0a58421ad878fce65-mini.png"
+          },
+          "nextQuestionId": "trigger_Anger"
+        },
+        {
+          "type": "option",
+          "title": "Frustration",
+          "description": "A feeling arising from unmet needs or goals.",
+          "image": {
+            "hash": "767dfc38c531872d04037799184a6fab9129a5617595f7f3f00b90b593089d24",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/767dfc38c531872d04037799184a6fab9129a5617595f7f3f00b90b593089d24.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/767dfc38c531872d04037799184a6fab9129a5617595f7f3f00b90b593089d24-mini.png"
+          },
+          "nextQuestionId": "trigger_Anger"
+        },
+        {
+          "type": "option",
+          "title": "Rage",
+          "description": "An intense and uncontrolled anger.",
+          "image": {
+            "hash": "d6f60085826b7e2c4e7d91780be8e13fb73feb55dd4e22e52c4229e64022a5c3",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6f60085826b7e2c4e7d91780be8e13fb73feb55dd4e22e52c4229e64022a5c3.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6f60085826b7e2c4e7d91780be8e13fb73feb55dd4e22e52c4229e64022a5c3-mini.png"
+          },
+          "nextQuestionId": "trigger_Anger"
+        }
+      ],
+      "parentId": "root",
+      "repeatable": false
+    },
+    {
+      "id": "trigger_Anger",
+      "type": "question",
+      "title": "What triggered your feeling of Anger?",
+      "description": "Select the option that best describes the cause of your emotion.",
+      "image": {
+        "hash": "306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/306aeb98d3ea8498395e94c75bba4a46014f37669114c11f31922384f5d3e907-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Obstacles",
+          "description": "Barriers preventing progress.",
+          "image": {
+            "hash": "57ed2c2f040700827c812f4195278d2e255d1f9512cea6993a6c43cc98aa627a",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/57ed2c2f040700827c812f4195278d2e255d1f9512cea6993a6c43cc98aa627a.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/57ed2c2f040700827c812f4195278d2e255d1f9512cea6993a6c43cc98aa627a-mini.png"
+          },
+          "nextQuestionId": "detail_Anger_Obstacles"
+        },
+        {
+          "type": "option",
+          "title": "Injustice",
+          "description": "Perceived unfair treatment.",
+          "image": {
+            "hash": "75934510ac442cf3a041e46e5825aeb93f95800b07d70aeb3aa0729838400b19",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/75934510ac442cf3a041e46e5825aeb93f95800b07d70aeb3aa0729838400b19.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/75934510ac442cf3a041e46e5825aeb93f95800b07d70aeb3aa0729838400b19-mini.png"
+          },
+          "nextQuestionId": "detail_Anger_Injustice"
+        },
+        {
+          "type": "option",
+          "title": "Conflict",
+          "description": "Disagreements or clashes with others.",
+          "image": {
+            "hash": "5e13e136c17d8b39191bf8e552f3a5a4b3b41f9f0e71d74c73beda4a2fb04f78",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5e13e136c17d8b39191bf8e552f3a5a4b3b41f9f0e71d74c73beda4a2fb04f78.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5e13e136c17d8b39191bf8e552f3a5a4b3b41f9f0e71d74c73beda4a2fb04f78-mini.png"
+          },
+          "nextQuestionId": "detail_Anger_Conflict"
+        },
+        {
+          "type": "option",
+          "title": "Frustrated Expectations",
+          "description": "Expectations not being met.",
+          "image": {
+            "hash": "fa82963eb2714e31c6c6fe6b552d704ac7272711ffeba8cad962d5b6818ffd2c",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fa82963eb2714e31c6c6fe6b552d704ac7272711ffeba8cad962d5b6818ffd2c.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fa82963eb2714e31c6c6fe6b552d704ac7272711ffeba8cad962d5b6818ffd2c-mini.png"
+          },
+          "nextQuestionId": "detail_Anger_Frustrated Expectations"
+        }
+      ],
+      "parentId": "intensity_Anger",
+      "repeatable": true
+    },
+    {
+      "id": "detail_Anger_Obstacles",
+      "type": "question",
+      "title": "What obstacle today caused you to feel angry?",
+      "description": "Barriers preventing progress.",
+      "image": {
+        "hash": "57ed2c2f040700827c812f4195278d2e255d1f9512cea6993a6c43cc98aa627a",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/57ed2c2f040700827c812f4195278d2e255d1f9512cea6993a6c43cc98aa627a.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/57ed2c2f040700827c812f4195278d2e255d1f9512cea6993a6c43cc98aa627a-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Technical difficulties",
+          "description": "",
+          "image": {
+            "hash": "0e1fac4337adc774d2435d12cfec464913a8f9b963956b91913d989a68f7ee12",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/0e1fac4337adc774d2435d12cfec464913a8f9b963956b91913d989a68f7ee12.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/0e1fac4337adc774d2435d12cfec464913a8f9b963956b91913d989a68f7ee12-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Obstacles"
+        },
+        {
+          "type": "option",
+          "title": "Traffic jams",
+          "description": "",
+          "image": {
+            "hash": "9ebb9f2afb5feb69e410f3a97990c1385754344a763bb512a5ed91986a7b2f69",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9ebb9f2afb5feb69e410f3a97990c1385754344a763bb512a5ed91986a7b2f69.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9ebb9f2afb5feb69e410f3a97990c1385754344a763bb512a5ed91986a7b2f69-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Obstacles"
+        },
+        {
+          "type": "option",
+          "title": "Uncooperative people",
+          "description": "",
+          "image": {
+            "hash": "9d506f68d8631aa5adb56dac8e1ebb4bcccb314ca63709a3e5cb28b19fd2d8ae",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9d506f68d8631aa5adb56dac8e1ebb4bcccb314ca63709a3e5cb28b19fd2d8ae.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9d506f68d8631aa5adb56dac8e1ebb4bcccb314ca63709a3e5cb28b19fd2d8ae-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Obstacles"
+        },
+        {
+          "type": "option",
+          "title": "Personal limitations",
+          "description": "",
+          "image": {
+            "hash": "d16e32e68923f99173948d1e464b262ac7a9cb747352e795072af59e04862f01",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d16e32e68923f99173948d1e464b262ac7a9cb747352e795072af59e04862f01.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d16e32e68923f99173948d1e464b262ac7a9cb747352e795072af59e04862f01-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Obstacles"
+        }
+      ],
+      "parentId": "trigger_Anger",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Anger_Obstacles",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Anger"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Anger_Obstacles",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Anger_Injustice",
+      "type": "question",
+      "title": "What injustice today made you feel angry?",
+      "description": "Perceived unfair treatment.",
+      "image": {
+        "hash": "75934510ac442cf3a041e46e5825aeb93f95800b07d70aeb3aa0729838400b19",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/75934510ac442cf3a041e46e5825aeb93f95800b07d70aeb3aa0729838400b19.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/75934510ac442cf3a041e46e5825aeb93f95800b07d70aeb3aa0729838400b19-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Witnessing unfair behavior",
+          "description": "",
+          "image": {
+            "hash": "454d5f63edbe340acd3fc5b896015a8f7450ddb2841c775e400811da35309d98",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/454d5f63edbe340acd3fc5b896015a8f7450ddb2841c775e400811da35309d98.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/454d5f63edbe340acd3fc5b896015a8f7450ddb2841c775e400811da35309d98-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Injustice"
+        },
+        {
+          "type": "option",
+          "title": "Being treated unjustly",
+          "description": "",
+          "image": {
+            "hash": "260d5ee657286e308d6c2d24ae13658149e804fdb327449eea65d1aa12b56f84",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/260d5ee657286e308d6c2d24ae13658149e804fdb327449eea65d1aa12b56f84.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/260d5ee657286e308d6c2d24ae13658149e804fdb327449eea65d1aa12b56f84-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Injustice"
+        },
+        {
+          "type": "option",
+          "title": "Seeing inequality",
+          "description": "",
+          "image": {
+            "hash": "f059eb4e1956959a49d7e3f0a4433460c77bbdc9ddbf7076c43ef7efe99ae008",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f059eb4e1956959a49d7e3f0a4433460c77bbdc9ddbf7076c43ef7efe99ae008.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f059eb4e1956959a49d7e3f0a4433460c77bbdc9ddbf7076c43ef7efe99ae008-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Injustice"
+        },
+        {
+          "type": "option",
+          "title": "Experiencing bias",
+          "description": "",
+          "image": {
+            "hash": "b1bb82db36d017fd9fc45e71ef9e330e62915accea64e6c785226d8dd3234fe0",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b1bb82db36d017fd9fc45e71ef9e330e62915accea64e6c785226d8dd3234fe0.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b1bb82db36d017fd9fc45e71ef9e330e62915accea64e6c785226d8dd3234fe0-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Injustice"
+        }
+      ],
+      "parentId": "trigger_Anger",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Anger_Injustice",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Anger"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Anger_Injustice",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Anger_Conflict",
+      "type": "question",
+      "title": "Which conflict today led to feelings of anger?",
+      "description": "Disagreements or clashes with others.",
+      "image": {
+        "hash": "5e13e136c17d8b39191bf8e552f3a5a4b3b41f9f0e71d74c73beda4a2fb04f78",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5e13e136c17d8b39191bf8e552f3a5a4b3b41f9f0e71d74c73beda4a2fb04f78.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5e13e136c17d8b39191bf8e552f3a5a4b3b41f9f0e71d74c73beda4a2fb04f78-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Argument with a colleague",
+          "description": "",
+          "image": {
+            "hash": "bd3cb467566f31ab026cd12f9e7672cef97e01644aafe041867a899a9fceb462",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/bd3cb467566f31ab026cd12f9e7672cef97e01644aafe041867a899a9fceb462.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/bd3cb467566f31ab026cd12f9e7672cef97e01644aafe041867a899a9fceb462-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Conflict"
+        },
+        {
+          "type": "option",
+          "title": "Disagreement with a friend",
+          "description": "",
+          "image": {
+            "hash": "bc9d7cbd538fbb2cfbc9946023737cd4bc2f878e33da71c63bfd89b40177558d",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/bc9d7cbd538fbb2cfbc9946023737cd4bc2f878e33da71c63bfd89b40177558d.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/bc9d7cbd538fbb2cfbc9946023737cd4bc2f878e33da71c63bfd89b40177558d-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Conflict"
+        },
+        {
+          "type": "option",
+          "title": "Family dispute",
+          "description": "",
+          "image": {
+            "hash": "a7a3b4c7f2a1d5efa2fc2a5ebf3a09de161183c3f68a4e4724dd082dddb18be2",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a7a3b4c7f2a1d5efa2fc2a5ebf3a09de161183c3f68a4e4724dd082dddb18be2.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a7a3b4c7f2a1d5efa2fc2a5ebf3a09de161183c3f68a4e4724dd082dddb18be2-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Conflict"
+        },
+        {
+          "type": "option",
+          "title": "Online confrontation",
+          "description": "",
+          "image": {
+            "hash": "8fadf027b9a0a304d06fcf1ddf4e48741d43adebf2e45c03ee587072fc73b19a",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8fadf027b9a0a304d06fcf1ddf4e48741d43adebf2e45c03ee587072fc73b19a.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8fadf027b9a0a304d06fcf1ddf4e48741d43adebf2e45c03ee587072fc73b19a-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Conflict"
+        }
+      ],
+      "parentId": "trigger_Anger",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Anger_Conflict",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Anger"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Anger_Conflict",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Anger_Frustrated Expectations",
+      "type": "question",
+      "title": "What unmet expectation today caused anger?",
+      "description": "Expectations not being met.",
+      "image": {
+        "hash": "fa82963eb2714e31c6c6fe6b552d704ac7272711ffeba8cad962d5b6818ffd2c",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fa82963eb2714e31c6c6fe6b552d704ac7272711ffeba8cad962d5b6818ffd2c.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fa82963eb2714e31c6c6fe6b552d704ac7272711ffeba8cad962d5b6818ffd2c-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Plans falling through",
+          "description": "",
+          "image": {
+            "hash": "324f59c84b6ca8094981fe45d409756e463cb3f55c37e1fcd07cadf5bc1fba1c",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/324f59c84b6ca8094981fe45d409756e463cb3f55c37e1fcd07cadf5bc1fba1c.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/324f59c84b6ca8094981fe45d409756e463cb3f55c37e1fcd07cadf5bc1fba1c-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Frustrated Expectations"
+        },
+        {
+          "type": "option",
+          "title": "Others not meeting commitments",
+          "description": "",
+          "image": {
+            "hash": "91bd46e03fdc0239b1d9a014b82b5f3ad0828c7391fa0a210b93e62b0210070b",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/91bd46e03fdc0239b1d9a014b82b5f3ad0828c7391fa0a210b93e62b0210070b.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/91bd46e03fdc0239b1d9a014b82b5f3ad0828c7391fa0a210b93e62b0210070b-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Frustrated Expectations"
+        },
+        {
+          "type": "option",
+          "title": "Self not achieving goals",
+          "description": "",
+          "image": {
+            "hash": "678eaaae86b8fccbc5eda6ee387de160bbd6cd2651a107ec736bbf61521905a1",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/678eaaae86b8fccbc5eda6ee387de160bbd6cd2651a107ec736bbf61521905a1.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/678eaaae86b8fccbc5eda6ee387de160bbd6cd2651a107ec736bbf61521905a1-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Frustrated Expectations"
+        },
+        {
+          "type": "option",
+          "title": "Unexpected setbacks",
+          "description": "",
+          "image": {
+            "hash": "602537573c8728dc125d715ec76b9091f0b45ab727dffd4836bcad7a04588a83",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/602537573c8728dc125d715ec76b9091f0b45ab727dffd4836bcad7a04588a83.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/602537573c8728dc125d715ec76b9091f0b45ab727dffd4836bcad7a04588a83-mini.png"
+          },
+          "nextQuestionId": "fork_Anger_Frustrated Expectations"
+        }
+      ],
+      "parentId": "trigger_Anger",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Anger_Frustrated Expectations",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Anger"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Anger_Frustrated Expectations",
+      "repeatable": false
+    },
+    {
+      "id": "intensity_Fear",
+      "type": "question",
+      "title": "How intense is your feeling of Fear?",
+      "description": "Select the level of intensity that best matches your current state.",
+      "image": {
+        "hash": "d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Apprehension",
+          "description": "A mild sense of worry or unease.",
+          "image": {
+            "hash": "a89e5f6330e80c02ece87cdcb113de32ec748efb94478bbd98f13f7eb4f7db92",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a89e5f6330e80c02ece87cdcb113de32ec748efb94478bbd98f13f7eb4f7db92.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a89e5f6330e80c02ece87cdcb113de32ec748efb94478bbd98f13f7eb4f7db92-mini.png"
+          },
+          "nextQuestionId": "trigger_Fear"
+        },
+        {
+          "type": "option",
+          "title": "Anxiety",
+          "description": "A feeling of worry, nervousness, or unease.",
+          "image": {
+            "hash": "6a1b2bc956dfa98eff7450c5e29c3ee1083fdcdfaffadadd8cc0fe311e97ec8e",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6a1b2bc956dfa98eff7450c5e29c3ee1083fdcdfaffadadd8cc0fe311e97ec8e.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6a1b2bc956dfa98eff7450c5e29c3ee1083fdcdfaffadadd8cc0fe311e97ec8e-mini.png"
+          },
+          "nextQuestionId": "trigger_Fear"
+        },
+        {
+          "type": "option",
+          "title": "Terror",
+          "description": "An extreme fear.",
+          "image": {
+            "hash": "79a81e7e92a148b3109fb22c11d9334d07b9c646983c12334a6e506af713b582",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/79a81e7e92a148b3109fb22c11d9334d07b9c646983c12334a6e506af713b582.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/79a81e7e92a148b3109fb22c11d9334d07b9c646983c12334a6e506af713b582-mini.png"
+          },
+          "nextQuestionId": "trigger_Fear"
+        }
+      ],
+      "parentId": "root",
+      "repeatable": false
+    },
+    {
+      "id": "trigger_Fear",
+      "type": "question",
+      "title": "What triggered your feeling of Fear?",
+      "description": "Select the option that best describes the cause of your emotion.",
+      "image": {
+        "hash": "d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6eee46743a3ada814657ed67b2fd513d1bcbfcf170a76808b6ccaa8ec4f19ff-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Unknown",
+          "description": "Fear of uncertainty or unfamiliar situations.",
+          "image": {
+            "hash": "77f58b74d47c316eee948821cb760d6444151397f89e46b5a028511d394908a5",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/77f58b74d47c316eee948821cb760d6444151397f89e46b5a028511d394908a5.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/77f58b74d47c316eee948821cb760d6444151397f89e46b5a028511d394908a5-mini.png"
+          },
+          "nextQuestionId": "detail_Fear_Unknown"
+        },
+        {
+          "type": "option",
+          "title": "Threats",
+          "description": "Perceived danger to self or others.",
+          "image": {
+            "hash": "8d5f96fecb9031d3f1f4e1bca4891e8d71e316352e0866e821d7015997a048a7",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8d5f96fecb9031d3f1f4e1bca4891e8d71e316352e0866e821d7015997a048a7.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8d5f96fecb9031d3f1f4e1bca4891e8d71e316352e0866e821d7015997a048a7-mini.png"
+          },
+          "nextQuestionId": "detail_Fear_Threats"
+        },
+        {
+          "type": "option",
+          "title": "Phobias",
+          "description": "Irrational fears of specific things.",
+          "image": {
+            "hash": "e253eb4ce06246a4a0fa9d3a0b76c957f753536b5fc809e77bca43ddfb261f41",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e253eb4ce06246a4a0fa9d3a0b76c957f753536b5fc809e77bca43ddfb261f41.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e253eb4ce06246a4a0fa9d3a0b76c957f753536b5fc809e77bca43ddfb261f41-mini.png"
+          },
+          "nextQuestionId": "detail_Fear_Phobias"
+        },
+        {
+          "type": "option",
+          "title": "Past Trauma",
+          "description": "Memories of past harmful events.",
+          "image": {
+            "hash": "888b70206238bbc6b7e891d20ffdef0894cc44a97a00aeb4747fd1410208bd58",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/888b70206238bbc6b7e891d20ffdef0894cc44a97a00aeb4747fd1410208bd58.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/888b70206238bbc6b7e891d20ffdef0894cc44a97a00aeb4747fd1410208bd58-mini.png"
+          },
+          "nextQuestionId": "detail_Fear_Past Trauma"
+        }
+      ],
+      "parentId": "intensity_Fear",
+      "repeatable": true
+    },
+    {
+      "id": "detail_Fear_Unknown",
+      "type": "question",
+      "title": "What unknown today caused you to feel fear?",
+      "description": "Fear of uncertainty or unfamiliar situations.",
+      "image": {
+        "hash": "77f58b74d47c316eee948821cb760d6444151397f89e46b5a028511d394908a5",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/77f58b74d47c316eee948821cb760d6444151397f89e46b5a028511d394908a5.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/77f58b74d47c316eee948821cb760d6444151397f89e46b5a028511d394908a5-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Starting a new job",
+          "description": "",
+          "image": {
+            "hash": "a262d8cfec5ecef2e78ebe87f87034c56dea5afacd5cb464b25532458342d7a1",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a262d8cfec5ecef2e78ebe87f87034c56dea5afacd5cb464b25532458342d7a1.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a262d8cfec5ecef2e78ebe87f87034c56dea5afacd5cb464b25532458342d7a1-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Unknown"
+        },
+        {
+          "type": "option",
+          "title": "Moving to a new place",
+          "description": "",
+          "image": {
+            "hash": "d1fe753ba000dbf8e8c36b48e4ac086594f71812d09b0c4701837f8bacff3944",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d1fe753ba000dbf8e8c36b48e4ac086594f71812d09b0c4701837f8bacff3944.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d1fe753ba000dbf8e8c36b48e4ac086594f71812d09b0c4701837f8bacff3944-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Unknown"
+        },
+        {
+          "type": "option",
+          "title": "Uncertain future",
+          "description": "",
+          "image": {
+            "hash": "ad57e02c2bad903448b244f7bb16406fbc563b46f115e53f27f370f1709fc863",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/ad57e02c2bad903448b244f7bb16406fbc563b46f115e53f27f370f1709fc863.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/ad57e02c2bad903448b244f7bb16406fbc563b46f115e53f27f370f1709fc863-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Unknown"
+        },
+        {
+          "type": "option",
+          "title": "Unfamiliar social situations",
+          "description": "",
+          "image": {
+            "hash": "a94a3199b13f8eee4bd797e3567e779a9c1930144cf8ee0697ebd1a8f6edc916",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a94a3199b13f8eee4bd797e3567e779a9c1930144cf8ee0697ebd1a8f6edc916.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/a94a3199b13f8eee4bd797e3567e779a9c1930144cf8ee0697ebd1a8f6edc916-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Unknown"
+        }
+      ],
+      "parentId": "trigger_Fear",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Fear_Unknown",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Fear"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Fear_Unknown",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Fear_Threats",
+      "type": "question",
+      "title": "What threat today made you feel fearful?",
+      "description": "Perceived danger to self or others.",
+      "image": {
+        "hash": "8d5f96fecb9031d3f1f4e1bca4891e8d71e316352e0866e821d7015997a048a7",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8d5f96fecb9031d3f1f4e1bca4891e8d71e316352e0866e821d7015997a048a7.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8d5f96fecb9031d3f1f4e1bca4891e8d71e316352e0866e821d7015997a048a7-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Health concerns",
+          "description": "",
+          "image": {
+            "hash": "facc8210e5f47eaf7f2209d811683c79e9800ec1d4babc8e41387b9dada5745c",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/facc8210e5f47eaf7f2209d811683c79e9800ec1d4babc8e41387b9dada5745c.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/facc8210e5f47eaf7f2209d811683c79e9800ec1d4babc8e41387b9dada5745c-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Threats"
+        },
+        {
+          "type": "option",
+          "title": "Safety risks",
+          "description": "",
+          "image": {
+            "hash": "6c4005db89e4f3ccc6e68eeb229f79c237365da163c95c33f976cacfc8be67b1",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6c4005db89e4f3ccc6e68eeb229f79c237365da163c95c33f976cacfc8be67b1.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6c4005db89e4f3ccc6e68eeb229f79c237365da163c95c33f976cacfc8be67b1-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Threats"
+        },
+        {
+          "type": "option",
+          "title": "Aggressive behavior",
+          "description": "",
+          "image": {
+            "hash": "8ecbf8f0e5f2b36add2e01913547eb536b5cb756f6fed61c3659a99e7ec2302b",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8ecbf8f0e5f2b36add2e01913547eb536b5cb756f6fed61c3659a99e7ec2302b.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8ecbf8f0e5f2b36add2e01913547eb536b5cb756f6fed61c3659a99e7ec2302b-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Threats"
+        },
+        {
+          "type": "option",
+          "title": "Financial instability",
+          "description": "",
+          "image": {
+            "hash": "5ccd2ebd621744996343b830afdebe605abf53820bc9fce96f4ce30af8db0a21",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5ccd2ebd621744996343b830afdebe605abf53820bc9fce96f4ce30af8db0a21.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5ccd2ebd621744996343b830afdebe605abf53820bc9fce96f4ce30af8db0a21-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Threats"
+        }
+      ],
+      "parentId": "trigger_Fear",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Fear_Threats",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Fear"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Fear_Threats",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Fear_Phobias",
+      "type": "question",
+      "title": "Did any of your phobias cause fear today?",
+      "description": "Irrational fears of specific things.",
+      "image": {
+        "hash": "e253eb4ce06246a4a0fa9d3a0b76c957f753536b5fc809e77bca43ddfb261f41",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e253eb4ce06246a4a0fa9d3a0b76c957f753536b5fc809e77bca43ddfb261f41.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e253eb4ce06246a4a0fa9d3a0b76c957f753536b5fc809e77bca43ddfb261f41-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Heights",
+          "description": "",
+          "image": {
+            "hash": "f704bb7d7360823eb45d31a609a7a4db0ed744355e5c528892847369823d11ed",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f704bb7d7360823eb45d31a609a7a4db0ed744355e5c528892847369823d11ed.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f704bb7d7360823eb45d31a609a7a4db0ed744355e5c528892847369823d11ed-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Phobias"
+        },
+        {
+          "type": "option",
+          "title": "Public speaking",
+          "description": "",
+          "image": {
+            "hash": "12d4f9bb99dd7d301f9521b3639a44818e9891f0e78ae1b39973fad280274f47",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/12d4f9bb99dd7d301f9521b3639a44818e9891f0e78ae1b39973fad280274f47.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/12d4f9bb99dd7d301f9521b3639a44818e9891f0e78ae1b39973fad280274f47-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Phobias"
+        },
+        {
+          "type": "option",
+          "title": "Enclosed spaces",
+          "description": "",
+          "image": {
+            "hash": "96f63c90511bd780d65c4233e5ce783ddcd543b676ed700c7016d88d6da08ad2",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/96f63c90511bd780d65c4233e5ce783ddcd543b676ed700c7016d88d6da08ad2.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/96f63c90511bd780d65c4233e5ce783ddcd543b676ed700c7016d88d6da08ad2-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Phobias"
+        },
+        {
+          "type": "option",
+          "title": "Insects or animals",
+          "description": "",
+          "image": {
+            "hash": "7dd447a083647d658affe23169aad66be0a9c79ba2a827269b9eb9238c9107cd",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/7dd447a083647d658affe23169aad66be0a9c79ba2a827269b9eb9238c9107cd.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/7dd447a083647d658affe23169aad66be0a9c79ba2a827269b9eb9238c9107cd-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Phobias"
+        }
+      ],
+      "parentId": "trigger_Fear",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Fear_Phobias",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Fear"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Fear_Phobias",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Fear_Past Trauma",
+      "type": "question",
+      "title": "Did reflecting on past events cause fear today?",
+      "description": "Memories of past harmful events.",
+      "image": {
+        "hash": "888b70206238bbc6b7e891d20ffdef0894cc44a97a00aeb4747fd1410208bd58",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/888b70206238bbc6b7e891d20ffdef0894cc44a97a00aeb4747fd1410208bd58.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/888b70206238bbc6b7e891d20ffdef0894cc44a97a00aeb4747fd1410208bd58-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Recalling an accident",
+          "description": "",
+          "image": {
+            "hash": "7e4d64a2422473daadfa40dd65f1a0fceac6230730245706410e59c35bf2f286",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/7e4d64a2422473daadfa40dd65f1a0fceac6230730245706410e59c35bf2f286.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/7e4d64a2422473daadfa40dd65f1a0fceac6230730245706410e59c35bf2f286-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Past Trauma"
+        },
+        {
+          "type": "option",
+          "title": "Remembering loss",
+          "description": "",
+          "image": {
+            "hash": "5833e668debba5dd4609524a267b947e2924f845a26235ed2e480c5b94ad8f1a",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5833e668debba5dd4609524a267b947e2924f845a26235ed2e480c5b94ad8f1a.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5833e668debba5dd4609524a267b947e2924f845a26235ed2e480c5b94ad8f1a-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Past Trauma"
+        },
+        {
+          "type": "option",
+          "title": "Reliving a conflict",
+          "description": "",
+          "image": {
+            "hash": "58879302409e512223df8a246af21a682abb2a5cb4488003f00fb710bf0ebba6",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/58879302409e512223df8a246af21a682abb2a5cb4488003f00fb710bf0ebba6.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/58879302409e512223df8a246af21a682abb2a5cb4488003f00fb710bf0ebba6-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Past Trauma"
+        },
+        {
+          "type": "option",
+          "title": "Triggers from past experiences",
+          "description": "",
+          "image": {
+            "hash": "973ffad5ec83fcc1eb55b8b9d19fbe1dde38946854109617f9833a596d9ac919",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/973ffad5ec83fcc1eb55b8b9d19fbe1dde38946854109617f9833a596d9ac919.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/973ffad5ec83fcc1eb55b8b9d19fbe1dde38946854109617f9833a596d9ac919-mini.png"
+          },
+          "nextQuestionId": "fork_Fear_Past Trauma"
+        }
+      ],
+      "parentId": "trigger_Fear",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Fear_Past Trauma",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Fear"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Fear_Past Trauma",
+      "repeatable": false
+    },
+    {
+      "id": "intensity_Anxiety",
+      "type": "question",
+      "title": "How intense is your feeling of Anxiety?",
+      "description": "Select the level of intensity that best matches your current state.",
+      "image": {
+        "hash": "f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Mild Worry",
+          "description": "Slight concern about something.",
+          "image": {
+            "hash": "03e60aa465cdf6c4c4821178498f31a5ee5a9108a7198becf36efcc6fd781dfd",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/03e60aa465cdf6c4c4821178498f31a5ee5a9108a7198becf36efcc6fd781dfd.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/03e60aa465cdf6c4c4821178498f31a5ee5a9108a7198becf36efcc6fd781dfd-mini.png"
+          },
+          "nextQuestionId": "trigger_Anxiety"
+        },
+        {
+          "type": "option",
+          "title": "Concern",
+          "description": "A moderate level of anxiety.",
+          "image": {
+            "hash": "713e1ed5af18ed24194179c788b0707650866eb201828395fa060d8205881489",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/713e1ed5af18ed24194179c788b0707650866eb201828395fa060d8205881489.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/713e1ed5af18ed24194179c788b0707650866eb201828395fa060d8205881489-mini.png"
+          },
+          "nextQuestionId": "trigger_Anxiety"
+        },
+        {
+          "type": "option",
+          "title": "Panic",
+          "description": "A sudden overwhelming fear.",
+          "image": {
+            "hash": "93d7fb022750f76fd2665a9eb487931c2cf51e90a5643e2fb2481cce16a4655a",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/93d7fb022750f76fd2665a9eb487931c2cf51e90a5643e2fb2481cce16a4655a.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/93d7fb022750f76fd2665a9eb487931c2cf51e90a5643e2fb2481cce16a4655a-mini.png"
+          },
+          "nextQuestionId": "trigger_Anxiety"
+        }
+      ],
+      "parentId": "root",
+      "repeatable": false
+    },
+    {
+      "id": "trigger_Anxiety",
+      "type": "question",
+      "title": "What triggered your feeling of Anxiety?",
+      "description": "Select the option that best describes the cause of your emotion.",
+      "image": {
+        "hash": "f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f01252c184a13bfbaae91964bf8c3f82100c5571a9fe6cdea8d84957df5b9b36-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Future Uncertainty",
+          "description": "Anxiety about upcoming events or outcomes.",
+          "image": {
+            "hash": "fcea662410aa39578e48cca3c09fc080d12d57edbb2c9f631ef1b59c156f1812",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fcea662410aa39578e48cca3c09fc080d12d57edbb2c9f631ef1b59c156f1812.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fcea662410aa39578e48cca3c09fc080d12d57edbb2c9f631ef1b59c156f1812-mini.png"
+          },
+          "nextQuestionId": "detail_Anxiety_Future Uncertainty"
+        },
+        {
+          "type": "option",
+          "title": "Social Situations",
+          "description": "Anxiety arising from interactions with others.",
+          "image": {
+            "hash": "33c3fc3f35605f87ede3d639bc5c077e24a5f586977e08e289655a44612f5a25",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/33c3fc3f35605f87ede3d639bc5c077e24a5f586977e08e289655a44612f5a25.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/33c3fc3f35605f87ede3d639bc5c077e24a5f586977e08e289655a44612f5a25-mini.png"
+          },
+          "nextQuestionId": "detail_Anxiety_Social Situations"
+        },
+        {
+          "type": "option",
+          "title": "Performance Pressure",
+          "description": "Anxiety about meeting expectations.",
+          "image": {
+            "hash": "e50c64583b4f2d9ffe95afd04a1c4493058be0c5df9feaa73a4f0ec13337569d",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e50c64583b4f2d9ffe95afd04a1c4493058be0c5df9feaa73a4f0ec13337569d.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e50c64583b4f2d9ffe95afd04a1c4493058be0c5df9feaa73a4f0ec13337569d-mini.png"
+          },
+          "nextQuestionId": "detail_Anxiety_Performance Pressure"
+        },
+        {
+          "type": "option",
+          "title": "Overwhelm",
+          "description": "Feeling unable to cope with demands.",
+          "image": {
+            "hash": "e71c55bbd477d918dfc95c7c95d8c2ee97c943406e0b304ce4f61b53f479932a",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e71c55bbd477d918dfc95c7c95d8c2ee97c943406e0b304ce4f61b53f479932a.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e71c55bbd477d918dfc95c7c95d8c2ee97c943406e0b304ce4f61b53f479932a-mini.png"
+          },
+          "nextQuestionId": "detail_Anxiety_Overwhelm"
+        }
+      ],
+      "parentId": "intensity_Anxiety",
+      "repeatable": true
+    },
+    {
+      "id": "detail_Anxiety_Future Uncertainty",
+      "type": "question",
+      "title": "What future uncertainty caused anxiety today?",
+      "description": "Anxiety about upcoming events or outcomes.",
+      "image": {
+        "hash": "fcea662410aa39578e48cca3c09fc080d12d57edbb2c9f631ef1b59c156f1812",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fcea662410aa39578e48cca3c09fc080d12d57edbb2c9f631ef1b59c156f1812.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fcea662410aa39578e48cca3c09fc080d12d57edbb2c9f631ef1b59c156f1812-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Upcoming exams",
+          "description": "",
+          "image": {
+            "hash": "051409f72536e76c130f96f469627b2d626e37269dd0b1d4b19af1bfd203a268",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/051409f72536e76c130f96f469627b2d626e37269dd0b1d4b19af1bfd203a268.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/051409f72536e76c130f96f469627b2d626e37269dd0b1d4b19af1bfd203a268-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Future Uncertainty"
+        },
+        {
+          "type": "option",
+          "title": "Job interviews",
+          "description": "",
+          "image": {
+            "hash": "2dcb5e4859a5cdbc62bdee4eab2e1dd145c2e5e0f1077a2a1153471696c48c4d",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/2dcb5e4859a5cdbc62bdee4eab2e1dd145c2e5e0f1077a2a1153471696c48c4d.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/2dcb5e4859a5cdbc62bdee4eab2e1dd145c2e5e0f1077a2a1153471696c48c4d-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Future Uncertainty"
+        },
+        {
+          "type": "option",
+          "title": "Health results",
+          "description": "",
+          "image": {
+            "hash": "e8bb635271debf62320af33452f20fc4d09ad5ccfb813627b1898fb34c86900f",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e8bb635271debf62320af33452f20fc4d09ad5ccfb813627b1898fb34c86900f.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e8bb635271debf62320af33452f20fc4d09ad5ccfb813627b1898fb34c86900f-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Future Uncertainty"
+        },
+        {
+          "type": "option",
+          "title": "Financial concerns",
+          "description": "",
+          "image": {
+            "hash": "b9ba8953928e24e96a7a2e03969267e298a69306e88b796a565093eff4b0cc43",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b9ba8953928e24e96a7a2e03969267e298a69306e88b796a565093eff4b0cc43.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b9ba8953928e24e96a7a2e03969267e298a69306e88b796a565093eff4b0cc43-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Future Uncertainty"
+        }
+      ],
+      "parentId": "trigger_Anxiety",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Anxiety_Future Uncertainty",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Anxiety"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Anxiety_Future Uncertainty",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Anxiety_Social Situations",
+      "type": "question",
+      "title": "Which social situation caused anxiety today?",
+      "description": "Anxiety arising from interactions with others.",
+      "image": {
+        "hash": "33c3fc3f35605f87ede3d639bc5c077e24a5f586977e08e289655a44612f5a25",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/33c3fc3f35605f87ede3d639bc5c077e24a5f586977e08e289655a44612f5a25.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/33c3fc3f35605f87ede3d639bc5c077e24a5f586977e08e289655a44612f5a25-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Public speaking",
+          "description": "",
+          "image": {
+            "hash": "58673c076dc36a80f6871f8b1b42b8636f3161d494a0915a9d73c715aeef9a69",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/58673c076dc36a80f6871f8b1b42b8636f3161d494a0915a9d73c715aeef9a69.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/58673c076dc36a80f6871f8b1b42b8636f3161d494a0915a9d73c715aeef9a69-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Social Situations"
+        },
+        {
+          "type": "option",
+          "title": "Networking events",
+          "description": "",
+          "image": {
+            "hash": "3013a1abf1e31f7d120c80bc6a19ec08d4c4bb1049212c2de1b004acda94fca1",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/3013a1abf1e31f7d120c80bc6a19ec08d4c4bb1049212c2de1b004acda94fca1.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/3013a1abf1e31f7d120c80bc6a19ec08d4c4bb1049212c2de1b004acda94fca1-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Social Situations"
+        },
+        {
+          "type": "option",
+          "title": "Meeting new people",
+          "description": "",
+          "image": {
+            "hash": "e8241a4128f2f9862466ea7a4213c3c2c43f90ccaf2e7e1ed5cbc1feab48c948",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e8241a4128f2f9862466ea7a4213c3c2c43f90ccaf2e7e1ed5cbc1feab48c948.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e8241a4128f2f9862466ea7a4213c3c2c43f90ccaf2e7e1ed5cbc1feab48c948-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Social Situations"
+        },
+        {
+          "type": "option",
+          "title": "Group discussions",
+          "description": "",
+          "image": {
+            "hash": "fb1d7886ca1d3e9b03b7526fae3c035ddcc1589ac12cbbd2bd2cec33990909e0",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fb1d7886ca1d3e9b03b7526fae3c035ddcc1589ac12cbbd2bd2cec33990909e0.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/fb1d7886ca1d3e9b03b7526fae3c035ddcc1589ac12cbbd2bd2cec33990909e0-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Social Situations"
+        }
+      ],
+      "parentId": "trigger_Anxiety",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Anxiety_Social Situations",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Anxiety"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Anxiety_Social Situations",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Anxiety_Performance Pressure",
+      "type": "question",
+      "title": "What performance pressure caused anxiety today?",
+      "description": "Anxiety about meeting expectations.",
+      "image": {
+        "hash": "e50c64583b4f2d9ffe95afd04a1c4493058be0c5df9feaa73a4f0ec13337569d",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e50c64583b4f2d9ffe95afd04a1c4493058be0c5df9feaa73a4f0ec13337569d.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e50c64583b4f2d9ffe95afd04a1c4493058be0c5df9feaa73a4f0ec13337569d-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Work deadlines",
+          "description": "",
+          "image": {
+            "hash": "dda1489795fc72dfa3371f2e5815209479defc95aa3b746839a768bc1659b128",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/dda1489795fc72dfa3371f2e5815209479defc95aa3b746839a768bc1659b128.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/dda1489795fc72dfa3371f2e5815209479defc95aa3b746839a768bc1659b128-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Performance Pressure"
+        },
+        {
+          "type": "option",
+          "title": "Competitive sports",
+          "description": "",
+          "image": {
+            "hash": "cd4ab84ed93fb7fa069f2e6db67a8c9bbdc1532534695c9ec9d1a2cb2e6c0665",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/cd4ab84ed93fb7fa069f2e6db67a8c9bbdc1532534695c9ec9d1a2cb2e6c0665.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/cd4ab84ed93fb7fa069f2e6db67a8c9bbdc1532534695c9ec9d1a2cb2e6c0665-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Performance Pressure"
+        },
+        {
+          "type": "option",
+          "title": "Academic achievements",
+          "description": "",
+          "image": {
+            "hash": "6a1a7c876849b3f316863427bef6272c58435cc9b078c696698fe31c5db6a091",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6a1a7c876849b3f316863427bef6272c58435cc9b078c696698fe31c5db6a091.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6a1a7c876849b3f316863427bef6272c58435cc9b078c696698fe31c5db6a091-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Performance Pressure"
+        },
+        {
+          "type": "option",
+          "title": "Creative projects",
+          "description": "",
+          "image": {
+            "hash": "bc25858b2f90ca570a2e698b14b5a1ee49d899ad2f828e631d5b242db533c52f",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/bc25858b2f90ca570a2e698b14b5a1ee49d899ad2f828e631d5b242db533c52f.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/bc25858b2f90ca570a2e698b14b5a1ee49d899ad2f828e631d5b242db533c52f-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Performance Pressure"
+        }
+      ],
+      "parentId": "trigger_Anxiety",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Anxiety_Performance Pressure",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Anxiety"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Anxiety_Performance Pressure",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Anxiety_Overwhelm",
+      "type": "question",
+      "title": "What overwhelmed you and caused anxiety today?",
+      "description": "Feeling unable to cope with demands.",
+      "image": {
+        "hash": "e71c55bbd477d918dfc95c7c95d8c2ee97c943406e0b304ce4f61b53f479932a",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e71c55bbd477d918dfc95c7c95d8c2ee97c943406e0b304ce4f61b53f479932a.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e71c55bbd477d918dfc95c7c95d8c2ee97c943406e0b304ce4f61b53f479932a-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Too many tasks",
+          "description": "",
+          "image": {
+            "hash": "32924275c59ff05652757a5fcae3a975c9f23e8131bb48c7b38b05a2e865dcab",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/32924275c59ff05652757a5fcae3a975c9f23e8131bb48c7b38b05a2e865dcab.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/32924275c59ff05652757a5fcae3a975c9f23e8131bb48c7b38b05a2e865dcab-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Overwhelm"
+        },
+        {
+          "type": "option",
+          "title": "Complex responsibilities",
+          "description": "",
+          "image": {
+            "hash": "b16c84cbff57a1f65699ffcc07a8a76bd8508928a537fe24d40bad1d556d9758",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b16c84cbff57a1f65699ffcc07a8a76bd8508928a537fe24d40bad1d556d9758.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b16c84cbff57a1f65699ffcc07a8a76bd8508928a537fe24d40bad1d556d9758-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Overwhelm"
+        },
+        {
+          "type": "option",
+          "title": "Emotional burdens",
+          "description": "",
+          "image": {
+            "hash": "532ce250d379ca396a4d60ab9bb302a535cfd95bd0a471245a6abc3e09e4f1fb",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/532ce250d379ca396a4d60ab9bb302a535cfd95bd0a471245a6abc3e09e4f1fb.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/532ce250d379ca396a4d60ab9bb302a535cfd95bd0a471245a6abc3e09e4f1fb-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Overwhelm"
+        },
+        {
+          "type": "option",
+          "title": "Time constraints",
+          "description": "",
+          "image": {
+            "hash": "8ced08a817b8eaa87abf6dcf4d633df670ec07bcbd37d4f1658a3521fa95974e",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8ced08a817b8eaa87abf6dcf4d633df670ec07bcbd37d4f1658a3521fa95974e.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8ced08a817b8eaa87abf6dcf4d633df670ec07bcbd37d4f1658a3521fa95974e-mini.png"
+          },
+          "nextQuestionId": "fork_Anxiety_Overwhelm"
+        }
+      ],
+      "parentId": "trigger_Anxiety",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Anxiety_Overwhelm",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Anxiety"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Anxiety_Overwhelm",
+      "repeatable": false
+    },
+    {
+      "id": "intensity_Disgust",
+      "type": "question",
+      "title": "How intense is your feeling of Disgust?",
+      "description": "Select the level of intensity that best matches your current state.",
+      "image": {
+        "hash": "9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Distaste",
+          "description": "A mild feeling of dislike or aversion.",
+          "image": {
+            "hash": "176ac91dd1edd240519d8e922856a580cf3a47b87f4dbb0966e6ac59017cdc3a",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/176ac91dd1edd240519d8e922856a580cf3a47b87f4dbb0966e6ac59017cdc3a.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/176ac91dd1edd240519d8e922856a580cf3a47b87f4dbb0966e6ac59017cdc3a-mini.png"
+          },
+          "nextQuestionId": "trigger_Disgust"
+        },
+        {
+          "type": "option",
+          "title": "Aversion",
+          "description": "A strong feeling of dislike or unwillingness.",
+          "image": {
+            "hash": "8c9c93905831c8ada2b056084db3fc70165455ea11202278403adbe949af3f5e",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8c9c93905831c8ada2b056084db3fc70165455ea11202278403adbe949af3f5e.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8c9c93905831c8ada2b056084db3fc70165455ea11202278403adbe949af3f5e-mini.png"
+          },
+          "nextQuestionId": "trigger_Disgust"
+        },
+        {
+          "type": "option",
+          "title": "Repulsion",
+          "description": "An intense feeling of disgust and desire to avoid.",
+          "image": {
+            "hash": "c336b71a66c31baab33e047e2e61ea1e7a950c9270fe1651787b9ddd9584b894",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/c336b71a66c31baab33e047e2e61ea1e7a950c9270fe1651787b9ddd9584b894.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/c336b71a66c31baab33e047e2e61ea1e7a950c9270fe1651787b9ddd9584b894-mini.png"
+          },
+          "nextQuestionId": "trigger_Disgust"
+        }
+      ],
+      "parentId": "root",
+      "repeatable": false
+    },
+    {
+      "id": "trigger_Disgust",
+      "type": "question",
+      "title": "What triggered your feeling of Disgust?",
+      "description": "Select the option that best describes the cause of your emotion.",
+      "image": {
+        "hash": "9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9b11ff820ddd11946ade0baf5c712407db2456104478f63b0538999865a6515b-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Unpleasant Sights",
+          "description": "Visual experiences that are offensive or disturbing.",
+          "image": {
+            "hash": "9c7cac7ec2ae22bfce48ef003835c45b977e4aa51c14c811a67dd6c33e60e499",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9c7cac7ec2ae22bfce48ef003835c45b977e4aa51c14c811a67dd6c33e60e499.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9c7cac7ec2ae22bfce48ef003835c45b977e4aa51c14c811a67dd6c33e60e499-mini.png"
+          },
+          "nextQuestionId": "detail_Disgust_Unpleasant Sights"
+        },
+        {
+          "type": "option",
+          "title": "Offensive Smells",
+          "description": "Odors that are foul or nauseating.",
+          "image": {
+            "hash": "1ce3bcb71325ac179e42ae18342aa637d69f37b30ad53fb5aa80e9bc7199f07f",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1ce3bcb71325ac179e42ae18342aa637d69f37b30ad53fb5aa80e9bc7199f07f.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1ce3bcb71325ac179e42ae18342aa637d69f37b30ad53fb5aa80e9bc7199f07f-mini.png"
+          },
+          "nextQuestionId": "detail_Disgust_Offensive Smells"
+        },
+        {
+          "type": "option",
+          "title": "Moral Violations",
+          "description": "Actions that go against personal ethics.",
+          "image": {
+            "hash": "072723d331f15a703203c4ae6d82b7c44aeb248f2398899240ddbe6293dfc347",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/072723d331f15a703203c4ae6d82b7c44aeb248f2398899240ddbe6293dfc347.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/072723d331f15a703203c4ae6d82b7c44aeb248f2398899240ddbe6293dfc347-mini.png"
+          },
+          "nextQuestionId": "detail_Disgust_Moral Violations"
+        },
+        {
+          "type": "option",
+          "title": "Unpleasant Tastes",
+          "description": "Consuming something that tastes bad.",
+          "image": {
+            "hash": "8077a0b26b5c4c58a14197129165ab35e53af9bd480e38fc83f97a7acf7a72ac",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8077a0b26b5c4c58a14197129165ab35e53af9bd480e38fc83f97a7acf7a72ac.png",
+            "mini": "failed"
+          },
+          "nextQuestionId": "detail_Disgust_Unpleasant Tastes"
+        }
+      ],
+      "parentId": "intensity_Disgust",
+      "repeatable": true
+    },
+    {
+      "id": "detail_Disgust_Unpleasant Sights",
+      "type": "question",
+      "title": "What unpleasant sight today caused you to feel disgust?",
+      "description": "Visual experiences that are offensive or disturbing.",
+      "image": {
+        "hash": "9c7cac7ec2ae22bfce48ef003835c45b977e4aa51c14c811a67dd6c33e60e499",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9c7cac7ec2ae22bfce48ef003835c45b977e4aa51c14c811a67dd6c33e60e499.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/9c7cac7ec2ae22bfce48ef003835c45b977e4aa51c14c811a67dd6c33e60e499-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Witnessing inappropriate behavior",
+          "description": "",
+          "image": {
+            "hash": "0d58069b25f3bdbb674b5130fa28b6ba1ded2ddac4d0e141a9c31c7244ce08c9",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/0d58069b25f3bdbb674b5130fa28b6ba1ded2ddac4d0e141a9c31c7244ce08c9.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/0d58069b25f3bdbb674b5130fa28b6ba1ded2ddac4d0e141a9c31c7244ce08c9-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Unpleasant Sights"
+        },
+        {
+          "type": "option",
+          "title": "Seeing unhygienic conditions",
+          "description": "",
+          "image": {
+            "hash": "91104b9ebea15c69eead27382e42108041cced8b030ee997bd8a9957a3d96f37",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/91104b9ebea15c69eead27382e42108041cced8b030ee997bd8a9957a3d96f37.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/91104b9ebea15c69eead27382e42108041cced8b030ee997bd8a9957a3d96f37-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Unpleasant Sights"
+        },
+        {
+          "type": "option",
+          "title": "Observing a disturbing scene",
+          "description": "",
+          "image": {
+            "hash": "22764b0f9a510ccee07744a1012ca4ef4298d076bbaabf74ed2a247d63cebb36",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/22764b0f9a510ccee07744a1012ca4ef4298d076bbaabf74ed2a247d63cebb36.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/22764b0f9a510ccee07744a1012ca4ef4298d076bbaabf74ed2a247d63cebb36-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Unpleasant Sights"
+        },
+        {
+          "type": "option",
+          "title": "Encountering offensive content",
+          "description": "",
+          "image": {
+            "hash": "c86f6546b0c15f120b326be1e546c1bdcf20192c59a2d7a90badb04ddd62d0a3",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/c86f6546b0c15f120b326be1e546c1bdcf20192c59a2d7a90badb04ddd62d0a3.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/c86f6546b0c15f120b326be1e546c1bdcf20192c59a2d7a90badb04ddd62d0a3-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Unpleasant Sights"
+        }
+      ],
+      "parentId": "trigger_Disgust",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Disgust_Unpleasant Sights",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Disgust"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Disgust_Unpleasant Sights",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Disgust_Offensive Smells",
+      "type": "question",
+      "title": "Which smell today made you feel disgusted?",
+      "description": "Odors that are foul or nauseating.",
+      "image": {
+        "hash": "1ce3bcb71325ac179e42ae18342aa637d69f37b30ad53fb5aa80e9bc7199f07f",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1ce3bcb71325ac179e42ae18342aa637d69f37b30ad53fb5aa80e9bc7199f07f.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1ce3bcb71325ac179e42ae18342aa637d69f37b30ad53fb5aa80e9bc7199f07f-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Rotten food",
+          "description": "",
+          "image": {
+            "hash": "d6161e7d3e051e7f1e59d29f695a42848a4507d5574391e9f33d4e6dd1ed573f",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6161e7d3e051e7f1e59d29f695a42848a4507d5574391e9f33d4e6dd1ed573f.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6161e7d3e051e7f1e59d29f695a42848a4507d5574391e9f33d4e6dd1ed573f-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Offensive Smells"
+        },
+        {
+          "type": "option",
+          "title": "Polluted air",
+          "description": "",
+          "image": {
+            "hash": "df44491daed2529ef749cd4d6a598f0192bb91ba8f16158a7a1fa7a4eb87fcef",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/df44491daed2529ef749cd4d6a598f0192bb91ba8f16158a7a1fa7a4eb87fcef.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/df44491daed2529ef749cd4d6a598f0192bb91ba8f16158a7a1fa7a4eb87fcef-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Offensive Smells"
+        },
+        {
+          "type": "option",
+          "title": "Chemical odors",
+          "description": "",
+          "image": {
+            "hash": "e155dfb3b34453bad431c1e98fb61ea49880ba2e4702a49963724d8b92814554",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e155dfb3b34453bad431c1e98fb61ea49880ba2e4702a49963724d8b92814554.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e155dfb3b34453bad431c1e98fb61ea49880ba2e4702a49963724d8b92814554-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Offensive Smells"
+        },
+        {
+          "type": "option",
+          "title": "Unpleasant body odors",
+          "description": "",
+          "image": {
+            "hash": "b034cea77863a639bf44fd26f6b5aa179d9c6fd3501dfff17785af7210830213",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b034cea77863a639bf44fd26f6b5aa179d9c6fd3501dfff17785af7210830213.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b034cea77863a639bf44fd26f6b5aa179d9c6fd3501dfff17785af7210830213-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Offensive Smells"
+        }
+      ],
+      "parentId": "trigger_Disgust",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Disgust_Offensive Smells",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Disgust"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Disgust_Offensive Smells",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Disgust_Moral Violations",
+      "type": "question",
+      "title": "What moral violation today caused you to feel disgust?",
+      "description": "Actions that go against personal ethics.",
+      "image": {
+        "hash": "072723d331f15a703203c4ae6d82b7c44aeb248f2398899240ddbe6293dfc347",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/072723d331f15a703203c4ae6d82b7c44aeb248f2398899240ddbe6293dfc347.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/072723d331f15a703203c4ae6d82b7c44aeb248f2398899240ddbe6293dfc347-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Witnessing dishonesty",
+          "description": "",
+          "image": {
+            "hash": "0304bcc1895d76701dc9fc08c6b317f47a59d130498f968f194a2040d68fa2a5",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/0304bcc1895d76701dc9fc08c6b317f47a59d130498f968f194a2040d68fa2a5.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/0304bcc1895d76701dc9fc08c6b317f47a59d130498f968f194a2040d68fa2a5-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Moral Violations"
+        },
+        {
+          "type": "option",
+          "title": "Seeing acts of cruelty",
+          "description": "",
+          "image": {
+            "hash": "b8241ef9f4131bc06613736f1eec1bad32e2d1fc4c24ac837c7d877026b8037f",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b8241ef9f4131bc06613736f1eec1bad32e2d1fc4c24ac837c7d877026b8037f.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b8241ef9f4131bc06613736f1eec1bad32e2d1fc4c24ac837c7d877026b8037f-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Moral Violations"
+        },
+        {
+          "type": "option",
+          "title": "Experiencing betrayal",
+          "description": "",
+          "image": {
+            "hash": "1bf32888850339ca31becf23d50a5f1401cb0cc5bbd90915458a352dd31eb729",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1bf32888850339ca31becf23d50a5f1401cb0cc5bbd90915458a352dd31eb729.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1bf32888850339ca31becf23d50a5f1401cb0cc5bbd90915458a352dd31eb729-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Moral Violations"
+        },
+        {
+          "type": "option",
+          "title": "Observing injustice",
+          "description": "",
+          "image": {
+            "hash": "c9deadb90066fec5ec8f2841aad63ab7bb7aff3faccd9ef273840a7d5e09b1d1",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/c9deadb90066fec5ec8f2841aad63ab7bb7aff3faccd9ef273840a7d5e09b1d1.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/c9deadb90066fec5ec8f2841aad63ab7bb7aff3faccd9ef273840a7d5e09b1d1-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Moral Violations"
+        }
+      ],
+      "parentId": "trigger_Disgust",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Disgust_Moral Violations",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Disgust"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Disgust_Moral Violations",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Disgust_Unpleasant Tastes",
+      "type": "question",
+      "title": "Did an unpleasant taste make you feel disgusted today?",
+      "description": "Consuming something that tastes bad.",
+      "image": {
+        "hash": "8077a0b26b5c4c58a14197129165ab35e53af9bd480e38fc83f97a7acf7a72ac",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/8077a0b26b5c4c58a14197129165ab35e53af9bd480e38fc83f97a7acf7a72ac.png",
+        "mini": "failed"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Eating spoiled food",
+          "description": "",
+          "image": {
+            "hash": "010f5e9fb01e8a1234e3cd6989f6bc5953e83cf45b1487cc949f7e42903ae083",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/010f5e9fb01e8a1234e3cd6989f6bc5953e83cf45b1487cc949f7e42903ae083.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/010f5e9fb01e8a1234e3cd6989f6bc5953e83cf45b1487cc949f7e42903ae083-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Unpleasant Tastes"
+        },
+        {
+          "type": "option",
+          "title": "Trying an unpalatable dish",
+          "description": "",
+          "image": {
+            "hash": "95b5429c6de76ba39bbef1293557387a3792a248898ffd251756fa3e18ce1c0d",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/95b5429c6de76ba39bbef1293557387a3792a248898ffd251756fa3e18ce1c0d.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/95b5429c6de76ba39bbef1293557387a3792a248898ffd251756fa3e18ce1c0d-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Unpleasant Tastes"
+        },
+        {
+          "type": "option",
+          "title": "Tasting bitter medicine",
+          "description": "",
+          "image": {
+            "hash": "1e0eb5e88723fd306b1aaf2ac94bbba631a89f33d4c504c8a5752ffaa97b5245",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1e0eb5e88723fd306b1aaf2ac94bbba631a89f33d4c504c8a5752ffaa97b5245.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/1e0eb5e88723fd306b1aaf2ac94bbba631a89f33d4c504c8a5752ffaa97b5245-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Unpleasant Tastes"
+        },
+        {
+          "type": "option",
+          "title": "Accidentally ingesting something unpleasant",
+          "description": "",
+          "image": {
+            "hash": "7490d45789723fe1e1b095ce73bf67bfadb47d74e362887840f510a2b239367f",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/7490d45789723fe1e1b095ce73bf67bfadb47d74e362887840f510a2b239367f.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/7490d45789723fe1e1b095ce73bf67bfadb47d74e362887840f510a2b239367f-mini.png"
+          },
+          "nextQuestionId": "fork_Disgust_Unpleasant Tastes"
+        }
+      ],
+      "parentId": "trigger_Disgust",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Disgust_Unpleasant Tastes",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Disgust"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Disgust_Unpleasant Tastes",
+      "repeatable": false
+    },
+    {
+      "id": "intensity_Calm",
+      "type": "question",
+      "title": "How intense is your feeling of Calm?",
+      "description": "Select the level of intensity that best matches your current state.",
+      "image": {
+        "hash": "34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Relaxed",
+          "description": "Free from tension and anxiety.",
+          "image": {
+            "hash": "d6fce09ec20cee1710ff0a9820353211fb0a639502f2c8d28785d962d4fa8924",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6fce09ec20cee1710ff0a9820353211fb0a639502f2c8d28785d962d4fa8924.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d6fce09ec20cee1710ff0a9820353211fb0a639502f2c8d28785d962d4fa8924-mini.png"
+          },
+          "nextQuestionId": "trigger_Calm"
+        },
+        {
+          "type": "option",
+          "title": "Peaceful",
+          "description": "Feeling at peace with oneself and surroundings.",
+          "image": {
+            "hash": "375bdefb359c1b008859dfe1f79af2c22727ed44bd0e20596c4232e90d9cdba0",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/375bdefb359c1b008859dfe1f79af2c22727ed44bd0e20596c4232e90d9cdba0.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/375bdefb359c1b008859dfe1f79af2c22727ed44bd0e20596c4232e90d9cdba0-mini.png"
+          },
+          "nextQuestionId": "trigger_Calm"
+        },
+        {
+          "type": "option",
+          "title": "Tranquil",
+          "description": "An untroubled state, free from disturbances.",
+          "image": {
+            "hash": "19dbff44fab6653915a57d827d8456acc06b5684d173b82d5f061c495859241f",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/19dbff44fab6653915a57d827d8456acc06b5684d173b82d5f061c495859241f.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/19dbff44fab6653915a57d827d8456acc06b5684d173b82d5f061c495859241f-mini.png"
+          },
+          "nextQuestionId": "trigger_Calm"
+        },
+        {
+          "type": "option",
+          "title": "Indifferent",
+          "description": "Lack of interest or concern.",
+          "image": {
+            "hash": "538892be501b7639ae829f092b727838d890195eb8bbc5960fc5af18d54ba265",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/538892be501b7639ae829f092b727838d890195eb8bbc5960fc5af18d54ba265.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/538892be501b7639ae829f092b727838d890195eb8bbc5960fc5af18d54ba265-mini.png"
+          },
+          "nextQuestionId": "trigger_Calm"
+        },
+        {
+          "type": "option",
+          "title": "Detached",
+          "description": "Emotional disengagement or aloofness.",
+          "image": {
+            "hash": "ac2b42e6d276bf39cc0848270531e187bf17e144cb12c64f8cea149f9392d9c8",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/ac2b42e6d276bf39cc0848270531e187bf17e144cb12c64f8cea149f9392d9c8.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/ac2b42e6d276bf39cc0848270531e187bf17e144cb12c64f8cea149f9392d9c8-mini.png"
+          },
+          "nextQuestionId": "trigger_Calm"
+        },
+        {
+          "type": "option",
+          "title": "Equanimity",
+          "description": "Mental calmness and composure.",
+          "image": {
+            "hash": "e65882f049276880220e1463a0d474329f38c8ca8d69d39801ad830ba3a83117",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e65882f049276880220e1463a0d474329f38c8ca8d69d39801ad830ba3a83117.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/e65882f049276880220e1463a0d474329f38c8ca8d69d39801ad830ba3a83117-mini.png"
+          },
+          "nextQuestionId": "trigger_Calm"
+        }
+      ],
+      "parentId": "root",
+      "repeatable": false
+    },
+    {
+      "id": "trigger_Calm",
+      "type": "question",
+      "title": "What triggered your feeling of Calm?",
+      "description": "Select the option that best describes the cause of your emotion.",
+      "image": {
+        "hash": "34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/34e682720ba5b7af35d8d10b3506bddef504704eb684b7c32ee106440f8f4b8d-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Nature",
+          "description": "Being in or observing natural environments.",
+          "image": {
+            "hash": "6f1ab6ac57be7ceae6beae8f167496bf8011ea858ee221067ea07c3b21088baf",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6f1ab6ac57be7ceae6beae8f167496bf8011ea858ee221067ea07c3b21088baf.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6f1ab6ac57be7ceae6beae8f167496bf8011ea858ee221067ea07c3b21088baf-mini.png"
+          },
+          "nextQuestionId": "detail_Calm_Nature"
+        },
+        {
+          "type": "option",
+          "title": "Mindfulness",
+          "description": "Practicing present-moment awareness.",
+          "image": {
+            "hash": "52bb6ab5fc821e42470fa1156a0945714504f26f4ae80eeae4fce071aabc53c1",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/52bb6ab5fc821e42470fa1156a0945714504f26f4ae80eeae4fce071aabc53c1.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/52bb6ab5fc821e42470fa1156a0945714504f26f4ae80eeae4fce071aabc53c1-mini.png"
+          },
+          "nextQuestionId": "detail_Calm_Mindfulness"
+        },
+        {
+          "type": "option",
+          "title": "Comfort Activities",
+          "description": "Engaging in activities that soothe.",
+          "image": {
+            "hash": "dcaedaf8c7975af2e8436abd02439bc7d5d004a420ec649e6d286a230c46f988",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/dcaedaf8c7975af2e8436abd02439bc7d5d004a420ec649e6d286a230c46f988.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/dcaedaf8c7975af2e8436abd02439bc7d5d004a420ec649e6d286a230c46f988-mini.png"
+          },
+          "nextQuestionId": "detail_Calm_Comfort Activities"
+        },
+        {
+          "type": "option",
+          "title": "Positive Relationships",
+          "description": "Interactions with supportive individuals.",
+          "image": {
+            "hash": "5e8dd468278421f50f6fbbcd5fbaa19b2e1400bdb2fee9e0e96f5cd07845f564",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5e8dd468278421f50f6fbbcd5fbaa19b2e1400bdb2fee9e0e96f5cd07845f564.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5e8dd468278421f50f6fbbcd5fbaa19b2e1400bdb2fee9e0e96f5cd07845f564-mini.png"
+          },
+          "nextQuestionId": "detail_Calm_Positive Relationships"
+        }
+      ],
+      "parentId": "intensity_Calm",
+      "repeatable": true
+    },
+    {
+      "id": "detail_Calm_Nature",
+      "type": "question",
+      "title": "How did nature contribute to your calmness today?",
+      "description": "Being in or observing natural environments.",
+      "image": {
+        "hash": "6f1ab6ac57be7ceae6beae8f167496bf8011ea858ee221067ea07c3b21088baf",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6f1ab6ac57be7ceae6beae8f167496bf8011ea858ee221067ea07c3b21088baf.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/6f1ab6ac57be7ceae6beae8f167496bf8011ea858ee221067ea07c3b21088baf-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Walking in a park",
+          "description": "",
+          "image": {
+            "hash": "117fbf5236fad8d127a8ed8eef86629021e5f9e91179e2e6f0f5e1de7a743983",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/117fbf5236fad8d127a8ed8eef86629021e5f9e91179e2e6f0f5e1de7a743983.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/117fbf5236fad8d127a8ed8eef86629021e5f9e91179e2e6f0f5e1de7a743983-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Nature"
+        },
+        {
+          "type": "option",
+          "title": "Listening to birds",
+          "description": "",
+          "image": {
+            "hash": "839aa872fd9357f46c6b78b4c91a164c358d49b582351f762ba3f53b5e084724",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/839aa872fd9357f46c6b78b4c91a164c358d49b582351f762ba3f53b5e084724.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/839aa872fd9357f46c6b78b4c91a164c358d49b582351f762ba3f53b5e084724-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Nature"
+        },
+        {
+          "type": "option",
+          "title": "Watching a sunset",
+          "description": "",
+          "image": {
+            "hash": "77272caaaeb409dcdb5845b639085fe057122c4e8368f9820ee63922c366d359",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/77272caaaeb409dcdb5845b639085fe057122c4e8368f9820ee63922c366d359.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/77272caaaeb409dcdb5845b639085fe057122c4e8368f9820ee63922c366d359-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Nature"
+        },
+        {
+          "type": "option",
+          "title": "Gardening",
+          "description": "",
+          "image": {
+            "hash": "35ae36653ada76c9594d0637a235ed169255062e4168a8bfec6c8c38f8e1ff57",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/35ae36653ada76c9594d0637a235ed169255062e4168a8bfec6c8c38f8e1ff57.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/35ae36653ada76c9594d0637a235ed169255062e4168a8bfec6c8c38f8e1ff57-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Nature"
+        }
+      ],
+      "parentId": "trigger_Calm",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Calm_Nature",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Calm"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Calm_Nature",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Calm_Mindfulness",
+      "type": "question",
+      "title": "What mindfulness practice helped you feel calm today?",
+      "description": "Practicing present-moment awareness.",
+      "image": {
+        "hash": "52bb6ab5fc821e42470fa1156a0945714504f26f4ae80eeae4fce071aabc53c1",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/52bb6ab5fc821e42470fa1156a0945714504f26f4ae80eeae4fce071aabc53c1.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/52bb6ab5fc821e42470fa1156a0945714504f26f4ae80eeae4fce071aabc53c1-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Meditation",
+          "description": "",
+          "image": {
+            "hash": "152bdaec4fe406910cc46018a2836f3c69e866d1d1f9668aec1a3b6042d1aa30",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/152bdaec4fe406910cc46018a2836f3c69e866d1d1f9668aec1a3b6042d1aa30.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/152bdaec4fe406910cc46018a2836f3c69e866d1d1f9668aec1a3b6042d1aa30-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Mindfulness"
+        },
+        {
+          "type": "option",
+          "title": "Deep breathing",
+          "description": "",
+          "image": {
+            "hash": "69975b07db9be99a467b9b9ff703b8a55d79c752092ca9189fa4e2d9a5002563",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/69975b07db9be99a467b9b9ff703b8a55d79c752092ca9189fa4e2d9a5002563.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/69975b07db9be99a467b9b9ff703b8a55d79c752092ca9189fa4e2d9a5002563-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Mindfulness"
+        },
+        {
+          "type": "option",
+          "title": "Yoga",
+          "description": "",
+          "image": {
+            "hash": "43e8685814578460d6e48b2553f1145a17b0c954daa02cad5ed8f51dd2c373ac",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/43e8685814578460d6e48b2553f1145a17b0c954daa02cad5ed8f51dd2c373ac.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/43e8685814578460d6e48b2553f1145a17b0c954daa02cad5ed8f51dd2c373ac-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Mindfulness"
+        },
+        {
+          "type": "option",
+          "title": "Journaling",
+          "description": "",
+          "image": {
+            "hash": "5b9249d0122cfc4934ab7dd55d3d2bbdfdeb30bd376968c8add4c72a98b9eb63",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5b9249d0122cfc4934ab7dd55d3d2bbdfdeb30bd376968c8add4c72a98b9eb63.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5b9249d0122cfc4934ab7dd55d3d2bbdfdeb30bd376968c8add4c72a98b9eb63-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Mindfulness"
+        }
+      ],
+      "parentId": "trigger_Calm",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Calm_Mindfulness",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Calm"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Calm_Mindfulness",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Calm_Comfort Activities",
+      "type": "question",
+      "title": "What activity brought you calmness today?",
+      "description": "Engaging in activities that soothe.",
+      "image": {
+        "hash": "dcaedaf8c7975af2e8436abd02439bc7d5d004a420ec649e6d286a230c46f988",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/dcaedaf8c7975af2e8436abd02439bc7d5d004a420ec649e6d286a230c46f988.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/dcaedaf8c7975af2e8436abd02439bc7d5d004a420ec649e6d286a230c46f988-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Reading a book",
+          "description": "",
+          "image": {
+            "hash": "b2150d462694ccb182da6a9c2a2ec39652d1da333d55af0eab4dbb103fe82154",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b2150d462694ccb182da6a9c2a2ec39652d1da333d55af0eab4dbb103fe82154.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/b2150d462694ccb182da6a9c2a2ec39652d1da333d55af0eab4dbb103fe82154-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Comfort Activities"
+        },
+        {
+          "type": "option",
+          "title": "Listening to music",
+          "description": "",
+          "image": {
+            "hash": "f8708c4ec476e2fb4a162bfc886ae51c60e18fd37545dbf04287a82258abf3d4",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f8708c4ec476e2fb4a162bfc886ae51c60e18fd37545dbf04287a82258abf3d4.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f8708c4ec476e2fb4a162bfc886ae51c60e18fd37545dbf04287a82258abf3d4-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Comfort Activities"
+        },
+        {
+          "type": "option",
+          "title": "Taking a warm bath",
+          "description": "",
+          "image": {
+            "hash": "581ccaad23c760f65dfa9560eea56e2be1f9e18e6a59b119791908e4cc7616e8",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/581ccaad23c760f65dfa9560eea56e2be1f9e18e6a59b119791908e4cc7616e8.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/581ccaad23c760f65dfa9560eea56e2be1f9e18e6a59b119791908e4cc7616e8-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Comfort Activities"
+        },
+        {
+          "type": "option",
+          "title": "Drinking tea",
+          "description": "",
+          "image": {
+            "hash": "21d27e23ca3adb42a24cd778f5c3834d6ae47a809e332a5bcd2abdd952be3f3a",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/21d27e23ca3adb42a24cd778f5c3834d6ae47a809e332a5bcd2abdd952be3f3a.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/21d27e23ca3adb42a24cd778f5c3834d6ae47a809e332a5bcd2abdd952be3f3a-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Comfort Activities"
+        }
+      ],
+      "parentId": "trigger_Calm",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Calm_Comfort Activities",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Calm"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Calm_Comfort Activities",
+      "repeatable": false
+    },
+    {
+      "id": "detail_Calm_Positive Relationships",
+      "type": "question",
+      "title": "Which relationship contributed to your calmness today?",
+      "description": "Interactions with supportive individuals.",
+      "image": {
+        "hash": "5e8dd468278421f50f6fbbcd5fbaa19b2e1400bdb2fee9e0e96f5cd07845f564",
+        "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5e8dd468278421f50f6fbbcd5fbaa19b2e1400bdb2fee9e0e96f5cd07845f564.png",
+        "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/5e8dd468278421f50f6fbbcd5fbaa19b2e1400bdb2fee9e0e96f5cd07845f564-mini.png"
+      },
+      "options": [
+        {
+          "type": "option",
+          "title": "Talking with a close friend",
+          "description": "",
+          "image": {
+            "hash": "d67c1e3f35c735fd62c0c9daef95bdbba5ff8c66377e45ad64dfcd7338c74358",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d67c1e3f35c735fd62c0c9daef95bdbba5ff8c66377e45ad64dfcd7338c74358.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/d67c1e3f35c735fd62c0c9daef95bdbba5ff8c66377e45ad64dfcd7338c74358-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Positive Relationships"
+        },
+        {
+          "type": "option",
+          "title": "Spending time with family",
+          "description": "",
+          "image": {
+            "hash": "86b714246f8edf7c7562d5f40b008bc159c56bd1843950977fee34a50a397630",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/86b714246f8edf7c7562d5f40b008bc159c56bd1843950977fee34a50a397630.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/86b714246f8edf7c7562d5f40b008bc159c56bd1843950977fee34a50a397630-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Positive Relationships"
+        },
+        {
+          "type": "option",
+          "title": "Receiving support from a partner",
+          "description": "",
+          "image": {
+            "hash": "abf44c9dd99df26e0abc2e558274fd76fc4ed2f20d88bf4dd858c6b16aa9727a",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/abf44c9dd99df26e0abc2e558274fd76fc4ed2f20d88bf4dd858c6b16aa9727a.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/abf44c9dd99df26e0abc2e558274fd76fc4ed2f20d88bf4dd858c6b16aa9727a-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Positive Relationships"
+        },
+        {
+          "type": "option",
+          "title": "Connecting with a mentor",
+          "description": "",
+          "image": {
+            "hash": "0bc0eda58ac556b0f3d98e86cb67910ce09f42a42eb244842b2c870992a06834",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/0bc0eda58ac556b0f3d98e86cb67910ce09f42a42eb244842b2c870992a06834.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/0bc0eda58ac556b0f3d98e86cb67910ce09f42a42eb244842b2c870992a06834-mini.png"
+          },
+          "nextQuestionId": "fork_Calm_Positive Relationships"
+        }
+      ],
+      "parentId": "trigger_Calm",
+      "repeatable": false
+    },
+    {
+      "id": "fork_Calm_Positive Relationships",
+      "type": "question",
+      "title": "Would you like to add another trigger?",
+      "description": "Select 'Yes' to add another trigger or 'No' to continue.",
+      "image": null,
+      "options": [
+        {
+          "type": "option",
+          "title": "Yes",
+          "description": "Add another trigger",
+          "image": null,
+          "nextQuestionId": "trigger_Calm"
+        },
+        {
+          "type": "option",
+          "title": "No",
+          "description": "Continue to the next question",
+          "image": null,
+          "nextQuestionId": "root_fork"
+        }
+      ],
+      "parentId": "detail_Calm_Positive Relationships",
+      "repeatable": false
+    }
+  ]
+}

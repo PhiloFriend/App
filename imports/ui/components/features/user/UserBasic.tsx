@@ -14,6 +14,7 @@ const UserBasic: React.FC<UserBasicProps> = ({
     <Box
       sx={{
         padding: 2,
+        border: (theme) => `1px solid ${theme.palette.divider}`,
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",

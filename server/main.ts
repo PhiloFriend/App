@@ -3,6 +3,7 @@ import { PhilosophyCollection } from "/imports/api/Philosophies";
 
 import "../imports/api/Quiz";
 import "../imports/api/ReflectionQuiz";
+import "../imports/api/Reflection";
 
 import PHILOSOPHIES from "../imports/philosophies.json";
 

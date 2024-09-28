@@ -21,7 +21,12 @@ export const HomePage = () => {
     <Box>
       <HeaderContainer />
       <Main>
-        {user == null ? (
+        <>
+          <Hero />
+          <Box mt={10} />
+          {/*<PhilosophySelector />*/}
+        </>
+        {/*user == null ? (
           <>
             <Hero />
             <Box mt={10} />
@@ -29,7 +34,7 @@ export const HomePage = () => {
           </>
         ) : (
           <Dashboard />
-        )}
+        )*/}
         {/* For the logged-in user, render null for now */}
       </Main>
     </Box>

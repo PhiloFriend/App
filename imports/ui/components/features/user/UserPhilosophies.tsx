@@ -17,6 +17,7 @@ const UserPhilosophies: React.FC<UserPhilosophiesProps> = ({ MyPhilosophiesSelec
     <Box
       sx={{
         padding: 2,
+        border: (theme) => `1px solid ${theme.palette.divider}`,
         borderRadius: 1,
       }}
     >

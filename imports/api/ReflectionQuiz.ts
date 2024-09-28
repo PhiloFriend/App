@@ -368,225 +368,13 @@ const generateTheNextQuestion = async (
   }
 };
 
-const generateResult = async (
-  quizId: string,
-  history: Array<{ question: string; answer: string }>
-) => {
-  if (Meteor.isServer) {
-    const quiz = await ReflectionQuizzesCollection.findOneAsync(quizId);
-    if (!quiz) throw new Meteor.Error("quiz-not-found");
-    const philosophies = quiz.philosophies; // Retrieve philosophies
-
-    const model = new ChatOpenAI({
-      model: "gpt-4o-mini",
-      apiKey,
-    });
-
-    const setResult = async (resultObj: any) => {
-      await ReflectionQuizzesCollection.updateAsync(quizId, {
-        $set: {
-          result: resultObj,
-          updatedAt: new Date(),
-        },
-      });
-    };
-
-    // Generate the reflection summary
-    const reflectionPrompt = ChatPromptTemplate.fromTemplate(`
-      Make sure your answer is in the proper json format: {{"reflection": "Your reflection summary here."}}
-
-      Based on the following quiz results, provide a comprehensive reflection summary for the user. The summary should help the user understand their feelings, experiences, and thoughts from the day, offering insights and suggestions for personal growth.
-
-      Guidelines for reflection generation:
-      1. Summarize key themes: Identify the main themes or patterns in the user's responses.
-      2. Encourage self-awareness: Highlight areas where the user showed strong emotions or significant experiences.
-      3. Offer positive reinforcement: Acknowledge achievements or positive actions the user took.
-      4. Suggest areas for improvement: Gently suggest ways the user could address challenges or negative feelings.
-      5. Use empathetic and supportive language.
-
-      Format the response as a valid JSON string with a 'reflection' field containing the reflection summary.
-
-      Example format:
-      {{"reflection": "Your reflection summary here."}}
-
-      Quiz results: {context}
-
-      Reflection Summary:
-    `);
-
-    const reflectionChain = reflectionPrompt
-      .pipe(model)
-      .pipe(new StringOutputParser());
-    const reflectionResult = await reflectionChain.invoke({
-      context: JSON.stringify(history),
-    });
-
-    try {
-      function parseStringToJson(input: string): any {
-        const jsonStartIndex = input.indexOf("{");
-        const jsonEndIndex = input.lastIndexOf("}") + 1;
-        const jsonString = input.slice(jsonStartIndex, jsonEndIndex);
-        return JSON.parse(jsonString);
-      }
-
-      const parsedReflection = parseStringToJson(reflectionResult);
-      const reflection = parsedReflection.reflection;
-
-      // Generate the quote and story based on the reflection and philosophy
-      const philosophy = philosophies[0]; // Using the first philosophy for simplicity
-
-      const quoteStoryPrompt = ChatPromptTemplate.fromTemplate(`
-        Make sure your answer is in the proper json format: {{"quote": "...", "story": "...", "application": "..."}}
-
-        Based on the reflection below and the philosophy "{philosophy}", provide:
-
-        1. A relevant quote from a thinker or text associated with {philosophy} that relates to the themes in the reflection.
-        2. A brief story or anecdote about someone with beliefs or actions aligned with {philosophy} who dealt with similar situations.
-        3. An application and learning point from the story that the user can apply to their own situation.
-
-        Use empathetic and supportive language.
-
-        Format the response as a valid JSON string with 'quote', 'story', and 'application' fields.
-
-        Example format:
-        {{"quote": "Your quote here.", "story": "Your story here.", "application": "Your application and learning here."}}
-
-        Reflection: {reflection}
-
-        Response:
-      `);
-
-      const quoteStoryChain = quoteStoryPrompt
-        .pipe(model)
-        .pipe(new StringOutputParser());
-      const quoteStoryResult = await quoteStoryChain.invoke({
-        philosophy: philosophy,
-        reflection: reflection,
-      });
-
-      console.log();
-
-      const parsedQuoteStory = parseStringToJson(quoteStoryResult);
-
-      // Combine reflection and quote/story into the final result
-
-      interface FinalResult {
-        reflection: any;
-        quote: any;
-        story: any;
-        application: any;
-        imageUrl: any;
-      }
-
-      const finalResult: FinalResult = {
-        reflection: reflection,
-        quote: parsedQuoteStory.quote,
-        story: parsedQuoteStory.story,
-        application: parsedQuoteStory.application,
-        imageUrl: null,
-      };
-
-      if (Meteor.isServer) {
-        AWS.config.update({
-          accessKeyId: config.awsAccessKeyId,
-          secretAccessKey: config.awsSecretAccessKey,
-          region: config.awsRegion,
-        });
-
-        const openai = new OpenAI({
-          apiKey: config.openAiKey,
-        });
-
-        var s3 = new AWS.S3();
-
-        // Generate the image prompt
-        const imagePrompt = `
-              Create an artistic, uplifting, and relatable image that represents the following reflection and story in a "higher self" mood:
-
-              Reflection:
-              ${reflection}
-
-              Story:
-              ${parsedQuoteStory.story}
-
-              Application:
-              ${parsedQuoteStory.application}
-
-              The image should capture the essence of the user's situation and the suggested solution, in an artistic and inspiring way.
-            `;
-
-        console.log("========", imagePrompt);
-
-        // Moderation check
-        const moderationResponse = await openai.moderations.create({
-          input: imagePrompt,
-        });
-
-        const moderationResult = moderationResponse.results[0].flagged;
-
-        if (moderationResult) {
-          console.warn(
-            "Image prompt was flagged by moderation API. Skipping image generation."
-          );
-          finalResult.imageUrl = null;
-        } else {
-          try {
-            // Generate the image
-            const imageResponse = await openai.images.generate({
-              prompt: imagePrompt,
-              model: "dall-e-3",
-              n: 1,
-              size: "1024x1024",
-              style: "vivid",
-              response_format: "b64_json",
-            });
-
-            const imageData = imageResponse.data[0].b64_json;
-            if (imageData) {
-              const buffer = Buffer.from(imageData, "base64");
-              // Upload the image to AWS S3
-              const filename = `images/${quizId}/${Date.now()}.png`;
-
-              const params = {
-                Bucket: config.awsBucketName,
-                Key: filename,
-                Body: buffer,
-                ContentType: "image/png",
-                ACL: "public-read",
-              };
-
-              const uploadResult = await s3.upload(params).promise();
-
-              const imageUrl = uploadResult.Location;
-
-              // Include imageUrl in finalResult
-              finalResult.imageUrl = imageUrl;
-            }
-          } catch (error) {
-            console.error("Error during image generation or upload:", error);
-            finalResult.imageUrl = null;
-          }
-        }
-      }
-
-      await setResult(finalResult);
-    } catch (error) {
-      console.error("Error parsing reflection or quote/story result:", error);
-      console.log("Raw reflection result:", reflectionResult);
-      //@ts-ignore
-      console.log("Raw quote and story result:", quoteStoryResult);
-      throw new Error("Failed to generate a valid reflection or quote/story");
-    }
-  }
-};
-
 function parseJsonResponse(input: string): any {
   try {
     const jsonStartIndex = input.indexOf("{");
     const jsonEndIndex = input.lastIndexOf("}") + 1;
     const jsonString = input.slice(jsonStartIndex, jsonEndIndex);
 
-    console.log(jsonString, JSON.parse(jsonString))
+    console.log(jsonString, JSON.parse(jsonString));
     return JSON.parse(jsonString);
   } catch (error) {
     throw new Error("Failed to parse JSON response");
@@ -631,10 +419,13 @@ const generateReflectionResult = async (
 
     async function generateReflection(
       history: Array<{ question: string; answer: string }>,
-      philosophy: string,
-    ): Promise<
-    { quote: string; story: string; application: string, reflection: string }
-    > {
+      philosophy: string
+    ): Promise<{
+      quote: string;
+      story: string;
+      application: string;
+      reflection: string;
+    }> {
       const reflectionPrompt = ChatPromptTemplate.fromTemplate(`
          IMPORTANT: Your response must be in the proper JSON format. Ensure that the JSON is correctly formatted with double quotes around keys and string values.
 
@@ -690,80 +481,10 @@ IMPORTANT: GIVE ME THE RESULT IN JSON FORMAT WITH NO ADDITIONAL INFO
           philosophy: philosophy,
         });
 
-
-
-
         const parsedReflection = parseJsonResponse(reflectionResult);
         return parsedReflection;
       });
     }
-
-    // Function to generate the quote, story, and application
-    /*async function generateQuoteStory(
-      philosophy: string,
-    ): Promise<{ quote: string; story: string; application: string }> {
-      const maxRetries = 5;
-      const baseDelay = 1000; // 1 second
-
-      const quoteStoryPrompt = ChatPromptTemplate.fromTemplate(`
-        Make sure your answer is in the proper json format: {{"quote": "...", "story": "...", "application": "..."}}
-    
-        Based on the reflection below and the philosophy "{philosophy}", provide:
-    
-        1. A relevant quote from a thinker or text associated with {philosophy} that relates to the themes in the reflection.
-        2. A brief story or anecdote about someone with beliefs or actions aligned with {philosophy} who dealt with similar situations.
-        3. An application and learning point from the story that the user can apply to their own situation.
-    
-        Use empathetic and supportive language.
-    
-        Format the response as a valid JSON string with 'quote', 'story', and 'application' fields.
-    
-        Example format:
-        {{"quote": "Your quote here.", "story": "Your story here.", "application": "Your application and learning here."}}
-    
-        Reflection: {reflection}
-    
-        Response:
-      `);
-
-      const quoteStoryChain = quoteStoryPrompt
-        .pipe(model)
-        .pipe(new StringOutputParser());
-
-      for (let attempt = 0; attempt < maxRetries; attempt++) {
-        try {
-          const quoteStoryResult = await quoteStoryChain.invoke({
-            philosophy: philosophy,
-            reflection: reflection,
-          });
-
-          console.log(quoteStoryResult);
-
-          const parsedQuoteStory = parseJsonResponse(quoteStoryResult);
-          return {
-            quote: parsedQuoteStory.quote,
-            story: parsedQuoteStory.story,
-            application: parsedQuoteStory.application,
-          };
-        } catch (error) {
-          console.error(`Attempt ${attempt + 1} failed:`, error);
-
-          if (attempt === maxRetries - 1) {
-            throw new Error(
-              `Failed to generate quote story after ${maxRetries} attempts`
-            );
-          }
-
-          // Exponential backoff
-          const delay = baseDelay * Math.pow(2, attempt);
-          await new Promise((resolve) => setTimeout(resolve, delay));
-        }
-      }
-
-      // This line should never be reached due to the throw in the loop,
-      // but TypeScript needs it for type safety
-      throw new Error("Unexpected error in generateQuoteStory");
-    }*/
 
     async function generateImage(
       quizId: string,
@@ -894,8 +615,8 @@ IMPORTANT: GIVE ME THE RESULT IN JSON FORMAT WITH NO ADDITIONAL INFO
       try {
         const philosophy = philosophies[0]; // Use the first philosophy
 
-
-        const { quote, story, application, reflection } = await generateReflection(history, philosophy);
+        const { quote, story, application, reflection } =
+          await generateReflection(history, philosophy);
 
         // Combine all results
         const finalResult: any = {
@@ -985,9 +706,6 @@ Meteor.methods({
         updatedAt: new Date(),
       },
     });
-
-    // Generate the final result when the quiz is completed
-    await generateResult(quizId, []);
   },
 });
 

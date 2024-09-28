@@ -18,6 +18,7 @@
     "@langchain/openai": "^0.3.0",
     "@mui/icons-material": "^6.1.1",
     "@mui/joy": "^5.0.0-beta.48",
+    "@xyflow/react": "^12.3.1",
     "aws-sdk": "^2.1691.0",
     "http2": "^3.3.6",
     "langchain": "^0.3.2",
@@ -25,8 +26,10 @@
     "openai": "^4.63.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-flow-renderer": "^10.3.17",
     "react-router-dom": "^6.26.2",
-    "react-slick": "^0.30.2"
+    "react-slick": "^0.30.2",
+    "rxjs": "^7.8.1"
   },
   "devDependencies": {
     "@types/mocha": "^8.2.3",
