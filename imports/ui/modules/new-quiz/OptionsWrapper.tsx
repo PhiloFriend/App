@@ -17,9 +17,9 @@ export const OptionsWrapper: React.FC<OptionsWrapperProps> = ({ options }) => {
       case 1:
         return { xs: 12 };
       case 2:
-        return { xs: 6 };
+        return { xs: 6, sm: 3 };
       case 3:
-        return { xs: 6, sm: 4 };
+        return { xs: 6, sm: 3 };
       case 4:
       case 5:
       case 6:

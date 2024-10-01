@@ -84,6 +84,9 @@ async function generateReflectionResult(
             
         I want you to first give me a proper paragraph that describes the user reflection in a wise way ( but easily understandable ), give me a quote, a story and then apply it to the user reflection to give him wisdom also provide a short paragraph which user can share in social media which combine his reflection and the gained wisdom from the story , application and quote, 
             
+
+        Sharable caption must not seem that is getting written by an AI, it should be more like a very wise and smart person telling something wise and catchy according to his challenge and philosophical solution, put quote in the start of the caption then smartly combine it with the challenge and solution
+
         The wisdom, story and quote and application must come from a proper psychology or philosophy based on this map:
             
         Happiness and Joy
@@ -258,6 +261,8 @@ async function generateReflectionResult(
           The image should capture the essence in a "higher self" mood.
   
           Use styles that are inspiring and resonant.
+
+          The image should have no text in it
         `;
 
       // The image generation logic remains the same as before

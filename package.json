@@ -20,6 +20,7 @@
     "@mui/joy": "^5.0.0-beta.48",
     "@xyflow/react": "^12.3.1",
     "aws-sdk": "^2.1691.0",
+    "file-saver": "^2.0.5",
     "http2": "^3.3.6",
     "langchain": "^0.3.2",
     "meteor-node-stubs": "^1.2.10",

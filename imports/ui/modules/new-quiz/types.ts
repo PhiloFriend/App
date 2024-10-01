@@ -15,14 +15,11 @@ export interface Option {
 }
 
 export interface Question {
-  id: string; // Unique identifier for the question
-  type: "question";
-  title: string; // Main question text
-  description: string; // Additional details or instructions
-  image?: Image; // Optional image
-  options: Option[]; // List of selectable options
-  parentId?: string; // ID of the parent question (if any)
-  repeatable: boolean; // Indicates if the question can be repeated
+  title: string;
+  description?: string;
+  type: "options" | "text";
+  options?: Option[];
+  placeholder?: string;
 }
 
 export type NodeType = "question" | "option";

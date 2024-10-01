@@ -1,0 +1,1438 @@
+{
+  "physical_health": {
+    "questions": [
+      {
+        "id": "energy_levels",
+        "question": "How would you describe your energy levels on a typical day?",
+        "options": [
+          {
+            "value": "Energetic",
+            "philosophies": ["Aristotelian Virtue Ethics", "Stoicism"],
+            "psychologies": ["Positive Psychology"],
+            "follow_up": {
+              "question": "What contributes most to your high energy levels?",
+              "options": [
+                {
+                  "value": "Regular Exercise",
+                  "philosophies": ["Aristotelian Virtue Ethics"],
+                  "psychologies": ["Behavioral Medicine"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Balanced Nutrition",
+                  "philosophies": ["Epicureanism"],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Good Sleep Quality",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Sleep Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Positive Mindset",
+                  "philosophies": ["Humanism"],
+                  "psychologies": ["Positive Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Other",
+                  "philosophies": ["Aristotelian Virtue Ethics", "Stoicism"],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": {
+                    "question": "Please specify what contributes to your energy levels:",
+                    "input_type": "text"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "value": "Average",
+            "philosophies": ["Aristotelian Virtue Ethics"],
+            "psychologies": ["Health Psychology"],
+            "follow_up": {
+              "question": "What factors influence your average energy levels?",
+              "options": [
+                {
+                  "value": "Inconsistent Exercise",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Behavioral Medicine"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Unbalanced Diet",
+                  "philosophies": ["Epicureanism"],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Irregular Sleep Patterns",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Sleep Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Stress",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Cognitive Behavioral Therapy (CBT)"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Other",
+                  "philosophies": ["Aristotelian Virtue Ethics"],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": {
+                    "question": "Please specify what influences your energy levels:",
+                    "input_type": "text"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "value": "Tired",
+            "philosophies": ["Stoicism", "Epicureanism"],
+            "psychologies": ["Sleep Psychology", "Health Psychology"],
+            "follow_up": {
+              "question": "What primarily makes you feel tired?",
+              "options": [
+                {
+                  "value": "Lack of Sleep",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Sleep Psychology"],
+                  "follow_up": {
+                    "question": "How many hours do you typically sleep each night?",
+                    "input_type": "number",
+                    "unit": "hours",
+                    "follow_up": null
+                  }
+                },
+                {
+                  "value": "Poor Nutrition",
+                  "philosophies": ["Epicureanism"],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Sedentary Lifestyle",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Behavioral Medicine"],
+                  "follow_up": null
+                },
+                {
+                  "value": "High Stress Levels",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["CBT"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Medical Conditions",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Other",
+                  "philosophies": ["Stoicism", "Epicureanism"],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": {
+                    "question": "Please specify what makes you feel tired:",
+                    "input_type": "text"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "value": "Exhausted",
+            "philosophies": ["Stoicism", "Aristotelian Virtue Ethics"],
+            "psychologies": ["Health Psychology", "Sleep Psychology"],
+            "follow_up": {
+              "question": "What is the main reason for your exhaustion?",
+              "options": [
+                {
+                  "value": "Chronic Sleep Deprivation",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Sleep Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Overworking",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Behavioral Medicine"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Severe Health Issues",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Mental Health Struggles",
+                  "philosophies": ["Stoicism", "Humanism"],
+                  "psychologies": ["CBT"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Other",
+                  "philosophies": ["Stoicism", "Aristotelian Virtue Ethics"],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": {
+                    "question": "Please specify the cause of your exhaustion:",
+                    "input_type": "text"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "physical_comfort",
+        "question": "How would you rate your physical comfort currently?",
+        "options": [
+          {
+            "value": "No Pain",
+            "philosophies": ["Epicureanism", "Aristotelian Virtue Ethics"],
+            "psychologies": ["Positive Psychology"],
+            "follow_up": null
+          },
+          {
+            "value": "Mild Discomfort",
+            "philosophies": ["Stoicism"],
+            "psychologies": ["Health Psychology"],
+            "follow_up": {
+              "question": "What area are you experiencing mild discomfort?",
+              "options": [
+                {
+                  "value": "Back",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Physical Therapy Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Neck",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Physical Therapy Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Headaches",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Muscle Aches",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Physical Therapy Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Joint Pain",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Physical Therapy Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Other",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": {
+                    "question": "Please specify the area of discomfort:",
+                    "input_type": "text"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "value": "Moderate Pain",
+            "philosophies": ["Stoicism", "Aristotelian Virtue Ethics"],
+            "psychologies": ["Health Psychology", "Pain Management Psychology"],
+            "follow_up": {
+              "question": "What is the primary source of your moderate pain?",
+              "options": [
+                {
+                  "value": "Injury",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Pain Management Psychology"],
+                  "follow_up": {
+                    "question": "Is your injury acute or chronic?",
+                    "options": [
+                      {
+                        "value": "Acute",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Pain Management Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Chronic",
+                        "philosophies": [
+                          "Stoicism",
+                          "Aristotelian Virtue Ethics"
+                        ],
+                        "psychologies": [
+                          "Pain Management Psychology",
+                          "Health Psychology"
+                        ],
+                        "follow_up": null
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Chronic Conditions",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": [
+                    "Health Psychology",
+                    "Pain Management Psychology"
+                  ],
+                  "follow_up": null
+                },
+                {
+                  "value": "Posture Issues",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Physical Therapy Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Other",
+                  "philosophies": ["Stoicism", "Aristotelian Virtue Ethics"],
+                  "psychologies": [
+                    "Health Psychology",
+                    "Pain Management Psychology"
+                  ],
+                  "follow_up": {
+                    "question": "Please specify the cause of your pain:",
+                    "input_type": "text"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "value": "Severe Pain",
+            "philosophies": ["Stoicism", "Aristotelian Virtue Ethics"],
+            "psychologies": ["Health Psychology", "Pain Management Psychology"],
+            "follow_up": {
+              "question": "What is the main cause of your severe pain?",
+              "options": [
+                {
+                  "value": "Injury",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Pain Management Psychology"],
+                  "follow_up": {
+                    "question": "Is your injury acute or chronic?",
+                    "options": [
+                      {
+                        "value": "Acute",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Pain Management Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Chronic",
+                        "philosophies": [
+                          "Stoicism",
+                          "Aristotelian Virtue Ethics"
+                        ],
+                        "psychologies": [
+                          "Pain Management Psychology",
+                          "Health Psychology"
+                        ],
+                        "follow_up": null
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Chronic Conditions",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": [
+                    "Health Psychology",
+                    "Pain Management Psychology"
+                  ],
+                  "follow_up": null
+                },
+                {
+                  "value": "Posture Issues",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Physical Therapy Psychology"],
+                  "follow_up": null
+                },
+                {
+                  "value": "Other",
+                  "philosophies": ["Stoicism", "Aristotelian Virtue Ethics"],
+                  "psychologies": [
+                    "Health Psychology",
+                    "Pain Management Psychology"
+                  ],
+                  "follow_up": {
+                    "question": "Please specify the cause of your severe pain:",
+                    "input_type": "text"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "health_habits",
+        "question": "Which of the following health habits do you actively engage in?",
+        "options": [
+          {
+            "value": "Exercise",
+            "philosophies": ["Aristotelian Virtue Ethics", "Stoicism"],
+            "psychologies": ["Behavioral Medicine", "Health Psychology"],
+            "follow_up": {
+              "question": "How frequently do you exercise each week?",
+              "options": [
+                {
+                  "value": "Daily",
+                  "philosophies": ["Aristotelian Virtue Ethics"],
+                  "psychologies": ["Behavioral Medicine"],
+                  "follow_up": {
+                    "question": "What type of exercise do you prefer?",
+                    "options": [
+                      {
+                        "value": "Cardio",
+                        "philosophies": ["Aristotelian Virtue Ethics"],
+                        "psychologies": ["Behavioral Medicine"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Strength Training",
+                        "philosophies": ["Aristotelian Virtue Ethics"],
+                        "psychologies": ["Behavioral Medicine"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Yoga/Pilates",
+                        "philosophies": ["Stoicism", "Taoism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Sports",
+                        "philosophies": ["Aristotelian Virtue Ethics"],
+                        "psychologies": ["Behavioral Medicine"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Other",
+                        "philosophies": [
+                          "Stoicism",
+                          "Aristotelian Virtue Ethics"
+                        ],
+                        "psychologies": [
+                          "Health Psychology",
+                          "Behavioral Medicine"
+                        ],
+                        "follow_up": {
+                          "question": "Please specify the type of exercise you engage in:",
+                          "input_type": "text"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "3-5 Times a Week",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Behavioral Medicine"],
+                  "follow_up": {
+                    "question": "What motivates you to exercise regularly?",
+                    "options": [
+                      {
+                        "value": "Health Benefits",
+                        "philosophies": ["Aristotelian Virtue Ethics"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Stress Relief",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Physical Appearance",
+                        "philosophies": ["Epicureanism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Social Interaction",
+                        "philosophies": ["Aristotelian Virtue Ethics"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Other",
+                        "philosophies": [
+                          "Stoicism",
+                          "Aristotelian Virtue Ethics"
+                        ],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": {
+                          "question": "Please specify what motivates you:",
+                          "input_type": "text"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "1-2 Times a Week",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Behavioral Medicine"],
+                  "follow_up": {
+                    "question": "What prevents you from exercising more frequently?",
+                    "options": [
+                      {
+                        "value": "Lack of Time",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Time Management Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Low Motivation",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Behavioral Medicine"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Health Issues",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Lack of Knowledge",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Other",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Behavioral Medicine"],
+                        "follow_up": {
+                          "question": "Please specify the reason:",
+                          "input_type": "text"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Rarely",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Behavioral Medicine"],
+                  "follow_up": {
+                    "question": "What discourages you from exercising regularly?",
+                    "options": [
+                      {
+                        "value": "Lack of Interest",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Behavioral Medicine"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Physical Limitations",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Mental Health Issues",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["CBT"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Other",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Behavioral Medicine"],
+                        "follow_up": {
+                          "question": "Please specify the discouraging factor:",
+                          "input_type": "text"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "value": "Nutrition",
+            "philosophies": ["Epicureanism", "Aristotelian Virtue Ethics"],
+            "psychologies": ["Health Psychology", "Nutritional Psychology"],
+            "follow_up": {
+              "question": "How would you rate your overall nutrition?",
+              "options": [
+                {
+                  "value": "Balanced Diet",
+                  "philosophies": [
+                    "Epicureanism",
+                    "Aristotelian Virtue Ethics"
+                  ],
+                  "psychologies": ["Health Psychology"],
+                  "follow_up": {
+                    "question": "Which aspect of your diet do you focus on most?",
+                    "options": [
+                      {
+                        "value": "Macronutrients (Proteins, Carbs, Fats)",
+                        "philosophies": ["Epicureanism"],
+                        "psychologies": ["Nutritional Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Micronutrients (Vitamins, Minerals)",
+                        "philosophies": ["Epicureanism"],
+                        "psychologies": ["Nutritional Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Whole Foods",
+                        "philosophies": ["Epicureanism"],
+                        "psychologies": ["Nutritional Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Portion Control",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Other",
+                        "philosophies": ["Epicureanism", "Stoicism"],
+                        "psychologies": ["Nutritional Psychology"],
+                        "follow_up": {
+                          "question": "Please specify the focus of your diet:",
+                          "input_type": "text"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Unbalanced Diet",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": [
+                    "Health Psychology",
+                    "Nutritional Psychology"
+                  ],
+                  "follow_up": {
+                    "question": "What aspect of your diet is unbalanced?",
+                    "options": [
+                      {
+                        "value": "High in Processed Foods",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Nutritional Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Low in Nutrients",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Nutritional Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Irregular Eating Patterns",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Overeating or Undereating",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Other",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Nutritional Psychology"],
+                        "follow_up": {
+                          "question": "Please specify the issue with your diet:",
+                          "input_type": "text"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Poor Nutrition",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": [
+                    "Health Psychology",
+                    "Nutritional Psychology"
+                  ],
+                  "follow_up": {
+                    "question": "What factors contribute to your poor nutrition?",
+                    "options": [
+                      {
+                        "value": "Busy Lifestyle",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Lack of Knowledge",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Nutritional Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Emotional Eating",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["CBT"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Health Conditions",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Other",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Nutritional Psychology"],
+                        "follow_up": {
+                          "question": "Please specify the factors affecting your nutrition:",
+                          "input_type": "text"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Other",
+                  "philosophies": [
+                    "Epicureanism",
+                    "Stoicism",
+                    "Aristotelian Virtue Ethics"
+                  ],
+                  "psychologies": [
+                    "Health Psychology",
+                    "Nutritional Psychology"
+                  ],
+                  "follow_up": {
+                    "question": "Please specify your health habits related to nutrition:",
+                    "input_type": "text"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "value": "Sleep Quality",
+            "philosophies": ["Stoicism", "Buddhism"],
+            "psychologies": ["Sleep Psychology", "Health Psychology"],
+            "follow_up": {
+              "question": "How would you rate your sleep quality?",
+              "options": [
+                {
+                  "value": "Excellent",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Sleep Psychology"],
+                  "follow_up": {
+                    "question": "What practices contribute to your excellent sleep?",
+                    "options": [
+                      {
+                        "value": "Consistent Sleep Schedule",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Relaxation Techniques",
+                        "philosophies": ["Stoicism", "Buddhism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Healthy Sleep Environment",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Limiting Screen Time Before Bed",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Other",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": {
+                          "question": "Please specify your sleep practices:",
+                          "input_type": "text"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Good",
+                  "philosophies": ["Stoicism"],
+                  "psychologies": ["Sleep Psychology"],
+                  "follow_up": {
+                    "question": "What helps you maintain good sleep quality?",
+                    "options": [
+                      {
+                        "value": "Regular Exercise",
+                        "philosophies": ["Aristotelian Virtue Ethics"],
+                        "psychologies": ["Behavioral Medicine"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Balanced Diet",
+                        "philosophies": ["Epicureanism"],
+                        "psychologies": ["Health Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Relaxation Techniques",
+                        "philosophies": ["Stoicism", "Buddhism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Limiting Caffeine Intake",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Other",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": {
+                          "question": "Please specify what helps your sleep quality:",
+                          "input_type": "text"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Poor",
+                  "philosophies": ["Stoicism", "Buddhism"],
+                  "psychologies": ["Sleep Psychology", "Health Psychology"],
+                  "follow_up": {
+                    "question": "What factors contribute to your poor sleep quality?",
+                    "options": [
+                      {
+                        "value": "Inconsistent Sleep Schedule",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Stress and Anxiety",
+                        "philosophies": ["Stoicism", "Buddhism"],
+                        "psychologies": ["CBT", "Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Environmental Disruptions",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Use of Electronics Before Bed",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Other",
+                        "philosophies": ["Stoicism", "Buddhism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": {
+                          "question": "Please specify the factors affecting your sleep:",
+                          "input_type": "text"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Very Poor",
+                  "philosophies": ["Stoicism", "Buddhism"],
+                  "psychologies": ["Sleep Psychology", "Health Psychology"],
+                  "follow_up": {
+                    "question": "What is the main reason for your very poor sleep quality?",
+                    "options": [
+                      {
+                        "value": "Chronic Insomnia",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": [
+                          "Cognitive Behavioral Therapy for Insomnia (CBT-I)"
+                        ],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Sleep Apnea",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Restless Leg Syndrome",
+                        "philosophies": ["Stoicism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Severe Stress or Anxiety",
+                        "philosophies": ["Stoicism", "Buddhism"],
+                        "psychologies": ["CBT", "Mindfulness Practices"],
+                        "follow_up": null
+                      },
+                      {
+                        "value": "Other",
+                        "philosophies": ["Stoicism", "Buddhism"],
+                        "psychologies": ["Sleep Psychology"],
+                        "follow_up": {
+                          "question": "Please specify the reason for your poor sleep quality:",
+                          "input_type": "text"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "health_habits_exercise",
+            "question": "How frequently do you engage in physical exercise each week?",
+            "options": [
+              {
+                "value": "Daily",
+                "philosophies": ["Aristotelian Virtue Ethics"],
+                "psychologies": ["Behavioral Medicine"],
+                "follow_up": {
+                  "question": "What type of exercise do you primarily engage in?",
+                  "options": [
+                    {
+                      "value": "Cardio",
+                      "philosophies": ["Aristotelian Virtue Ethics"],
+                      "psychologies": ["Behavioral Medicine"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Strength Training",
+                      "philosophies": ["Aristotelian Virtue Ethics"],
+                      "psychologies": ["Behavioral Medicine"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Yoga/Pilates",
+                      "philosophies": ["Stoicism", "Taoism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Sports",
+                      "philosophies": ["Aristotelian Virtue Ethics"],
+                      "psychologies": ["Behavioral Medicine"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Other",
+                      "philosophies": [
+                        "Stoicism",
+                        "Aristotelian Virtue Ethics"
+                      ],
+                      "psychologies": [
+                        "Health Psychology",
+                        "Behavioral Medicine"
+                      ],
+                      "follow_up": {
+                        "question": "Please specify the type of exercise you engage in:",
+                        "input_type": "text"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "value": "3-5 Times a Week",
+                "philosophies": ["Stoicism"],
+                "psychologies": ["Behavioral Medicine"],
+                "follow_up": {
+                  "question": "What motivates you to exercise regularly?",
+                  "options": [
+                    {
+                      "value": "Health Benefits",
+                      "philosophies": ["Aristotelian Virtue Ethics"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Stress Relief",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Physical Appearance",
+                      "philosophies": ["Epicureanism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Social Interaction",
+                      "philosophies": ["Aristotelian Virtue Ethics"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Other",
+                      "philosophies": [
+                        "Stoicism",
+                        "Aristotelian Virtue Ethics"
+                      ],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": {
+                        "question": "Please specify what motivates you:",
+                        "input_type": "text"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "value": "1-2 Times a Week",
+                "philosophies": ["Stoicism"],
+                "psychologies": ["Behavioral Medicine"],
+                "follow_up": {
+                  "question": "What prevents you from exercising more frequently?",
+                  "options": [
+                    {
+                      "value": "Lack of Time",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Time Management Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Low Motivation",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Behavioral Medicine"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Health Issues",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Lack of Knowledge",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Other",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Behavioral Medicine"],
+                      "follow_up": {
+                        "question": "Please specify the reason:",
+                        "input_type": "text"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "value": "Rarely",
+                "philosophies": ["Stoicism"],
+                "psychologies": ["Behavioral Medicine"],
+                "follow_up": {
+                  "question": "What discourages you from exercising regularly?",
+                  "options": [
+                    {
+                      "value": "Lack of Interest",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Behavioral Medicine"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Physical Limitations",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Mental Health Issues",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Cognitive Behavioral Therapy (CBT)"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Other",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Behavioral Medicine"],
+                      "follow_up": {
+                        "question": "Please specify the discouraging factor:",
+                        "input_type": "text"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "health_habits_nutrition",
+            "question": "How would you describe your overall nutrition?",
+            "options": [
+              {
+                "value": "Balanced Diet",
+                "philosophies": ["Epicureanism", "Aristotelian Virtue Ethics"],
+                "psychologies": ["Health Psychology"],
+                "follow_up": {
+                  "question": "Which aspect of your diet do you focus on most?",
+                  "options": [
+                    {
+                      "value": "Macronutrients (Proteins, Carbs, Fats)",
+                      "philosophies": ["Epicureanism"],
+                      "psychologies": ["Nutritional Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Micronutrients (Vitamins, Minerals)",
+                      "philosophies": ["Epicureanism"],
+                      "psychologies": ["Nutritional Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Whole Foods",
+                      "philosophies": ["Epicureanism"],
+                      "psychologies": ["Nutritional Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Portion Control",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Other",
+                      "philosophies": [
+                        "Epicureanism",
+                        "Stoicism",
+                        "Aristotelian Virtue Ethics"
+                      ],
+                      "psychologies": ["Nutritional Psychology"],
+                      "follow_up": {
+                        "question": "Please specify the focus of your diet:",
+                        "input_type": "text"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "value": "Unbalanced Diet",
+                "philosophies": ["Stoicism"],
+                "psychologies": ["Health Psychology", "Nutritional Psychology"],
+                "follow_up": {
+                  "question": "What aspect of your diet is unbalanced?",
+                  "options": [
+                    {
+                      "value": "High in Processed Foods",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Nutritional Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Low in Nutrients",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Nutritional Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Irregular Eating Patterns",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Overeating or Undereating",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Other",
+                      "philosophies": ["Stoicism", "Epicureanism"],
+                      "psychologies": ["Nutritional Psychology"],
+                      "follow_up": {
+                        "question": "Please specify the issue with your diet:",
+                        "input_type": "text"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "value": "Poor Nutrition",
+                "philosophies": ["Stoicism"],
+                "psychologies": ["Health Psychology", "Nutritional Psychology"],
+                "follow_up": {
+                  "question": "What factors contribute to your poor nutrition?",
+                  "options": [
+                    {
+                      "value": "Busy Lifestyle",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Lack of Knowledge",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Nutritional Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Emotional Eating",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Cognitive Behavioral Therapy (CBT)"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Health Conditions",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Other",
+                      "philosophies": ["Stoicism", "Epicureanism"],
+                      "psychologies": ["Nutritional Psychology"],
+                      "follow_up": {
+                        "question": "Please specify the factors affecting your nutrition:",
+                        "input_type": "text"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "value": "Other",
+                "philosophies": [
+                  "Epicureanism",
+                  "Stoicism",
+                  "Aristotelian Virtue Ethics"
+                ],
+                "psychologies": ["Health Psychology", "Nutritional Psychology"],
+                "follow_up": {
+                  "question": "Please specify your health habits related to nutrition:",
+                  "input_type": "text"
+                }
+              }
+            ]
+          },
+          {
+            "id": "health_habits_sleep",
+            "question": "How would you rate your sleep quality?",
+            "options": [
+              {
+                "value": "Excellent",
+                "philosophies": ["Stoicism"],
+                "psychologies": ["Sleep Psychology"],
+                "follow_up": {
+                  "question": "What practices contribute to your excellent sleep?",
+                  "options": [
+                    {
+                      "value": "Consistent Sleep Schedule",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Relaxation Techniques",
+                      "philosophies": ["Stoicism", "Buddhism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Healthy Sleep Environment",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Limiting Screen Time Before Bed",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Other",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": {
+                        "question": "Please specify your sleep practices:",
+                        "input_type": "text"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "value": "Good",
+                "philosophies": ["Stoicism"],
+                "psychologies": ["Sleep Psychology"],
+                "follow_up": {
+                  "question": "What helps you maintain good sleep quality?",
+                  "options": [
+                    {
+                      "value": "Regular Exercise",
+                      "philosophies": ["Aristotelian Virtue Ethics"],
+                      "psychologies": ["Behavioral Medicine"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Balanced Diet",
+                      "philosophies": ["Epicureanism"],
+                      "psychologies": ["Health Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Relaxation Techniques",
+                      "philosophies": ["Stoicism", "Buddhism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Limiting Caffeine Intake",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Other",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": {
+                        "question": "Please specify what helps your sleep quality:",
+                        "input_type": "text"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "value": "Poor",
+                "philosophies": ["Stoicism", "Buddhism"],
+                "psychologies": ["Sleep Psychology", "Health Psychology"],
+                "follow_up": {
+                  "question": "What factors contribute to your poor sleep quality?",
+                  "options": [
+                    {
+                      "value": "Inconsistent Sleep Schedule",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Stress and Anxiety",
+                      "philosophies": ["Stoicism", "Buddhism"],
+                      "psychologies": ["CBT", "Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Environmental Disruptions",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Use of Electronics Before Bed",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Other",
+                      "philosophies": ["Stoicism", "Buddhism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": {
+                        "question": "Please specify the factors affecting your sleep:",
+                        "input_type": "text"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "value": "Very Poor",
+                "philosophies": ["Stoicism", "Buddhism"],
+                "psychologies": ["Sleep Psychology", "Health Psychology"],
+                "follow_up": {
+                  "question": "What is the main reason for your very poor sleep quality?",
+                  "options": [
+                    {
+                      "value": "Chronic Insomnia",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": [
+                        "Cognitive Behavioral Therapy for Insomnia (CBT-I)"
+                      ],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Sleep Apnea",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Restless Leg Syndrome",
+                      "philosophies": ["Stoicism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Severe Stress or Anxiety",
+                      "philosophies": ["Stoicism", "Buddhism"],
+                      "psychologies": ["CBT", "Mindfulness Practices"],
+                      "follow_up": null
+                    },
+                    {
+                      "value": "Other",
+                      "philosophies": ["Stoicism", "Buddhism"],
+                      "psychologies": ["Sleep Psychology"],
+                      "follow_up": {
+                        "question": "Please specify the reason for your poor sleep quality:",
+                        "input_type": "text"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

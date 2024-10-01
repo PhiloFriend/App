@@ -5,36 +5,44 @@ import { OptionsWrapper } from "./OptionsWrapper";
 import { Option as OptionType, Question as QuestionType } from "./types";
 
 interface QuestionProps {
-  currentQuestion: QuestionType;
-  handleOptionSelect: (option: OptionType) => void;
+  currentQuestion: React.ReactNode;
+  step: number;
+  //handleOptionSelect: (option: OptionType) => void;
 }
 
 export const Question: React.FC<QuestionProps> = ({
   currentQuestion,
-  handleOptionSelect,
+  step,
+  //handleOptionSelect,
 }) => {
   const [displayedQuestion, setDisplayedQuestion] = useState<
-    QuestionType | undefined
+    React.ReactNode | undefined
   >(undefined);
   const [animationState, setAnimationState] = useState("enter");
+  const [lastStep, setLastStep] = useState(0);
 
   useEffect(() => {
-    if (currentQuestion !== displayedQuestion) {
+    if (lastStep !== step) {
+      setLastStep(step);
       if (displayedQuestion) {
         // Start exit animation
+        console.log("start exit animation");
         setAnimationState("exit");
 
         // After exit animation, update displayed question
         setTimeout(() => {
           setDisplayedQuestion(currentQuestion);
           setAnimationState("enter");
+          console.log("end exit animation");
         }, 600); // Half of the animation duration
       } else {
         // Initial load
         setDisplayedQuestion(currentQuestion);
       }
+    } else {
+      setDisplayedQuestion(currentQuestion);
     }
-  }, [currentQuestion, displayedQuestion]);
+  }, [currentQuestion, displayedQuestion, step]);
 
   if (!displayedQuestion) {
     return <Box>Loading...</Box>;
@@ -56,23 +64,7 @@ export const Question: React.FC<QuestionProps> = ({
           transition: "transform 0.6s ease-in-out, opacity 0.6s ease-in-out",
         }}
       >
-        <Typography level="h2" sx={{ mb: 2 }}>
-          {displayedQuestion.title}
-        </Typography>
-        {displayedQuestion.description && (
-          <Typography level="body-lg" sx={{ mb: 2 }}>
-            {displayedQuestion.description}
-          </Typography>
-        )}
-        <OptionsWrapper
-          options={displayedQuestion.options.map((option) => (
-            <Option
-              key={option.title}
-              option={option}
-              onClick={handleOptionSelect}
-            />
-          ))}
-        />
+        {displayedQuestion}
       </Box>
     </Box>
   );

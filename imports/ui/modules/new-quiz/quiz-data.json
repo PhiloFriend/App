@@ -187,14 +187,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another emotion",
-          "image": null,
+          "image": {
+            "hash": "4275a92e66777c109b0f614191d913352705aa1f264ef549faa1c63c289f343a",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/4275a92e66777c109b0f614191d913352705aa1f264ef549faa1c63c289f343a.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/4275a92e66777c109b0f614191d913352705aa1f264ef549faa1c63c289f343a-mini.png"
+          },
           "nextQuestionId": "root_return"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Finish the reflection",
-          "image": null,
+          "image": {
+            "hash": "2265d4d46b69888c60b8e2717e16974b2682a250233ab5bc1e4ec9979ea46bb0",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/2265d4d46b69888c60b8e2717e16974b2682a250233ab5bc1e4ec9979ea46bb0.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/2265d4d46b69888c60b8e2717e16974b2682a250233ab5bc1e4ec9979ea46bb0-mini.png"
+          },
           "nextQuestionId": "End"
         }
       ],
@@ -378,14 +386,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Joy"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -462,14 +478,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Joy"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -546,14 +570,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Joy"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -630,14 +662,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Joy"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -821,14 +861,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Sadness"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -905,14 +953,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Sadness"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -989,14 +1045,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Sadness"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -1073,14 +1137,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Sadness"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -1264,14 +1336,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Anger"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -1348,14 +1428,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Anger"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -1432,14 +1520,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Anger"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -1516,14 +1612,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Anger"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -1707,14 +1811,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Fear"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -1791,14 +1903,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Fear"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -1875,14 +1995,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Fear"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -1959,14 +2087,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Fear"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -2150,14 +2286,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Anxiety"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -2234,14 +2378,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Anxiety"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -2318,14 +2470,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Anxiety"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -2402,14 +2562,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Anxiety"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -2593,14 +2761,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Disgust"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -2677,14 +2853,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Disgust"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -2761,14 +2945,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Disgust"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -2845,14 +3037,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Disgust"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -3069,14 +3269,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Calm"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -3153,14 +3361,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Calm"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -3237,14 +3453,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Calm"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],
@@ -3321,14 +3545,22 @@
           "type": "option",
           "title": "Yes",
           "description": "Add another trigger",
-          "image": null,
+          "image": {
+            "hash": "f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/f748c527d4debf86b722d2b62935357e6ab1c6213836182e8a826ded5aefd893-mini.png"
+          },
           "nextQuestionId": "trigger_Calm"
         },
         {
           "type": "option",
           "title": "No",
           "description": "Continue to the next question",
-          "image": null,
+          "image": {
+            "hash": "88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852",
+            "url": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852.png",
+            "mini": "https://philofriend.s3.eu-north-1.amazonaws.com/images/88511fec4ee53a6d311dea35740bde95ded592f41b01c0519e19bd713a32e852-mini.png"
+          },
           "nextQuestionId": "root_fork"
         }
       ],

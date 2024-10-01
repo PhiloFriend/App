@@ -9,14 +9,15 @@ import { Meteor } from "meteor/meteor";
 import { HeaderContainer } from "../containers/layout/HeaderContainer";
 import { Hero } from "../components/layout/Hero";
 import { Main } from "../components/layout/Main";
+import { SecondaryInfo } from "../components/layout/SecondaryInfo";
+import { Steps } from "../components/layout/Steps";
+
 import { PhilosophySelector } from "../containers/features/quizzes/PhilosopySelector";
 import { ReflectionQuiz } from "../containers/features/quizzes/ReflectionQuiz";
 
 import { Dashboard } from "../containers/features/user/Dashboard";
 
 export const HomePage = () => {
-  const user = useTracker(() => Meteor.user());
-
   return (
     <Box>
       <HeaderContainer />
@@ -24,19 +25,15 @@ export const HomePage = () => {
         <>
           <Hero />
           <Box mt={10} />
-          {/*<PhilosophySelector />*/}
-        </>
-        {/*user == null ? (
-          <>
-            <Hero />
-            <Box mt={10} />
-            <PhilosophySelector />
-          </>
-        ) : (
+          <SecondaryInfo />
+          <Steps />
           <Dashboard />
-        )*/}
-        {/* For the logged-in user, render null for now */}
+          {/*
+          <Dashboard />*/}
+        </>
       </Main>
     </Box>
   );
 };
+
+export default HomePage;

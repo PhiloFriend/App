@@ -52,7 +52,7 @@ export const Option: React.FC<OptionProps> = ({
           flexShrink: 0,
         }}
       >
-        {!imageLoaded && (
+        {option.image?.mini && !imageLoaded && (
           <Box
             sx={{
               position: "absolute",
@@ -71,23 +71,25 @@ export const Option: React.FC<OptionProps> = ({
             />
           </Box>
         )}
-        <img
-          src={option.image?.mini}
-          alt={option.title}
-          onLoad={() => {
-            console.log("image loaded");
-            handleImageLoad();
-          }}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            display: imageLoaded ? "block" : "none",
-          }}
-        />
+        {option.image?.mini ? (
+          <img
+            src={option.image?.mini}
+            alt={option.title}
+            onLoad={() => {
+              console.log("image loaded");
+              handleImageLoad();
+            }}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              display: imageLoaded ? "block" : "none",
+            }}
+          />
+        ) : null}
       </Box>
       <Box
         sx={{

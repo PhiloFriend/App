@@ -8,10 +8,11 @@ import { Button } from "@mui/joy";
 
 interface QuizProps {
   quizService: QuizService;
-  currentQuestion: Question | null;
+  currentQuestion: React.ReactNode;
   handleOptionSelect: (option: Option) => void;
   handleBack: () => void;
   canGoBack: boolean;
+  step: number;
 }
 
 export const Quiz: React.FC<QuizProps> = ({
@@ -20,6 +21,7 @@ export const Quiz: React.FC<QuizProps> = ({
   handleBack,
   handleOptionSelect,
   canGoBack,
+  step,
 }) => {
 
   return (
@@ -37,7 +39,7 @@ export const Quiz: React.FC<QuizProps> = ({
           ) : null}
           <QuestionRenderer
             currentQuestion={currentQuestion}
-            handleOptionSelect={handleOptionSelect}
+            step={step}
           />
           {/*         <h2>{currentQuestion.title}</h2>
           <p>{currentQuestion.description}</p>

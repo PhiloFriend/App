@@ -12,7 +12,8 @@ import {
   Typography,
   Grid,
 } from "@mui/joy";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
+import { saveAs } from "file-saver";
 
 import { ReflectionQuizzesCollection } from "/imports/api/ReflectionQuiz";
 import { QuizHeader } from "/imports/ui/components/features/quiz/QuizHeader";
@@ -47,26 +48,44 @@ interface ReflectionResultProps {
 }
 
 export const ReflectionResult = ({ result }: ReflectionResultProps) => {
-  console.log(result);
+  const handleDownload = useCallback(() => {
+    console.log("???");
+
+    if (result.image) {
+      saveAs(result.image, `reflection-${new Date().toISOString()}.png`);
+    }
+  }, [result.image]);
 
   return (
     <Box>
       <Grid container spacing={4}>
         <Grid sm={4} xs={12}>
-          <img src={result.image} style={{ width: "100%" }} />{" "}
+          <img src={result.image} style={{ width: "100%" }} alt="Reflection" />
           <Typography mb={"1.5em"} level="body-md">
             {result.quote}
           </Typography>
           <Box sx={{ width: "100%" }}>
             <Grid container spacing={2}>
               <Grid xs={6}>
-                <Button fullWidth variant="solid" color="primary" size="md">
-                  Share Reflection
+                <Button
+                  fullWidth
+                  variant="solid"
+                  color="primary"
+                  size="md"
+                  onClick={handleDownload}
+                >
+                  Download Image
                 </Button>
               </Grid>
               <Grid xs={6}>
-                <Button fullWidth variant="outlined" color="primary" size="md">
-                  Make it NFT
+                <Button
+                  disabled
+                  fullWidth
+                  variant="outlined"
+                  color="primary"
+                  size="md"
+                >
+                  Join Act I
                 </Button>
               </Grid>
             </Grid>
