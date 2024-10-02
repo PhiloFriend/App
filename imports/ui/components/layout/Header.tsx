@@ -38,25 +38,42 @@ export const Header = () => {
       {user ? (
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Button sx={{ mr: "0.5em" }} variant="solid">
-            Reflect
+            Reflect (5)
           </Button>
 
           <Box>
-            <IconButton
-              aria-controls={open ? "basic-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
-              onClick={handleClick}
-            >
-              <img height={24} width={24} src="/profile.svg" />
-            </IconButton>
+            {
+              <IconButton
+                aria-controls={open ? "basic-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                onClick={handleClick}
+                variant="outlined"
+                color="primary"
+                sx={{ borderRadius: "100%" }}
+              >
+                <img
+                  style={{ borderRadius: "100%" }}
+                  height={24}
+                  width={24}
+                  src="/profile.svg"
+                />
+              </IconButton>
+            }
             <Menu
               id="basic-menu"
               anchorEl={anchorEl}
               open={open}
               onClose={handleClose}
             >
-              <MenuItem onClick={handleClose}>Dashboard</MenuItem>
+              <MenuItem
+                onClick={() => {
+                  navigate("/");
+                  handleClose();
+                }}
+              >
+                My Reflections
+              </MenuItem>
               <MenuItem
                 onClick={() => {
                   Meteor.logout();

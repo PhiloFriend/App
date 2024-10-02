@@ -15,6 +15,7 @@ const apiKey = config.openAiKey;
 export interface ReflectionResult {
   quote: string;
   story: string;
+  reflection: string;
   application: string;
   sharableCaption: string;
   image: string | null;
@@ -432,7 +433,7 @@ Meteor.methods({
 });
 
 if (Meteor.isServer) {
-  Meteor.publish("reflections", function (limit = 10) {
+  /*Meteor.publish("reflections", function (limit = 10) {
     return ReflectionCollection.find(
       {},
       {
@@ -447,9 +448,35 @@ if (Meteor.isServer) {
         },
       }
     );
-  });
+  });*/
 
   Meteor.publish("reflection", function (reflectionId: string) {
-    return ReflectionCollection.find({ _id: reflectionId });
+    if (!this.userId) {
+      return this.ready();
+    }
+    return ReflectionCollection.find({
+      _id: reflectionId,
+      owner: this.userId
+    });
+  });
+
+  Meteor.publish("userReflections", function (limit = 10) {
+    if (!this.userId) {
+      return this.ready();
+    }
+    return ReflectionCollection.find(
+      { owner: this.userId },
+      {
+        limit: limit,
+        sort: { createdAt: -1 },
+        fields: {
+          reflectionText: 1,
+          reflectionType: 1,
+          result: 1,
+          createdAt: 1,
+          updatedAt: 1,
+        },
+      }
+    );
   });
 }

@@ -13,6 +13,7 @@ import {
   Grid,
 } from "@mui/joy";
 import React, { useEffect, useState, useCallback } from "react";
+//@ts-ignore
 import { saveAs } from "file-saver";
 
 import { ReflectionQuizzesCollection } from "/imports/api/ReflectionQuiz";

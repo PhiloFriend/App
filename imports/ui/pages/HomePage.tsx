@@ -16,21 +16,27 @@ import { PhilosophySelector } from "../containers/features/quizzes/PhilosopySele
 import { ReflectionQuiz } from "../containers/features/quizzes/ReflectionQuiz";
 
 import { Dashboard } from "../containers/features/user/Dashboard";
+import EmotionalQuiz from "../modules/new-quiz/EmotionalQuiz";
 
 export const HomePage = () => {
+  const userId = useTracker(() => Meteor.userId());
+
   return (
     <Box>
-      <HeaderContainer />
       <Main>
-        <>
-          <Hero />
-          <Box mt={10} />
-          <SecondaryInfo />
-          <Steps />
+        {userId ? (
           <Dashboard />
-          {/*
-          <Dashboard />*/}
-        </>
+        ) : (
+          <>
+            <Hero />
+            <Box mt={10} />
+            <SecondaryInfo />
+            <Steps />
+            <Box>
+              <EmotionalQuiz />
+            </Box>
+          </>
+        )}
       </Main>
     </Box>
   );
