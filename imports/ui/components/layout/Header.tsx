@@ -86,7 +86,12 @@ export const Header = () => {
         </Box>
       ) : (
         <Box>
-          <Button variant="solid">Get Start</Button>
+          <Button variant="outlined" sx={{ mr: "0.5em" }}>
+            Log In
+          </Button>
+          <Button onClick={() => navigate("/signup")} variant="solid">
+            Register
+          </Button>
         </Box>
       )}
     </Box>

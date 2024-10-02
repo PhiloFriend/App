@@ -5,7 +5,7 @@ export const aboutPageContent = {
     {
       title: "The Challenge of Gaining Wisdom",
       content: "We all aspire to be wiser because wisdom can transform our lives. But traditionally, becoming wise demands years of meditation or sifting through countless books, making it a daunting task for most.",
-      image: "/buddhism.webp"
+      image: "/about-hero.webp"
     },
     {
       title: "Introducing PhiloFriend",
