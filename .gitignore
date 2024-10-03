@@ -1,5 +1,7 @@
 node_modules/
 
+start.sh
+
 imports/config.ts
 
 .DS_Store

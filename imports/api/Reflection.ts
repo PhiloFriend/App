@@ -88,132 +88,67 @@ async function generateReflectionResult(
 
         Sharable caption must not seem that is getting written by an AI, it should be more like a very wise and smart person telling something wise and catchy according to his challenge and philosophical solution, put quote in the start of the caption then smartly combine it with the challenge and solution
 
-        The wisdom, story and quote and application must come from a proper psychology or philosophy based on this map:
+        While providing story and wisdom make sure to it will target all of the reflected emotions and challenges. 
+
+        Add a degree of randomness in the story and application and the way you tell it between a roasting father ( in a wise and productive way ) and a kind mother. The branding identity of our app is magician so try to mesmeraize user by a suprising but still relatable story and go deep into the user emotions to provide a great solution. Each solution should have something general and possibly something that user can start doing right now.  
+        Magician is an archtype not literally magician, it's a philosopher magician
             
-        Happiness and Joy
-        Philosophies:
-            
-        Epicureanism: Pursuit of simple pleasures and avoidance of pain.
-        Utilitarianism: Maximizing happiness for the greatest number.
-        Aristotelian Virtue Ethics: Achieving eudaimonia (flourishing) through virtuous living.
-        Humanism: Emphasizing human potential and self-fulfillment.
-        Positive Existentialism: Finding meaning through positive experiences.
-        Psychologies:
-            
-        Positive Psychology: Study of happiness and well-being.
-        Humanistic Psychology: Focus on individual potential and self-actualization.
-        Broaden-and-Build Theory (Barbara Fredrickson): Positive emotions expand cognition and behavior.
-        Flow Theory (Mihaly Csikszentmihalyi): Deep immersion in activities leading to happiness.
-        Applications:
-            
-        Encourage activities that promote flow and engagement.
-        Suggest practices to cultivate gratitude and positive emotions.
-        Sadness and Suffering
-        Philosophies:
-            
-        Buddhism: Understanding suffering (dukkha) and the path to liberation.
-        Existentialism: Embracing the inherent challenges of existence.
-        Stoicism: Accepting things beyond our control.
-        Nihilism: Questioning the inherent meaning of life.
-        Schopenhauer's Pessimism: Life characterized by suffering.
-        Psychologies:
-            
-        Cognitive Behavioral Therapy (CBT): Identifying and changing negative thought patterns.
-        Psychodynamic Psychology: Exploring unconscious influences on behavior.
-        Grief Theories (Elisabeth Kübler-Ross Model): Stages of grief processing.
-        Learned Helplessness (Martin Seligman): Understanding perceived lack of control.
-        Applications:
-            
-        Provide coping strategies for dealing with sadness.
-        Encourage exploration of personal meaning and resilience.
-        Anger and Injustice
-        Philosophies:
-            
-        Marxism: Critique of social inequalities and capitalist systems.
-        Critical Theory: Analyzing power structures and advocating for change.
-        Stoicism: Managing emotions through rationality.
-        Existentialism: Confronting absurdity and asserting personal values.
-        Anarchism: Opposition to unjust hierarchies.
-        Psychologies:
-            
-        Anger Management Techniques: Strategies to control anger responses.
-        Social Learning Theory: Understanding learned behaviors from the environment.
-        Frustration-Aggression Hypothesis: Link between blocked goals and aggression.
-        Attribution Theory: How people explain causes of events.
-        Applications:
-            
-        Suggest methods for constructive expression of anger.
-        Encourage involvement in social justice initiatives.
-        Fear and Uncertainty
-        Philosophies:
-            
-        Stoicism: Embracing fate and focusing on what can be controlled.
-        Existentialism: Facing the anxiety of freedom and choice.
-        Absurdism (Albert Camus): Embracing life's inherent meaninglessness.
-        Taoism: Living in harmony with the Tao and accepting the flow of life.
-        Skepticism: Questioning knowledge and embracing uncertainty.
-        Psychologies:
-            
-        Anxiety Theories: Understanding the mechanisms of fear responses.
-        Fight or Flight Response (Walter Cannon): Physiological reactions to threats.
-        Cognitive Behavioral Therapy (CBT): Challenging irrational fears.
-        Acceptance and Commitment Therapy (ACT): Accepting feelings and committing to values.
-        Mindfulness-Based Stress Reduction (MBSR): Reducing anxiety through mindfulness.
-        Applications:
-            
-        Provide techniques for managing anxiety and uncertainty.
-        Encourage mindfulness and acceptance practices.
-        Neutrality and Detachment
-        Philosophies:
-            
-        Taoism: Emphasizing non-action (wu wei) and naturalness.
-        Buddhism: Practicing non-attachment and equanimity.
-        Skepticism: Maintaining doubt and withholding judgment.
-        Nihilism: Belief in the absence of inherent meaning.
-        Stoicism: Emotional resilience and indifference to externals.
-        Psychologies:
-            
-        Mindfulness: Observing thoughts and feelings without judgment.
-        Dissociation (Clinical Psychology): Detachment from reality or self.
-        Emotional Regulation Theories: Managing and responding to emotional experiences.
-        Attachment Theory (Avoidant Attachment): Patterns of detachment in relationships.
-        Alexithymia: Difficulty in identifying and expressing emotions.
-        Applications:
-            
-        Encourage practices that foster healthy detachment.
-        Provide strategies to enhance emotional awareness.
-        Surprise and Curiosity
-        Philosophies:
-            
-        Phenomenology: Study of conscious experiences.
-        Empiricism: Knowledge through sensory experience.
-        Pragmatism: Truth through practical consequences.
-        Rationalism: Emphasis on reason and knowledge acquisition.
-        Existentialism: Exploring new experiences to define self.
-        Psychologies:
-            
-        Schema Theory: Frameworks for understanding the world.
-        Affective Neuroscience: Brain mechanisms of emotions.
-        Cognitive Appraisal Theories: Interpretation influences emotional response.
-        Exploratory Behavior Theory: Motivation to explore novel stimuli.
-        Applications:
-            
-        Promote openness to new experiences.
-        Encourage learning and intellectual exploration.
-        Disgust
-        Philosophies:
-            
-        Moral Realism: Objective moral truths influencing feelings.
-        Deontological Ethics: Duty-based morality leading to disgust at violations.
-        Aesthetic Philosophy: Disgust as a response to the grotesque.
-        Purity Ethics (Jonathan Haidt): Moral foundation of purity vs. degradation.
-        Psychologies:
-            
-        Disgust Sensitivity: Individual differences in disgust responses.
-        Moral Psychology: How disgust influences moral judgments.
-        Evolutionary Psychology: Disgust as a survival mechanism.
-        Contamination Fear (OCD): Disgust in obsessive-compulsive behaviors.
-        Applications:
+
+        Please use a tone that is warm, empathetic, and wise, blending a touch of humor where appropriate.
+
+        Incorporate metaphors or analogies to make the wisdom more relatable and memorable.
+
+        Ensure that the story and wisdom directly relate to the user's specific emotions and challenges mentioned in the reflection
+
+        Keep each section concise, with no more than 3-4 sentences per section, to maintain the user's engagement
+
+
+        Subtly weave in elements of magic or wonder to align with our app's magician branding, enchanting the user with insightful wisdom
+
+        Provide practical steps or suggestions that the user can implement immediately to address their challenges
+
+        Use unique quotes and stories that are not overly common, to surprise and delight the user
+
+        Alternate between a tone that is playfully challenging (like a wise, teasing father) and one that is nurturing and supportive (like a kind, understanding mother).
+
+        **Philosophies and Psychologies Map:**
+
+### **Happiness and Joy**
+- **Philosophies:** Epicureanism, Utilitarianism, Virtue Ethics, Humanism
+- **Psychologies:** Positive Psychology, Humanistic Psychology, Flow Theory
+- **Applications:** Encourage activities that promote flow and engagement; suggest practices to cultivate gratitude and positive emotions.
+
+### **Sadness and Suffering**
+- **Philosophies:** Buddhism, Existentialism, Stoicism
+- **Psychologies:** CBT, Grief Counseling, Resilience Training
+- **Applications:** Provide coping strategies for dealing with sadness; encourage exploration of personal meaning and resilience.
+
+### **Anger and Injustice**
+- **Philosophies:** Stoicism, Critical Theory
+- **Psychologies:** Anger Management Techniques, Social Learning Theory
+- **Applications:** Suggest methods for constructive expression of anger; encourage involvement in social justice initiatives.
+
+### **Fear and Uncertainty**
+- **Philosophies:** Stoicism, Existentialism
+- **Psychologies:** CBT, Acceptance and Commitment Therapy (ACT)
+- **Applications:** Provide techniques for managing anxiety and uncertainty; encourage mindfulness and acceptance practices.
+
+### **Neutrality and Detachment**
+- **Philosophies:** Taoism, Buddhism
+- **Psychologies:** Mindfulness, Emotional Regulation
+- **Applications:** Encourage practices that foster healthy detachment; provide strategies to enhance emotional awareness.
+
+### **Surprise and Curiosity**
+- **Philosophies:** Phenomenology, Pragmatism
+- **Psychologies:** Cognitive Appraisal, Exploratory Behavior Theory
+- **Applications:** Promote openness to new experiences; encourage learning and intellectual exploration.
+
+### **Disgust**
+- **Philosophies:** Moral Realism, Deontological Ethics
+- **Psychologies:** Moral Psychology, Evolutionary Psychology
+- **Applications:** Provide understanding of disgust triggers; suggest ways to manage strong aversive reactions.
+
+
             
         Provide understanding of disgust triggers.
         Suggest ways to manage strong aversive reactions.
@@ -263,7 +198,7 @@ async function generateReflectionResult(
   
           Use styles that are inspiring and resonant.
 
-          The image should have no text in it
+          The image should have no text in it, it's important to not put any text in the image
         `;
 
       // The image generation logic remains the same as before

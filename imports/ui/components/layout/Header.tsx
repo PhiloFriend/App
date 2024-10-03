@@ -37,7 +37,11 @@ export const Header = () => {
       </Box>
       {user ? (
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <Button sx={{ mr: "0.5em" }} variant="solid">
+          <Button
+            onClick={() => navigate("/reflect")}
+            sx={{ mr: "0.5em" }}
+            variant="solid"
+          >
             Reflect (5)
           </Button>
 
@@ -86,7 +90,11 @@ export const Header = () => {
         </Box>
       ) : (
         <Box>
-          <Button variant="outlined" sx={{ mr: "0.5em" }}>
+          <Button
+            onClick={() => navigate("/login")}
+            variant="outlined"
+            sx={{ mr: "0.5em" }}
+          >
             Log In
           </Button>
           <Button onClick={() => navigate("/signup")} variant="solid">

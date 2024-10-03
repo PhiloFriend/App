@@ -94,10 +94,7 @@ export function EmotionalQuiz() {
       );
       const reflectionId = await Meteor.callAsync(
         "reflection.create",
-        [
-          ...quizService.getAnswerArray(),
-          `Is there anything more to add? ${selfReflect}`,
-        ],
+        `${quizService.getAnswerArray()} Is there anything more to add? ${selfReflect}`,
         "Emotional"
       );
 

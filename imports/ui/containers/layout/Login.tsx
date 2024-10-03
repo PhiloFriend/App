@@ -1,31 +1,12 @@
-import React, { useState } from "react";
-import {
-  AspectRatio,
-  Box,
-  Button,
-  Divider,
-  Grid,
-  Input,
-  Stack,
-  TextField,
-  Typography,
-} from "@mui/joy";
+import React from "react";
+import { Box, Button, Divider, Grid, Stack, Typography } from "@mui/joy";
 import { Logo } from "../../components/common/Logo";
 import { Apple, Facebook, Google } from "@mui/icons-material";
-import { SignupForm } from "../features/authentication/SignupForm";
-import { useLocation, useNavigate } from "react-router-dom";
+import { LoginForm } from "../features/authentication/LoginForm";
+import { useNavigate } from "react-router-dom";
 
-const SignUp: React.FC = () => {
-  const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const philosophies: Array<string> = searchParams.getAll("philosophy");
-
+const Login: React.FC = () => {
   const navigate = useNavigate();
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    // Add your signup logic here
-  };
 
   const handleGoogleSignIn = () => {
     // Add your Google sign-in logic here
@@ -54,30 +35,59 @@ const SignUp: React.FC = () => {
             <Box sx={{ minHeight: "40em" }}>
               <Box sx={{ paddingTop: "2em", maxWidth: 400, margin: "auto" }}>
                 <Typography level="h2" sx={{ fontWeight: 400, mb: 0.5 }}>
-                  Welcome to <Logo />
+                  Welcome back to <Logo />
                 </Typography>
                 <Typography level="body-lg">
-                  Discover your life philosophy and grow with personalized
-                  wisdom.
+                  Log in to continue your journey of wisdom and growth.
                 </Typography>
               </Box>
               <Box sx={{ padding: "2em", height: "100%" }}>
                 <Stack spacing={2} sx={{ maxWidth: 400, margin: "auto" }}>
-                  <SignupForm philosophies={philosophies ? philosophies : []} />
+                  <LoginForm />
 
                   <Typography level="body-sm" textAlign="center">
-                    Already have an account?{" "}
+                    Don't have an account?{" "}
                     <Typography
-                      onClick={() => navigate("/login")}
+                      onClick={() => navigate("/signup")}
                       level="body-sm"
                       textAlign="center"
                       color="primary"
                       sx={{ cursor: "pointer" }}
                       fontWeight={700}
                     >
-                      Log in
+                      Sign up
                     </Typography>
                   </Typography>
+
+                  <Divider>or</Divider>
+
+                  <Button
+                    variant="outlined"
+                    color="neutral"
+                    startDecorator={<Google />}
+                    fullWidth
+                    onClick={handleGoogleSignIn}
+                  >
+                    Log in with Google
+                  </Button>
+
+                  <Button
+                    variant="outlined"
+                    color="neutral"
+                    startDecorator={<Facebook />}
+                    fullWidth
+                  >
+                    Log in with Facebook
+                  </Button>
+
+                  <Button
+                    variant="outlined"
+                    color="neutral"
+                    startDecorator={<Apple />}
+                    fullWidth
+                  >
+                    Log in with Apple
+                  </Button>
                 </Stack>
               </Box>
             </Box>
@@ -86,7 +96,7 @@ const SignUp: React.FC = () => {
             xs={0}
             sm={6}
             sx={{
-              backgroundImage: 'url("/nietzscheism.webp")',
+              backgroundImage: 'url("/taoism.webp")',
               backgroundSize: "cover",
               backgroundPosition: "center",
               minHeight: { xs: "200px", sm: "auto" },
@@ -98,4 +108,4 @@ const SignUp: React.FC = () => {
   );
 };
 
-export default SignUp;
+export default Login;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 //@ts-ignore
 import { useTracker } from "meteor/react-meteor-data";
 import { Meteor } from "meteor/meteor";
@@ -7,8 +7,11 @@ import { ReflectionCollection } from "/imports/api/Reflection";
 import { ReflectionCard } from "/imports/ui/components/reflections/ReflectionCard";
 import { Loader } from "/imports/ui/components/common/Loader";
 import { Reflection } from "/imports/api/Reflection";
+import { useNavigate } from "react-router-dom";
 
 export const MyReflections: React.FC = () => {
+  const navigate = useNavigate();
+
   const {
     reflections,
     isLoading,
@@ -23,6 +26,12 @@ export const MyReflections: React.FC = () => {
       isLoading: !subscription.ready(),
     };
   }, []);
+
+  useEffect(() => {
+    if (!isLoading && reflections.length === 0) {
+      navigate("/reflect");
+    }
+  }, [reflections]);
 
   if (isLoading) {
     return (

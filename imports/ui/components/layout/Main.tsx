@@ -15,6 +15,7 @@ export const Main: React.FC<ResponsiveContainerProps> = ({ children, sx }) => {
         px: { xs: 2, sm: 3, md: 4 },
         maxWidth: "1280px",
         width: "100%",
+        marginBottom: '2em',
         ...sx, // Allow overriding or extending styles
       }}
     >

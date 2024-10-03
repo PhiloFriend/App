@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
         backgroundColor: "primary.50",
         color: "text.primary",
         py: 6,
-        mt: "auto",
+        mt: 3,
       }}
     >
       <Container maxWidth="lg">
