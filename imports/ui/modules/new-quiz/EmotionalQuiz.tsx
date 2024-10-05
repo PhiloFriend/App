@@ -13,6 +13,8 @@ import { Loader } from "../../components/common/Loader";
 import { Box, Button, Textarea, Typography } from "@mui/joy";
 import OptionsWrapper from "./OptionsWrapper";
 import { Option as OptionComponent } from "./Option";
+import { User } from "/imports/api/users/UserProfile";
+import { OutOfCreditNotification } from "../../components/OutOfCreditNotification";
 
 const quizService = new QuizService(quizData.questions as Question[]);
 
@@ -27,6 +29,17 @@ export function EmotionalQuiz() {
   const [finalized, setFinalize] = useState<boolean>(false);
 
   const [canGoBack, setCanGoBack] = useState(false);
+
+  const [showCreditInfo, setShowCreditInfo] = useState(false);
+
+  const { user, isLoading } = useTracker(() => {
+    const subscription = Meteor.subscribe("userData");
+    const user = Meteor.user() as User | null;
+    return {
+      user,
+      isLoading: !subscription.ready(),
+    };
+  });
 
   useEffect(() => {
     const subscription = quizService.canGoBack$.subscribe((v) => {
@@ -102,6 +115,21 @@ export function EmotionalQuiz() {
       setReflectionId(reflectionId);
     }
   };
+
+  const handleUpgrade = () => {
+    // This function will be implemented later
+    console.log("Upgrade to premium clicked");
+  };
+
+  if (isLoading) {
+    return <Loader />;
+  }
+
+  if (user) {
+    if (user.credit <= 0) {
+      return <OutOfCreditNotification onUpgrade={handleUpgrade} />;
+    }
+  }
 
   return (
     <div>

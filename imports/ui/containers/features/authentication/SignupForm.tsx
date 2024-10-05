@@ -163,6 +163,8 @@ export const SignupForm: React.FC<SignupFormProps> = ({
           ...errors,
           general: "Google signup failed. Please try again.",
         });
+      } else {
+        navigate("/");
       }
     });
   };

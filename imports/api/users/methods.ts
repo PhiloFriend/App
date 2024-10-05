@@ -1,5 +1,6 @@
 import { Meteor } from "meteor/meteor";
 import { Accounts } from "meteor/accounts-base";
+import { setVerifiedCredit } from "./creditFunctions";
 
 if (Meteor.isServer) {
   (function () {
@@ -35,7 +36,10 @@ Meteor.methods({
     if (user) {
       Accounts.sendResetPasswordEmail(user._id);
     } else {
-      throw new Meteor.Error("user-not-found", "No user found with that email address");
+      throw new Meteor.Error(
+        "user-not-found",
+        "No user found with that email address"
+      );
     }
   },
 });

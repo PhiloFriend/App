@@ -1,11 +1,16 @@
 import { Meteor } from "meteor/meteor";
 import { PhilosophyCollection } from "/imports/api/Philosophies";
+import {
+  setCredit,
+  setVerifiedCredit,
+} from "../imports/api/users/creditFunctions";
 
 import "../imports/api/Quiz";
 import "../imports/api/ReflectionQuiz";
 import "../imports/api/Reflection";
 import "../imports/api/users/methods";
 import "../imports/api/users/server/publications";
+import "../imports/api/users/creditMethods";  // Add this line
 import "../imports/startup/server/oauth-config";
 
 import PHILOSOPHIES from "../imports/philosophies.json";

@@ -58,36 +58,6 @@ const Login: React.FC = () => {
                       Sign up
                     </Typography>
                   </Typography>
-
-                  <Divider>or</Divider>
-
-                  <Button
-                    variant="outlined"
-                    color="neutral"
-                    startDecorator={<Google />}
-                    fullWidth
-                    onClick={handleGoogleSignIn}
-                  >
-                    Log in with Google
-                  </Button>
-
-                  <Button
-                    variant="outlined"
-                    color="neutral"
-                    startDecorator={<Facebook />}
-                    fullWidth
-                  >
-                    Log in with Facebook
-                  </Button>
-
-                  <Button
-                    variant="outlined"
-                    color="neutral"
-                    startDecorator={<Apple />}
-                    fullWidth
-                  >
-                    Log in with Apple
-                  </Button>
                 </Stack>
               </Box>
             </Box>

@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 //@ts-ignore
 import { useTracker } from "meteor/react-meteor-data";
 
@@ -23,8 +19,8 @@ import { HomePage } from "./pages/HomePage";
 import SignUp from "./containers/layout/Signup";
 import Login from "./containers/layout/Login"; // Add this import
 import { ReflectionDetails } from "./containers/reflections/ReflectionDetails";
-import { AboutPage } from './pages/AboutPage';
-import ReflectPage from './pages/ReflectPage'; // Add this import
+import { AboutPage } from "./pages/AboutPage";
+import ReflectPage from "./pages/ReflectPage"; // Add this import
 import EmailVerification from "./pages/EmailVerification"; // Create this component
 
 import { Meteor } from "meteor/meteor";
@@ -32,9 +28,11 @@ import { Meteor } from "meteor/meteor";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";
 import ResetPasswordPage from "./pages/ResetPasswordPage";
 
+import { UserStatus } from "./components/UserStatus";
+
 const Layout = () => {
   const { user, isEmailVerified } = useTracker(() => {
-    const userSub = Meteor.subscribe('userData');
+    const userSub = Meteor.subscribe("userData");
     const user = Meteor.user();
     let isEmailVerified = false;
 
@@ -46,23 +44,23 @@ const Layout = () => {
       }
     }
 
-    return { 
-      user, 
+    return {
+      user,
       isEmailVerified,
-      isLoading: !userSub.ready()
+      isLoading: !userSub.ready(),
     };
   });
 
-  console.log(isEmailVerified)
-
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <HeaderContainer />
-      {user && !isEmailVerified && <EmailVerificationPanel />}
-      <Box component="main" sx={{ flexGrow: 1 }}>
-        <Outlet />
-      </Box>
-      <Footer />
+    <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+      <UserStatus>
+        <HeaderContainer />
+        {user && !isEmailVerified && <EmailVerificationPanel />}
+        <Box component="main" sx={{ flexGrow: 1 }}>
+          <Outlet />
+        </Box>
+        <Footer />
+      </UserStatus>
     </Box>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 //@ts-ignore
 import { useTracker } from "meteor/react-meteor-data";
 
@@ -6,11 +6,20 @@ import { Box, Button, IconButton, Menu, MenuItem } from "@mui/joy";
 import { Logo } from "../common/Logo";
 import { Meteor } from "meteor/meteor";
 import { useNavigate } from "react-router-dom";
+import { Logout } from "@mui/icons-material";
+import { User } from '/imports/api/users/UserProfile';
 
 export const Header = () => {
   const navigate = useNavigate();
 
-  const user = useTracker(() => Meteor.user());
+  const { user, credit } = useTracker(() => {
+    Meteor.subscribe('userData'); // Ensure we're subscribed to user data
+    const user = Meteor.user() as User | null;
+    return {
+      user,
+      credit: user?.credit || 0
+    };
+  });
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -42,50 +51,37 @@ export const Header = () => {
             sx={{ mr: "0.5em" }}
             variant="solid"
           >
-            Reflect (5)
+            Reflect ({credit})
           </Button>
 
-          <Box>
-            {
-              <IconButton
-                aria-controls={open ? "basic-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
-                onClick={handleClick}
-                variant="outlined"
-                color="primary"
-                sx={{ borderRadius: "100%" }}
-              >
-                <img
-                  style={{ borderRadius: "100%" }}
-                  height={24}
-                  width={24}
-                  src="/profile.svg"
-                />
-              </IconButton>
-            }
-            <Menu
-              id="basic-menu"
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <IconButton
+              aria-controls={open ? "basic-menu" : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? "true" : undefined}
+              variant="outlined"
+              color="primary"
+              sx={{ borderRadius: "100%" }}
+              onClick={() => {
+                navigate("/");
+              }}
             >
-              <MenuItem
-                onClick={() => {
-                  navigate("/");
-                  handleClose();
-                }}
-              >
-                My Reflections
-              </MenuItem>
-              <MenuItem
-                onClick={() => {
-                  Meteor.logout();
-                }}
-              >
-                Logout
-              </MenuItem>
-            </Menu>
+              <img
+                style={{ borderRadius: "100%" }}
+                height={24}
+                width={24}
+                src="/profile.svg"
+              />
+            </IconButton>
+            <IconButton
+              onClick={() => {
+                Meteor.logout();
+              }}
+              color="primary"
+              sx={{ borderRadius: "100%", ml: "0.5em" }}
+            >
+              <Logout sx={{ width: 20, height: 20 }} />
+            </IconButton>
           </Box>
         </Box>
       ) : (

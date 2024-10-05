@@ -35,6 +35,107 @@ export const ReflectionCollection = new Mongo.Collection<Reflection>(
   "reflection"
 );
 
+async function generateImage(
+  reflectionResult: ReflectionResult
+): Promise<string | null> {
+  console.log("Generating image for reflection");
+  const imagePrompt = `
+      Create an artistic, uplifting, and relatable image based on the following:
+
+      Reflection:
+      ${reflectionResult.application}
+
+      The image should capture the essence in a "higher self" mood.
+
+      Use styles that are inspiring and resonant.
+
+      The image should have no text in it, it's important to not put any text in the image
+    `;
+
+  // The image generation logic remains the same as before
+
+  // Set up AWS S3 client
+  const s3Client = new S3Client({
+    region: config.awsRegion,
+    credentials: {
+      accessKeyId: config.awsAccessKeyId,
+      secretAccessKey: config.awsSecretAccessKey,
+    },
+  });
+
+  const openai = new OpenAI({
+    apiKey: config.openAiKey,
+  });
+
+  // Moderation check
+  const moderationResponse = await openai.moderations.create({
+    input: imagePrompt,
+  });
+
+  const moderationResult = moderationResponse.results[0];
+
+  if (moderationResult.flagged) {
+    console.warn(
+      "Image prompt was flagged by moderation API. Skipping image generation."
+    );
+    return null;
+  } else {
+    const maxRetries = 1;
+    let retries = 0;
+
+    while (retries < maxRetries) {
+      try {
+        // Generate the image
+        const imageResponse = await openai.images.generate({
+          prompt: imagePrompt,
+          model: "dall-e-3",
+          n: 1,
+          size: "1024x1024",
+          style: "vivid",
+          response_format: "b64_json",
+        });
+
+        const imageData = imageResponse.data[0].b64_json;
+
+        if (imageData) {
+          const buffer = Buffer.from(imageData, "base64");
+          // Upload the image to AWS S3
+          const filename = `images/reflections/${Date.now()}.png`;
+
+          const params = {
+            Bucket: config.awsBucketName,
+            Key: filename,
+            Body: buffer,
+            ContentType: "image/png",
+          };
+
+          const command = new PutObjectCommand(params);
+          await s3Client.send(command);
+
+          return `https://${config.awsBucketName}.s3.${config.awsRegion}.amazonaws.com/${filename}`;
+        } else {
+          throw new Error("No image data received");
+        }
+      } catch (error) {
+        console.error(
+          `Error during image generation or upload (attempt ${retries + 1}):`,
+          error
+        );
+        retries++;
+        if (retries >= maxRetries) {
+          console.error("Max retries reached. Giving up.");
+          return null;
+        }
+        // Wait for a short time before retrying (exponential backoff)
+        await new Promise((resolve) =>
+          setTimeout(resolve, 1000 * Math.pow(2, retries))
+        );
+      }
+    }
+    return null;
+  }
+}
+
 // The generateReflectionResult function as defined above
 async function generateReflectionResult(
   reflectionText: string,
@@ -184,109 +285,6 @@ async function generateReflectionResult(
       });
     }
 
-    async function generateImage(
-      reflectionResult: ReflectionResult
-    ): Promise<string | null> {
-      console.log("Generating image for reflection");
-      const imagePrompt = `
-          Create an artistic, uplifting, and relatable image based on the following:
-  
-          Reflection:
-          ${reflectionResult.application}
-  
-          The image should capture the essence in a "higher self" mood.
-  
-          Use styles that are inspiring and resonant.
-
-          The image should have no text in it, it's important to not put any text in the image
-        `;
-
-      // The image generation logic remains the same as before
-
-      // Set up AWS S3 client
-      const s3Client = new S3Client({
-        region: config.awsRegion,
-        credentials: {
-          accessKeyId: config.awsAccessKeyId,
-          secretAccessKey: config.awsSecretAccessKey,
-        },
-      });
-
-      const openai = new OpenAI({
-        apiKey: config.openAiKey,
-      });
-
-      // Moderation check
-      const moderationResponse = await openai.moderations.create({
-        input: imagePrompt,
-      });
-
-      const moderationResult = moderationResponse.results[0];
-
-      if (moderationResult.flagged) {
-        console.warn(
-          "Image prompt was flagged by moderation API. Skipping image generation."
-        );
-        return null;
-      } else {
-        const maxRetries = 1;
-        let retries = 0;
-
-        while (retries < maxRetries) {
-          try {
-            // Generate the image
-            const imageResponse = await openai.images.generate({
-              prompt: imagePrompt,
-              model: "dall-e-3",
-              n: 1,
-              size: "1024x1024",
-              style: "vivid",
-              response_format: "b64_json",
-            });
-
-            const imageData = imageResponse.data[0].b64_json;
-
-            if (imageData) {
-              const buffer = Buffer.from(imageData, "base64");
-              // Upload the image to AWS S3
-              const filename = `images/reflections/${Date.now()}.png`;
-
-              const params = {
-                Bucket: config.awsBucketName,
-                Key: filename,
-                Body: buffer,
-                ContentType: "image/png",
-              };
-
-              const command = new PutObjectCommand(params);
-              await s3Client.send(command);
-
-              return `https://${config.awsBucketName}.s3.${config.awsRegion}.amazonaws.com/${filename}`;
-            } else {
-              throw new Error("No image data received");
-            }
-          } catch (error) {
-            console.error(
-              `Error during image generation or upload (attempt ${
-                retries + 1
-              }):`,
-              error
-            );
-            retries++;
-            if (retries >= maxRetries) {
-              console.error("Max retries reached. Giving up.");
-              return null;
-            }
-            // Wait for a short time before retrying (exponential backoff)
-            await new Promise((resolve) =>
-              setTimeout(resolve, 1000 * Math.pow(2, retries))
-            );
-          }
-        }
-        return null;
-      }
-    }
-
     function parseJsonResponse(input: string): any {
       try {
         const jsonStartIndex = input.indexOf("{");
@@ -322,6 +320,13 @@ async function generateReflectionResult(
 
 Meteor.methods({
   async "reflection.create"(reflectionText: string, reflectionType: string) {
+    if (!this.userId) {
+      throw new Meteor.Error(
+        "not-authorized",
+        "You must be logged in to create a reflection."
+      );
+    }
+
     // Validate inputs if necessary
     if (!reflectionText || !reflectionType) {
       throw new Meteor.Error(
@@ -330,40 +335,102 @@ Meteor.methods({
       );
     }
 
-    // Insert a new reflection document into the collection
-    const reflectionId = await ReflectionCollection.insertAsync({
-      reflectionText,
-      reflectionType,
-      owner: String(this.userId),
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    });
-    if (Meteor.isServer) {
-      try {
-        // Generate the reflection result
-        const result = await generateReflectionResult(
-          reflectionText,
-          reflectionType
-        );
+    try {
+      // Use a credit
+      await Meteor.call("useCredit");
 
-        // Update the reflection document with the result
+      // Insert a new reflection document into the collection
+      const reflectionId = await ReflectionCollection.insertAsync({
+        reflectionText,
+        reflectionType,
+        owner: this.userId,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      });
+
+      if (Meteor.isServer) {
+        try {
+          // Generate the reflection result
+          const result = await generateReflectionResult(
+            reflectionText,
+            reflectionType
+          );
+
+          // Update the reflection document with the result
+          await ReflectionCollection.updateAsync(reflectionId, {
+            $set: {
+              result,
+              updatedAt: new Date(),
+            },
+          });
+        } catch (error) {
+          console.error("Error generating reflection result:", error);
+          throw new Meteor.Error(
+            "reflection-generation-failed",
+            "Failed to generate reflection result."
+          );
+        }
+      }
+
+      return reflectionId;
+    } catch (error) {
+
+      // @ts-ignore
+      if (error.error === "insufficient-credit") {
+        throw new Meteor.Error(
+          "insufficient-credit",
+          "Not enough credit to create a reflection."
+        );
+      }
+      throw error;
+    }
+  },
+
+  async "reflection.regenerateImage"(reflectionId: string) {
+    if (!this.userId) {
+      throw new Meteor.Error(
+        "not-authorized",
+        "You must be logged in to regenerate an image."
+      );
+    }
+
+    const reflection = await ReflectionCollection.findOneAsync(reflectionId);
+    if (!reflection) {
+      throw new Meteor.Error("not-found", "Reflection not found.");
+    }
+
+    if (reflection.owner !== this.userId) {
+      throw new Meteor.Error(
+        "not-authorized",
+        "You can only regenerate images for your own reflections."
+      );
+    }
+
+    try {
+      // Use a credit
+      await Meteor.call("useCredit");
+
+      if (Meteor.isServer && reflection.result) {
+        const newImageUrl = await generateImage(reflection.result);
         await ReflectionCollection.updateAsync(reflectionId, {
           $set: {
-            result,
+            "result.image": newImageUrl,
             updatedAt: new Date(),
           },
         });
-      } catch (error) {
-        console.error("Error generating reflection result:", error);
+      }
+
+      return true;
+    } catch (error) {
+      // @ts-ignore
+      if (error.error === "insufficient-credit") {
         throw new Meteor.Error(
-          "reflection-generation-failed",
-          "Failed to generate reflection result."
+          "insufficient-credit",
+          "Not enough credit to regenerate the image."
         );
       }
-      return reflectionId;
+      throw error;
     }
-
-    return reflectionId;
   },
 });
 
@@ -391,7 +458,7 @@ if (Meteor.isServer) {
     }
     return ReflectionCollection.find({
       _id: reflectionId,
-      owner: this.userId
+      owner: this.userId,
     });
   });
 
