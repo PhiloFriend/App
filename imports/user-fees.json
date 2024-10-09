@@ -1,0 +1,21 @@
+{
+  "plans": [
+    {
+      "name": "premium",
+      "regularPrice": 15,
+      "earlyBirdDiscount": 0.2,
+      "earlyBirdPrice": 12,
+      "billingCycle": "monthly",
+      "credits": 60
+    },
+    {
+      "name": "premiumPlus",
+      "regularPrice": 25,
+      "earlyBirdDiscount": 30,
+      "earlyBirdPrice": 22.5,
+      "billingCycle": "monthly",
+      "credits": 150
+    }
+  ],
+  "currency": "USD"
+}
