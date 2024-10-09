@@ -6,7 +6,7 @@ import { Quiz } from "./Quiz";
 //@ts-ignore
 import { useTracker } from "meteor/react-meteor-data";
 import { Meteor } from "meteor/meteor";
-import { ReflectionCollection } from "/imports/api/Reflection";
+import { ReflectionCollection } from "/imports/api/reflection/index";
 import { ReflectionResult } from "../../containers/features/quizzes/ReflectionQuiz";
 import { Question, Option } from "./types";
 import { Loader } from "../../components/common/Loader";

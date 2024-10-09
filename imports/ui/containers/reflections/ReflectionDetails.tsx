@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useTracker } from "meteor/react-meteor-data";
 import { Meteor } from "meteor/meteor";
 import { Box, Typography } from "@mui/joy";
-import { ReflectionCollection } from "/imports/api/Reflection";
+import { ReflectionCollection } from "/imports/api/reflection/index";
 import { ReflectionResult } from "/imports/ui/components/reflections/ReflectionResult";
 import { Loader } from "/imports/ui/components/common/Loader";
 

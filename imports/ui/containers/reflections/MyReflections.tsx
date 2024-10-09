@@ -3,10 +3,9 @@ import React, { useEffect } from "react";
 import { useTracker } from "meteor/react-meteor-data";
 import { Meteor } from "meteor/meteor";
 import { Box, Typography, Grid, Button } from "@mui/joy";
-import { ReflectionCollection } from "/imports/api/Reflection";
+import { ReflectionCollection, Reflection } from "/imports/api/reflection/index";
 import { ReflectionCard } from "/imports/ui/components/reflections/ReflectionCard";
 import { Loader } from "/imports/ui/components/common/Loader";
-import { Reflection } from "/imports/api/Reflection";
 import { useNavigate } from "react-router-dom";
 
 export const MyReflections: React.FC = () => {

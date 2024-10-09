@@ -17,6 +17,8 @@ import PHILOSOPHIES from "../imports/philosophies.json";
 
 import { Accounts } from "meteor/accounts-base";
 
+import "../imports/api/reflection/index";
+
 Meteor.startup(async () => {
   if (!(await PhilosophyCollection.countDocuments({}))) {
     PHILOSOPHIES.philosophies.forEach(async (philosophy) => {
