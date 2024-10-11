@@ -32,6 +32,8 @@ import { UserStatus } from "./components/UserStatus";
 
 import SubscriptionPlansPage from './pages/subscription-plans';
 
+import TermsAndConditions from './pages/TermsAndConditions';
+
 const Layout = () => {
   const { user, isEmailVerified } = useTracker(() => {
     const userSub = Meteor.subscribe("userData");
@@ -85,6 +87,7 @@ export const App = () => {
         { path: "forgot-password", element: <ForgotPasswordPage /> },
         { path: "reset-password/:token", element: <ResetPasswordPage /> },
         { path: "subscription-plans", element: <SubscriptionPlansPage /> },
+        { path: "terms-and-conditions", element: <TermsAndConditions /> },
       ],
     },
   ]);

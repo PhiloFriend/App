@@ -26,10 +26,13 @@ Meteor.methods({
 
     const user = (await Meteor.users.findOneAsync(this.userId)) as User;
     if (
-      user &&
-      !user.verificationCreditReceived &&
-      user.emails &&
-      user.emails[0].verified
+      (user &&
+        !user.verificationCreditReceived &&
+        user.emails &&
+        user.emails[0].verified) ||
+      (user.services &&
+        user.services.google &&
+        user.services.google.verified_email)
     ) {
       Meteor.users.updateAsync(this.userId, {
         $set: {
@@ -45,14 +48,17 @@ Meteor.methods({
       throw new Meteor.Error("not-authorized");
     }
 
-    const user = await Meteor.users.findOneAsync(this.userId) as User;
+    const user = (await Meteor.users.findOneAsync(this.userId)) as User;
     if (user && user.credit > 0) {
       await Meteor.users.updateAsync(this.userId, {
-        $inc: { credit: -1 }
+        $inc: { credit: -1 },
       });
       return true;
     } else {
-      throw new Meteor.Error("insufficient-credit", "Not enough credit to perform this action");
+      throw new Meteor.Error(
+        "insufficient-credit",
+        "Not enough credit to perform this action"
+      );
     }
-  }
+  },
 });

@@ -5,6 +5,11 @@ export interface ReflectionResult {
   application: string;
   sharableCaption: string;
   image: string | null;
+  reflectionAudio?: string;
+  storyAudio?: string;
+  applicationAudio?: string;
+  sharableCaptionAudio?: string;
+  quoteAudio?: string;
 }
 
 export interface Reflection {
@@ -15,4 +20,5 @@ export interface Reflection {
   result?: ReflectionResult;
   createdAt: Date;
   updatedAt: Date;
+  status: string;
 }

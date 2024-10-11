@@ -10,15 +10,20 @@ import {
   IconButton,
   Alert,
   Divider,
+  Checkbox,
+  Link,
+  Typography,
 } from "@mui/joy";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import GoogleIcon from "@mui/icons-material/Google";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link as RouterLink } from "react-router-dom";
 
 interface FormData {
   email: string;
   password: string;
+  acceptTerms: boolean;
+  acceptEmails: boolean;
 }
 
 interface FormErrors {
@@ -39,6 +44,8 @@ export const SignupForm: React.FC<SignupFormProps> = ({
   const [formData, setFormData] = useState<FormData>({
     email: "",
     password: "",
+    acceptTerms: true,
+    acceptEmails: true,
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [touched, setTouched] = useState<Record<string, boolean>>({});
@@ -82,8 +89,11 @@ export const SignupForm: React.FC<SignupFormProps> = ({
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
     setTouched((prev) => ({ ...prev, [name]: true }));
 
     // Perform validation on change for password
@@ -96,7 +106,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validateForm()) {
-      const { email, password } = formData;
+      const { email, password, acceptEmails } = formData;
       setRegistrationStatus("idle");
       Accounts.createUser(
         {
@@ -104,6 +114,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({
           password,
           profile: {
             philosophies,
+            acceptEmails,
           },
         },
         (error) => {
@@ -156,17 +167,43 @@ export const SignupForm: React.FC<SignupFormProps> = ({
   };
 
   const handleGoogleSignup = () => {
-    Meteor.loginWithGoogle({}, (error) => {
-      if (error) {
-        console.error("Google signup error:", error);
-        setErrors({
-          ...errors,
-          general: "Google signup failed. Please try again.",
-        });
-      } else {
-        navigate("/");
+    if (!formData.acceptTerms) {
+      setErrors({
+        ...errors,
+        general: "You must accept the Terms and Conditions to sign up.",
+      });
+      return;
+    }
+
+    Meteor.loginWithGoogle(
+      {
+        requestPermissions: ["email"],
+        requestOfflineToken: true,
+        loginStyle: "popup",
+      },
+      (error) => {
+        if (error) {
+          console.error("Google signup error:", error);
+          setErrors({
+            ...errors,
+            general: "Google signup failed. Please try again.",
+          });
+        } else {
+          // Update user profile with acceptEmails
+          Meteor.call(
+            "updateUserProfile",
+            { acceptEmails: formData.acceptEmails },
+            //@ts-ignore
+            (error) => {
+              if (error) {
+                console.error("Error updating user profile:", error);
+              }
+              navigate("/");
+            }
+          );
+        }
       }
-    });
+    );
   };
 
   return (
@@ -220,10 +257,52 @@ export const SignupForm: React.FC<SignupFormProps> = ({
           <FormHelperText>{errors.password}</FormHelperText>
         )}
       </FormControl>
+
+      <FormControl size="sm" sx={{ width: "100%", mb: 2 }}>
+        <Checkbox
+          name="acceptTerms"
+          checked={formData.acceptTerms}
+          onChange={handleChange}
+          label={
+            <Typography>
+              I have read and agree to the{" "}
+              <Typography sx={{ fontWeight: "md" }}>
+                terms and conditions
+              </Typography>
+              .
+            </Typography>
+          }
+        />
+        <FormHelperText>
+          <Typography level="body-sm">
+            Read our{" "}
+            <Link component={RouterLink} to="/terms-and-conditions">
+              terms and conditions
+            </Link>
+            .
+          </Typography>
+        </FormHelperText>
+      </FormControl>
+
+      <FormControl size="sm" sx={{ width: "100%", mb: 2 }}>
+        <Checkbox
+          name="acceptEmails"
+          checked={formData.acceptEmails}
+          onChange={handleChange}
+          label={
+            <Typography>
+              Embark on a journey of daily wisdom. Allow us to send you
+              enchanting reminders, guiding you towards moments of reflection
+              and self-discovery.
+            </Typography>
+          }
+        />
+      </FormControl>
+
       <Button
         type="submit"
         fullWidth
-        disabled={registrationStatus === "success"}
+        disabled={registrationStatus === "success" || !formData.acceptTerms}
       >
         Sign Up
       </Button>
@@ -234,6 +313,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({
         color="neutral"
         startDecorator={<GoogleIcon />}
         onClick={handleGoogleSignup}
+        disabled={!formData.acceptTerms}
       >
         Sign up with Google
       </Button>

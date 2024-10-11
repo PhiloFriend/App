@@ -15,10 +15,13 @@ import OptionsWrapper from "./OptionsWrapper";
 import { Option as OptionComponent } from "./Option";
 import { User } from "/imports/api/users/UserProfile";
 import { OutOfCreditNotification } from "../../components/OutOfCreditNotification";
+import { useNavigate } from "react-router-dom";
 
-const quizService = new QuizService(quizData.questions as Question[]);
+let quizService = new QuizService(quizData.questions as Question[]);
 
 export function EmotionalQuiz() {
+  const navigate = useNavigate();
+
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(
     quizService.getCurrentQuestion()
   );
@@ -31,6 +34,11 @@ export function EmotionalQuiz() {
   const [canGoBack, setCanGoBack] = useState(false);
 
   const [showCreditInfo, setShowCreditInfo] = useState(false);
+
+  const resetStates = () => {
+    quizService = new QuizService(quizData.questions as Question[]);
+   
+  };
 
   const { user, isLoading } = useTracker(() => {
     const subscription = Meteor.subscribe("userData");
@@ -112,7 +120,8 @@ export function EmotionalQuiz() {
       );
 
       console.log("reflection id is", reflectionId);
-      setReflectionId(reflectionId);
+      resetStates();
+      navigate(`/reflections/${reflectionId}`);
     }
   };
 

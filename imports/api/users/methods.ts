@@ -1,6 +1,7 @@
 import { Meteor } from "meteor/meteor";
 import { Accounts } from "meteor/accounts-base";
 import { setVerifiedCredit } from "./creditFunctions";
+import { check } from "meteor/check";
 
 if (Meteor.isServer) {
   (function () {
@@ -41,5 +42,21 @@ Meteor.methods({
         "No user found with that email address"
       );
     }
+  },
+
+  async updateUserProfile(profileData: { acceptEmails?: boolean }) {
+    if (!this.userId) {
+      throw new Meteor.Error("not-authorized");
+    }
+
+    check(profileData, {
+      acceptEmails: Boolean,
+    });
+
+    await Meteor.users.updateAsync(this.userId, {
+      $set: {
+        "profile.acceptEmails": profileData.acceptEmails,
+      },
+    });
   },
 });

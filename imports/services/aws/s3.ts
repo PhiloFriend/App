@@ -14,6 +14,20 @@ export const s3Client = new S3Client({
   },
 });
 
+export async function storeAudio(audioBuffer: Buffer, fileName: string): Promise<string> {
+  const params = {
+    Bucket: config.awsBucketName,
+    Key: `audio/${fileName}`,
+    Body: audioBuffer,
+    ContentType: "audio/mpeg",
+  };
+
+  const command = new PutObjectCommand(params);
+  await s3Client.send(command);
+
+  return `https://${config.awsBucketName}.s3.${config.awsRegion}.amazonaws.com/audio/${fileName}`;
+}
+
 export const storeImage = async (imageData: string) => {
   const buffer = Buffer.from(imageData, "base64");
   // Upload the image to AWS S3

@@ -1,14 +1,15 @@
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 
 export const reflectionPrompt = ChatPromptTemplate.fromTemplate(`
+
     This is the emotional reflection of a user:
         
     {reflectionText}            
         
-    I want you to first give me a proper paragraph that describes the user reflection in a wise way ( but easily understandable ), give me a quote, a story and then apply it to the user reflection to give him wisdom also provide a short paragraph which user can share in social media which combine his reflection and the gained wisdom from the story , application and quote, 
+    I want you to first give me a proper paragraph that describes the user reflection in a wise way ( but easily understandable ), give me a quote, a story and then apply it to the user reflection to give him wisdom also provide a short paragraph which user can share in social media which combine his reflection and the gained wisdom from the application and quote, 
         
 
-    Sharable caption must not seem that is getting written by an AI, it should be more like a very wise and smart person telling something wise and catchy according to his challenge and philosophical solution, put quote in the start of the caption then smartly combine it with the challenge and solution
+    Sharable caption must not seem that is getting written by an AI, it should be more like a very wise and smart person telling something wise and catchy according to his challenge and philosophical solution, put quote in the start of the caption then smartly combine it with the challenge and solution, It should be more very wise in a way that increases the user status in the eyes of their followers with very limited and subtle hints to their reflection
 
     While providing story and wisdom make sure to it will target all of the reflected emotions and challenges. 
 
@@ -32,6 +33,8 @@ export const reflectionPrompt = ChatPromptTemplate.fromTemplate(`
     Use unique quotes and stories that are not overly common, to surprise and delight the user
 
     Alternate between a tone that is playfully challenging (like a wise, teasing father) and one that is nurturing and supportive (like a kind, understanding mother).
+
+    Remember you should NOT name the philosophies name directly in the application, instead you should give user some wisdom from choose philosophy
 
     **Philosophies and Psychologies Map:**
 
@@ -82,4 +85,3 @@ export const reflectionPrompt = ChatPromptTemplate.fromTemplate(`
         "sharableCaption": "Your sharable caption here.",
       }}
     `);
-

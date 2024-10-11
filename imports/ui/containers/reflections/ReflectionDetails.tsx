@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useParams } from "react-router-dom";
 //@ts-ignore
 import { useTracker } from "meteor/react-meteor-data";
@@ -20,12 +20,72 @@ export const ReflectionDetails: React.FC = () => {
     };
   }, [id]);
 
+  const resultReady = useMemo(() => {
+    if (!reflection || !reflection.result) return false;
+    const {
+      quote,
+      story,
+      reflection: reflectionText,
+      application,
+      sharableCaption,
+      image,
+    } = reflection.result;
+    return !!(
+      quote &&
+      story &&
+      reflectionText &&
+      application &&
+      sharableCaption &&
+      image
+    );
+  }, [reflection]);
+
   if (isLoading) {
-    return <Loader />;
+    return (
+      <Box
+        sx={{
+          height: "70vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Loader />
+      </Box>
+    );
   }
 
   if (!reflection) {
     return <Typography level="h4">Reflection not found</Typography>;
+  }
+
+  if (!resultReady) {
+    return (
+      <Box
+        sx={{
+          height: "70vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Loader />
+          <Typography sx={{ mt: "0.5em" }} level="body-md">
+            Processing Your Reflection Result
+          </Typography>
+          <Typography sx={{ mt: "0.25em" }} level="body-sm">
+            {reflection.status}
+          </Typography>
+        </Box>
+      </Box>
+    );
   }
 
   return (

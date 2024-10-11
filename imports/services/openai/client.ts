@@ -6,3 +6,17 @@ export const openai = new OpenAI({
   apiKey: config.openAiKey,
 });
 
+export type Voice = "alloy" | "echo" | "fable" | "onyx" | "nova" | "shimmer";
+
+export async function generateSpeech(
+  text: string,
+  voice: Voice = "nova"
+): Promise<Buffer> {
+  const response = await openai.audio.speech.create({
+    model: "tts-1",
+    voice,
+    input: text,
+  });
+
+  return Buffer.from(await response.arrayBuffer());
+}
