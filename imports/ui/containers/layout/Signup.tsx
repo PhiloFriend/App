@@ -9,11 +9,13 @@ import {
   Stack,
   TextField,
   Typography,
+  Alert,
 } from "@mui/joy";
 import { Logo } from "../../components/common/Logo";
 import { Apple, Facebook, Google } from "@mui/icons-material";
 import { SignupForm } from "../features/authentication/SignupForm";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useReflectionContext } from "../../contexts/ReflectionContext";
 
 const SignUp: React.FC = () => {
   const location = useLocation();
@@ -21,15 +23,7 @@ const SignUp: React.FC = () => {
   const philosophies: Array<string> = searchParams.getAll("philosophy");
 
   const navigate = useNavigate();
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    // Add your signup logic here
-  };
-
-  const handleGoogleSignIn = () => {
-    // Add your Google sign-in logic here
-  };
+  const { storedReflectionInput } = useReflectionContext();
 
   return (
     <Box
@@ -63,6 +57,11 @@ const SignUp: React.FC = () => {
               </Box>
               <Box sx={{ padding: "2em", height: "100%" }}>
                 <Stack spacing={2} sx={{ maxWidth: 400, margin: "auto" }}>
+                  {storedReflectionInput && (
+                    <Alert color="warning">
+                      Sign up to see the result of your reflection!
+                    </Alert>
+                  )}
                   <SignupForm philosophies={philosophies ? philosophies : []} />
 
                   <Typography level="body-sm" textAlign="center">

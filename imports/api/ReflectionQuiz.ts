@@ -11,7 +11,7 @@ import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 
 const config = getConfig();
 
-const apiKey = config.openAiKey;
+const apiKey = process.env.OPENAI_API_KEY;
 
 export interface ReflectionQuizAnswer {
   question: string;
@@ -513,13 +513,13 @@ IMPORTANT: GIVE ME THE RESULT IN JSON FORMAT WITH NO ADDITIONAL INFO
       const s3Client = new S3Client({
         region: config.awsRegion,
         credentials: {
-          accessKeyId: config.awsAccessKeyId,
-          secretAccessKey: config.awsSecretAccessKey,
+          accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
         },
       });
 
       const openai = new OpenAI({
-        apiKey: config.openAiKey,
+        apiKey: process.env.OPENAI_API_KEY,
       });
 
       // Moderation check

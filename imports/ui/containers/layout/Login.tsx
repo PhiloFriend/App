@@ -1,16 +1,14 @@
 import React from "react";
-import { Box, Button, Divider, Grid, Stack, Typography } from "@mui/joy";
+import { Box, Button, Divider, Grid, Stack, Typography, Alert } from "@mui/joy";
 import { Logo } from "../../components/common/Logo";
 import { Apple, Facebook, Google } from "@mui/icons-material";
 import { LoginForm } from "../features/authentication/LoginForm";
 import { useNavigate } from "react-router-dom";
+import { useReflectionContext } from "../../contexts/ReflectionContext";
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
-
-  const handleGoogleSignIn = () => {
-    // Add your Google sign-in logic here
-  };
+  const { storedReflectionInput } = useReflectionContext();
 
   return (
     <Box
@@ -43,6 +41,11 @@ const Login: React.FC = () => {
               </Box>
               <Box sx={{ padding: "2em", height: "100%" }}>
                 <Stack spacing={2} sx={{ maxWidth: 400, margin: "auto" }}>
+                  {storedReflectionInput && (
+                    <Alert color="warning">
+                      Log in to see the result of your reflection!
+                    </Alert>
+                  )}
                   <LoginForm />
 
                   <Typography level="body-sm" textAlign="center">

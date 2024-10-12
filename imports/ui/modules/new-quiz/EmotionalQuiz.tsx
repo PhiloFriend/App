@@ -6,21 +6,23 @@ import { Quiz } from "./Quiz";
 //@ts-ignore
 import { useTracker } from "meteor/react-meteor-data";
 import { Meteor } from "meteor/meteor";
+import { useNavigate } from "react-router-dom";
+import { Box, Button, Textarea, Typography } from "@mui/joy";
+import { User } from "/imports/api/users/UserProfile";
+import { useReflectionContext } from "../../contexts/ReflectionContext";
 import { ReflectionCollection } from "/imports/api/reflection/index";
 import { ReflectionResult } from "../../containers/features/quizzes/ReflectionQuiz";
 import { Question, Option } from "./types";
 import { Loader } from "../../components/common/Loader";
-import { Box, Button, Textarea, Typography } from "@mui/joy";
 import OptionsWrapper from "./OptionsWrapper";
 import { Option as OptionComponent } from "./Option";
-import { User } from "/imports/api/users/UserProfile";
 import { OutOfCreditNotification } from "../../components/OutOfCreditNotification";
-import { useNavigate } from "react-router-dom";
 
 let quizService = new QuizService(quizData.questions as Question[]);
 
 export function EmotionalQuiz() {
   const navigate = useNavigate();
+  const { storeReflectionInput } = useReflectionContext();
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(
     quizService.getCurrentQuestion()
@@ -109,19 +111,24 @@ export function EmotionalQuiz() {
   const handleSubmit = async () => {
     setFinalize(true);
     if (!currentQuestion) {
-      console.log(
-        "creating emotional reflection",
-        quizService.getAnswerArray()
-      );
-      const reflectionId = await Meteor.callAsync(
-        "reflection.create",
-        `${quizService.getAnswerArray()} Is there anything more to add? ${selfReflect}`,
-        "Emotional"
-      );
-
-      console.log("reflection id is", reflectionId);
-      resetStates();
-      navigate(`/reflections/${reflectionId}`);
+      const reflectionInput = `${quizService.getAnswerArray()} Is there anything more to add? ${selfReflect}`;
+      
+      if (Meteor.userId()) {
+        try {
+          const reflectionId = await Meteor.callAsync(
+            "reflection.create",
+            reflectionInput,
+            "Emotional"
+          );
+          resetStates();
+          navigate(`/reflections/${reflectionId}`);
+        } catch (error) {
+          console.error('Error creating reflection:', error);
+        }
+      } else {
+        storeReflectionInput(reflectionInput);
+        navigate('/signup');
+      }
     }
   };
 

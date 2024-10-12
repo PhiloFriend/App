@@ -44,7 +44,20 @@ export const UserStatus: React.FC<UserStatusProps> = ({ children }) => {
           console.error("Error setting verification credit:", error);
         }
       });
+      Meteor.call("sendWelcomeEmail", (error: Error) => {
+        if (error) {
+          console.error("Error sending welcome email:", error);
+        }
+      });
     }
+
+    console.log(
+      user,
+      user?.services,
+      user?.services?.google,
+      user?.services?.google?.verified_email,
+      user?.verificationCreditReceived
+    );
 
     if (
       user &&
@@ -53,9 +66,17 @@ export const UserStatus: React.FC<UserStatusProps> = ({ children }) => {
       user.services.google.verified_email &&
       !user.verificationCreditReceived
     ) {
+      console.log("are we here???");
       Meteor.call("setVerificationCredit", (error: Error) => {
         if (error) {
           console.error("Error setting verification credit:", error);
+        }
+      });
+      console.log("what about here???");
+      Meteor.call("sendWelcomeEmail", (error: Error) => {
+        console.log('sending wel email as well?')
+        if (error) {
+          console.error("Error sending welcome email:", error);
         }
       });
     }

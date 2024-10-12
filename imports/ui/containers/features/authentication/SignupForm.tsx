@@ -18,6 +18,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import GoogleIcon from "@mui/icons-material/Google";
 import { useNavigate, Link as RouterLink } from "react-router-dom";
+import { useReflectionContext } from "../../../contexts/ReflectionContext";
 
 interface FormData {
   email: string;
@@ -40,6 +41,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({
   philosophies,
 }: SignupFormProps) => {
   const navigate = useNavigate();
+  const { storedReflectionInput } = useReflectionContext();
 
   const [formData, setFormData] = useState<FormData>({
     email: "",
@@ -103,7 +105,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({
     }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validateForm()) {
       const { email, password, acceptEmails } = formData;
@@ -150,8 +152,16 @@ export const SignupForm: React.FC<SignupFormProps> = ({
                     "Registration successful, but failed to send verification email.",
                 });
               } else {
-                navigate("/");
-                console.log("Verification email sent");
+                try {
+                   Meteor.loginWithPassword(email, password);
+                  if (storedReflectionInput) {
+                    navigate('/reflect');
+                  } else {
+                    navigate('/');
+                  }
+                } catch (error) {
+                  console.error("Error logging in after registration:", error);
+                }
               }
             });
           }
@@ -193,10 +203,11 @@ export const SignupForm: React.FC<SignupFormProps> = ({
           Meteor.call(
             "updateUserProfile",
             { acceptEmails: formData.acceptEmails },
-            //@ts-ignore
-            (error) => {
+            (error: Error) => {
               if (error) {
                 console.error("Error updating user profile:", error);
+              } else {
+                // Send welcome email
               }
               navigate("/");
             }

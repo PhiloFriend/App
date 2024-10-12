@@ -84,7 +84,11 @@ const ImageLayout = () => {
   );
 };
 
-export const Hero = () => {
+interface HeroProps {
+  onCtaClick: () => void;
+}
+
+export const Hero = ({ onCtaClick }: HeroProps) => {
   return (
     <Grid container sx={{ marginTop: "4em" }} spacing={2}>
       <Grid xs={10} md={6} sm={10} sx={{ order: { xs: 2, md: 2 } }}>
@@ -100,16 +104,18 @@ export const Hero = () => {
             Grow
           </Typography>
         </Typography>
-        <Button sx={{ fontSize: "1.3em", mt: 3 }} size="lg">
+        <Button
+          sx={{ fontSize: "1.3em", mt: 3 }}
+          size="lg"
+          onClick={onCtaClick}
+        >
           Start Your Journey
         </Button>
       </Grid>
       <Grid
         xs={2}
         md={6}
-        sm={
-          2
-        }
+        sm={2}
         sx={{ order: { xs: 1, md: 2 }, mb: { xs: 4, md: 0 } }}
       >
         <Box sx={{ display: "flex", justifyContent: "end" }}>

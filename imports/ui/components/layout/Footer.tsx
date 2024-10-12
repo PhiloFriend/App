@@ -13,6 +13,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { FaDiscord } from "react-icons/fa";
 
 export const Footer: React.FC = () => {
   return (
@@ -36,17 +37,45 @@ export const Footer: React.FC = () => {
               grow as an individual.
             </Typography>
             <Box>
-              <IconButton aria-label="Facebook" size="sm">
-                <FacebookIcon />
-              </IconButton>
-              <IconButton aria-label="Twitter" size="sm">
-                <TwitterIcon />
-              </IconButton>
-              <IconButton aria-label="Instagram" size="sm">
+              <IconButton
+                component={Link}
+                href="https://www.instagram.com/philo_friend?igsh=MThwZXo2NHFkcnJpMQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <InstagramIcon />
               </IconButton>
-              <IconButton aria-label="LinkedIn" size="sm">
+              <IconButton
+                component={Link}
+                href="https://x.com/philofriend?s=21&t=lfOUaC1UjsDXZnMKPkIQRQ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TwitterIcon />
+              </IconButton>
+              <IconButton
+                component={Link}
+                href="https://www.facebook.com/share/EWYoETKjGHGJszXe/?mibextid=LQQJ4d"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FacebookIcon />
+              </IconButton>
+              <IconButton
+                component={Link}
+                href="https://www.linkedin.com/company/philofriend/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LinkedInIcon />
+              </IconButton>
+              <IconButton
+                component={Link}
+                href="https://discord.gg/UrJqmKR9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaDiscord style={{ color: "#636B74", width: 24, height: 24 }} />
               </IconButton>
             </Box>
           </Grid>
@@ -73,7 +102,6 @@ export const Footer: React.FC = () => {
               <ListItem>
                 Join our community to share your feedback and ideas
               </ListItem>
-
             </List>
             <Typography level="body-md" mt={2}>
               Your input is invaluable as we grow and improve. Thank you for
@@ -93,32 +121,6 @@ export const Footer: React.FC = () => {
               </Typography>
             </Box>
           </Grid>
-          {/*<Grid xs={12} sm={6} md={3}>
-            <Typography level="h4" fontWeight="bold" mb={2}>
-              Quick Links
-            </Typography>
-            <Link level="body-sm" href="#" display="block" mb={1}>Home</Link>
-            <Link level="body-sm" href="#" display="block" mb={1}>About</Link>
-            <Link level="body-sm" href="#" display="block" mb={1}>Services</Link>
-            <Link level="body-sm" href="#" display="block" mb={1}>Contact</Link>
-          </Grid>
-          <Grid xs={12} sm={6} md={3}>
-            <Typography level="h4" fontWeight="bold" mb={2}>
-              Resources
-            </Typography>
-            <Link level="body-sm" href="#" display="block" mb={1}>Blog</Link>
-            <Link level="body-sm" href="#" display="block" mb={1}>FAQ</Link>
-            <Link level="body-sm" href="#" display="block" mb={1}>Support</Link>
-            <Link level="body-sm" href="#" display="block" mb={1}>Privacy Policy</Link>
-          </Grid>
-          <Grid xs={12} sm={6} md={3}>
-            <Typography level="h4" fontWeight="bold" mb={2}>
-              Newsletter
-            </Typography>
-            <Typography level="body-sm" mb={2}>
-              Subscribe to our newsletter for the latest updates and insights.
-            </Typography>
-          </Grid>*/}
         </Grid>
       </Container>
     </Box>

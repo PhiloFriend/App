@@ -1,7 +1,6 @@
 // HomePage.jsx
-import React from "react";
-import { Box } from "@mui/joy";
-
+import React, { useRef } from "react";
+import { Box, Button } from "@mui/joy";
 // @ts-ignore
 import { useTracker } from "meteor/react-meteor-data";
 import { Meteor } from "meteor/meteor";
@@ -20,6 +19,11 @@ import EmotionalQuiz from "../modules/new-quiz/EmotionalQuiz";
 
 export const HomePage = () => {
   const userId = useTracker(() => Meteor.userId());
+  const quizRef = useRef<HTMLDivElement>(null);
+
+  const scrollToQuiz = () => {
+    quizRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <Box>
@@ -28,11 +32,11 @@ export const HomePage = () => {
           <Dashboard />
         ) : (
           <>
-            <Hero />
+            <Hero onCtaClick={scrollToQuiz} />
             <Box mt={10} />
-            <SecondaryInfo />
+            <SecondaryInfo onCtaClick={scrollToQuiz} />
             <Steps />
-            <Box>
+            <Box ref={quizRef}>
               <EmotionalQuiz />
             </Box>
           </>

@@ -19,6 +19,8 @@ import { Accounts } from "meteor/accounts-base";
 
 import "../imports/api/reflection/index";
 
+import "../imports/api/premium-users/stripe-webhook.ts"
+
 Meteor.startup(async () => {
   if (!(await PhilosophyCollection.countDocuments({}))) {
     PHILOSOPHIES.philosophies.forEach(async (philosophy) => {
@@ -26,7 +28,7 @@ Meteor.startup(async () => {
     });
   }
 
-  Accounts.emailTemplates.from = "PhiloFriend <no-reply@philofriend.com>";
+  Accounts.emailTemplates.from = "PhiloFriend <alchemist@philofriend.com>";
 
   const headerImageUrl =
     "https://philofriend.s3.eu-north-1.amazonaws.com/images/email.png";

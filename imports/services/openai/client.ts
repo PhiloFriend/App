@@ -3,7 +3,7 @@ import OpenAI from "openai";
 const config = getConfig();
 
 export const openai = new OpenAI({
-  apiKey: config.openAiKey,
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 export type Voice = "alloy" | "echo" | "fable" | "onyx" | "nova" | "shimmer";

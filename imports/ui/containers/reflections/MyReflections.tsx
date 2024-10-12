@@ -7,6 +7,7 @@ import { ReflectionCollection, Reflection } from "/imports/api/reflection/index"
 import { ReflectionCard } from "/imports/ui/components/reflections/ReflectionCard";
 import { Loader } from "/imports/ui/components/common/Loader";
 import { useNavigate } from "react-router-dom";
+import { AccountControl } from "/imports/ui/components/AccountControl";
 
 export const MyReflections: React.FC = () => {
   const navigate = useNavigate();
@@ -43,13 +44,15 @@ export const MyReflections: React.FC = () => {
           alignItems: "center",
         }}
       >
-        <Loader />;
+        <Loader />
       </Box>
     );
   }
 
   return (
     <Box>
+      <AccountControl />
+      
       <Box>
         <Typography level="h2" mb={3}>
           My Reflections

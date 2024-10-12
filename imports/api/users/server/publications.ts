@@ -12,11 +12,16 @@ if (Meteor.isServer) {
         fields: {
           "services.google.verified_email": 1,
           "services.google.email": 1,
+          "emails.address": 1,
           "emails.verified": 1,
           credit: 1,
           profile: 1,
           initialCreditReceived: 1,
           verificationCreditReceived: 1,
+          premiumTill: 1,
+          subscriptionId: 1,
+          isSubscribed: 1,
+          subscriptionType: 1,
         },
       }
     );

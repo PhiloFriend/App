@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import { Box, Typography, Switch, Button, styled, Grid } from "@mui/joy";
+// @ts-ignore
+import { useTracker } from "meteor/react-meteor-data";
+import {
+  getCurrentUserEmail,
+  getCurrentUserId,
+} from "../../utils/user-helpers";
 
 const Card = styled(Box)(({ theme }) => ({
   border: `1px solid ${theme.vars.palette.divider}`,
@@ -16,36 +22,55 @@ const plans = [
   {
     title: "Premium",
     image: "/premium.webp",
-    credits: 60,
-    monthlyPrice: 14.99,
-    yearlyPrice: 139.99,
+    credits: 100,
+    monthlyPrice: 19.99,
+    yearlyPrice: 99.99,
     features: [
       "Access to premium reflections",
       "Priority support",
       "Exclusive content",
     ],
-    ctaText: "Choose Premium",
+    ctaText: "Transform Your Journey",
     popular: true,
-  },
-  {
-    title: "Premium Plus",
-    image: "/premium-plus.webp",
-    credits: 150,
-    monthlyPrice: 24.99,
-    yearlyPrice: 199.99,
-    features: [
-      "All Premium features",
-      "Higher priority support",
-      "Early access to new features",
-      "Personalized content",
-    ],
-    ctaText: "Choose Premium Plus",
     bestValue: true,
+    links: {
+      dev: {
+        yearly: "https://buy.stripe.com/test_8wMaHLeac2rG5hefZ0",
+        monthly: "https://buy.stripe.com/test_00g2bf0jm0jy10Y3cf",
+      },
+      prod: {
+        yearly: "",
+        monthly: "",
+      },
+    },
   },
 ];
 
 const SubscriptionPlans: React.FC = () => {
   const [isYearly, setIsYearly] = useState(true);
+
+  console.log(process.env);
+
+  const { userEmail, userId } = useTracker(() => {
+    return {
+      userEmail: getCurrentUserEmail(),
+      userId: getCurrentUserId(),
+    };
+  });
+
+  const handleSubscribe = (plan: (typeof plans)[0]) => {
+    const baseLinks =
+      process.env.NODE_ENV === "development"
+        ? plans[0].links.dev
+        : plans[0].links.prod;
+
+    const baseUrl = isYearly ? baseLinks.yearly : baseLinks.monthly;
+
+    const subscriptionUrl = `${baseUrl}?prefilled_email=${encodeURIComponent(
+      userEmail
+    )}&client_reference_id=${encodeURIComponent(userId)}`;
+    window.open(subscriptionUrl, "_blank");
+  };
 
   return (
     <Box
@@ -60,7 +85,7 @@ const SubscriptionPlans: React.FC = () => {
           level="h1"
           sx={{ mb: 1, position: "relative", display: "inline-block" }}
         >
-          Choose Your Magical Journey
+          Transform Your Magical Journey
           <Box
             sx={{
               position: "absolute",
@@ -81,20 +106,38 @@ const SubscriptionPlans: React.FC = () => {
           />
         </Typography>
         <Typography level="body-lg" sx={{ color: "text.secondary" }}>
-          Unlock deeper insights with our premium plans.
+          Unlock deeper insights with our premium plan.
         </Typography>
       </Box>
 
       {/* Add back the yearly-monthly switch */}
-      <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", mb: 4 }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          mb: 4,
+        }}
+      >
         <Typography
-          sx={{ mr: 1, color: isYearly ? "text.secondary" : "primary.main", fontWeight: isYearly ? "normal" : "bold" }}
+          sx={{
+            mr: 1,
+            color: isYearly ? "text.secondary" : "primary.main",
+            fontWeight: isYearly ? "normal" : "bold",
+          }}
         >
           Monthly
         </Typography>
-        <Switch checked={isYearly} onChange={(event) => setIsYearly(event.target.checked)} />
+        <Switch
+          checked={isYearly}
+          onChange={(event) => setIsYearly(event.target.checked)}
+        />
         <Typography
-          sx={{ ml: 1, color: isYearly ? "primary.main" : "text.secondary", fontWeight: isYearly ? "bold" : "normal" }}
+          sx={{
+            ml: 1,
+            color: isYearly ? "primary.main" : "text.secondary",
+            fontWeight: isYearly ? "bold" : "normal",
+          }}
         >
           Yearly
         </Typography>
@@ -120,29 +163,12 @@ const SubscriptionPlans: React.FC = () => {
                     zIndex: 1,
                   }}
                 >
-                  Most Popular
+                  Philosopher's Choice
                 </Box>
               )}
-              {plan.bestValue && (
-                <Box
-                  sx={{
-                    position: "absolute",
-                    top: 10,
-                    right: 10,
-                    bgcolor: "warning.300",
-                    color: "warning.800",
-                    fontSize: "xs",
-                    fontWeight: "bold",
-                    px: 1,
-                    py: 0.5,
-                    borderRadius: "md",
-                    zIndex: 1,
-                  }}
-                >
-                  Best Value
-                </Box>
-              )}
-              <Box sx={{ width: "100%", paddingTop: "100%", position: "relative" }}>
+              <Box
+                sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
+              >
                 <img
                   src={plan.image}
                   alt={plan.title}
@@ -152,7 +178,7 @@ const SubscriptionPlans: React.FC = () => {
                     left: 0,
                     width: "100%",
                     height: "100%",
-                    objectFit: "cover"
+                    objectFit: "cover",
                   }}
                 />
               </Box>
@@ -176,7 +202,10 @@ const SubscriptionPlans: React.FC = () => {
                     {isYearly
                       ? plan.yearlyPrice.toFixed(2)
                       : plan.monthlyPrice.toFixed(2)}
-                    <Typography level="body-sm" sx={{ color: "text.secondary" }}>
+                    <Typography
+                      level="body-sm"
+                      sx={{ color: "text.secondary" }}
+                    >
                       {isYearly ? "/year" : "/month"}
                     </Typography>
                   </Typography>
@@ -184,6 +213,7 @@ const SubscriptionPlans: React.FC = () => {
                     <Typography
                       level="body-sm"
                       sx={{ color: "success.main", mb: 2 }}
+                      color="danger"
                     >
                       Save{" "}
                       {(
@@ -202,7 +232,11 @@ const SubscriptionPlans: React.FC = () => {
                       >
                         <Box
                           component="span"
-                          sx={{ mr: 1, color: "success.main", fontSize: "1.2em" }}
+                          sx={{
+                            mr: 1,
+                            color: "success.main",
+                            fontSize: "1.2em",
+                          }}
                         >
                           ✓
                         </Box>
@@ -213,9 +247,10 @@ const SubscriptionPlans: React.FC = () => {
                 </Box>
                 <Button
                   fullWidth
-                  variant={plan.bestValue ? "solid" : "outlined"}
-                  color={plan.bestValue ? "primary" : "neutral"}
+                  variant={plan.popular ? "solid" : "outlined"}
+                  color={plan.popular ? "primary" : "neutral"}
                   sx={{ mt: "auto", py: 1.5 }}
+                  onClick={() => handleSubscribe(plan)}
                 >
                   {plan.ctaText}
                 </Button>
@@ -226,13 +261,10 @@ const SubscriptionPlans: React.FC = () => {
       </Grid>
 
       <Box sx={{ textAlign: "center", mt: 4 }}>
-        <Typography level="body-sm" sx={{ color: "text.secondary", mb: 1 }}>
-          30-day money-back guarantee. Cancel anytime.
-        </Typography>
         <Typography
           level="body-sm"
           component="a"
-          href="#"
+          href="/terms-and-conditions"
           sx={{
             color: "text.secondary",
             textDecoration: "underline",

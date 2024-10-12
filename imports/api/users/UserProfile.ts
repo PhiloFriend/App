@@ -1,4 +1,4 @@
-import { Meteor } from 'meteor/meteor';
+import { Meteor } from "meteor/meteor";
 
 export interface UserProfile {
   firstName: string;
@@ -10,4 +10,9 @@ export interface User extends Meteor.User {
   credit: number;
   initialCreditReceived?: boolean;
   verificationCreditReceived?: boolean;
+  subscriptionId?: string;
+  isSubscribed?: boolean;
+  subscriptionType?: 'monthly' | 'yearly';
+  premiumTill?: Date;
+  welcomeEmailSent?: boolean;
 }

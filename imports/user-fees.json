@@ -2,19 +2,16 @@
   "plans": [
     {
       "name": "premium",
-      "regularPrice": 15,
+      "regularPrice": 20,
       "earlyBirdDiscount": 0.2,
       "earlyBirdPrice": 12,
       "billingCycle": "monthly",
-      "credits": 60
-    },
-    {
-      "name": "premiumPlus",
-      "regularPrice": 25,
-      "earlyBirdDiscount": 30,
-      "earlyBirdPrice": 22.5,
-      "billingCycle": "monthly",
-      "credits": 150
+      "credits": 100,
+      "yearlyPriceLink": "https://buy.stripe.com/test_8wMaHLeac2rG5hefZ0?prefilled_email=aj.mardalizad%40gmail.com&client_reference_id=qR39ifMXo2huMr6c5",
+      "monthlyPriceLink": "https://buy.stripe.com/test_00g2bf0jm0jy10Y3cf",
+      "productId": "prod_R18gWKmoH0rKMj",
+      "yearlyPriceId": "price_1Q96ZZA1qTs8gbucsxgTjZq3",
+      "monthlyPriceId": "price_1Q96OhA1qTs8gbucnQYVkliK"
     }
   ],
   "currency": "USD"

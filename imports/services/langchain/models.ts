@@ -5,5 +5,5 @@ const config = getConfig();
 
 export const chatModel = new ChatOpenAI({
   model: "gpt-4o",
-  apiKey: config.openAiKey,
+  apiKey: process.env.OPENAI_API_KEY,
 });

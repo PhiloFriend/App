@@ -25,7 +25,7 @@ import { generateSpeech } from "../services/openai/client";
 import { storeAudio } from "../services/aws/s3";
 
 const config = getConfig();
-const apiKey = config.openAiKey;
+const apiKey = process.env.OPENAI_API_KEY;
 
 const voices: Voice[] = ["onyx"];
 

@@ -30,9 +30,11 @@ import ResetPasswordPage from "./pages/ResetPasswordPage";
 
 import { UserStatus } from "./components/UserStatus";
 
-import SubscriptionPlansPage from './pages/subscription-plans';
+import SubscriptionPlansPage from "./pages/subscription-plans";
 
-import TermsAndConditions from './pages/TermsAndConditions';
+import TermsAndConditions from "./pages/TermsAndConditions";
+
+import { ReflectionProvider } from "./contexts/ReflectionContext";
 
 const Layout = () => {
   const { user, isEmailVerified } = useTracker(() => {
@@ -69,13 +71,17 @@ const Layout = () => {
   );
 };
 
-export const App = () => {
+export const App: React.FC = () => {
   useSubscribe("philosophies");
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout />,
+      element: (
+        <ReflectionProvider>
+          <Layout />
+        </ReflectionProvider>
+      ),
       children: [
         { index: true, element: <HomePage /> },
         { path: "signup", element: <SignUp /> },
